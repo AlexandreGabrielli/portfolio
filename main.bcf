@@ -3078,7 +3078,6 @@
     <bcf:citekey order="5" intorder="1">lafortune2001</bcf:citekey>
     <bcf:citekey order="6" intorder="1">lafortune2001</bcf:citekey>
     <bcf:citekey order="7" intorder="1">tardif2006</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">tardif2006</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
