@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  28 APR 2026 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  28 APR 2026 15:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -947,39 +947,57 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
 \BKM@id=\count472
 ))
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip74
+\f@nch@offset@elh=\skip75
+\f@nch@offset@erh=\skip76
+\f@nch@offset@olh=\skip77
+\f@nch@offset@orh=\skip78
+\f@nch@offset@elf=\skip79
+\f@nch@offset@erf=\skip80
+\f@nch@offset@olf=\skip81
+\f@nch@offset@orf=\skip82
+\f@nch@height=\skip83
+\f@nch@footalignment=\skip84
+\f@nch@widthL=\skip85
+\f@nch@widthC=\skip86
+\f@nch@widthR=\skip87
+\@temptokenb=\toks33
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 31
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 60
 .
- (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-(main.aux
+) (main.aux
 Package babel Info: 'french' activates 'french' shorthands.
 (babel)             Reported on input line 13.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Info: Redefining \degres on input line 31.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Info: Redefining \degres on input line 60.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1023,12 +1041,12 @@ ii
 \scratchbox=\box64
 \nofMPsegments=\count474
 \nofMParguments=\count475
-\everyMPshowfont=\toks33
+\everyMPshowfont=\toks34
 \MPscratchCnt=\count476
 \MPscratchDim=\dimen282
 \MPnumerator=\count477
 \makeMPintoPDFobject=\count478
-\everyMPtoPDFconversion=\toks34
+\everyMPtoPDFconversion=\toks35
 )
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1066,9 +1084,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 31.
-Package biblatex Info: Reference segment=0 on input line 31.
-Package hyperref Info: Link coloring OFF on input line 31.
+Package biblatex Info: Reference section=0 on input line 60.
+Package biblatex Info: Reference segment=0 on input line 60.
+Package hyperref Info: Link coloring OFF on input line 60.
  (sections/titlepage.tex
 <image/HES-SO-Logo.jpg, id=6, 259.97125pt x 168.63pt>
 File: image/HES-SO-Logo.jpg Graphic file (type jpg)
@@ -1125,7 +1143,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 Chapitre 1.
 
 
-<image/blueprint.jpg, id=61, 571.8966pt x 722.7pt>
+<image/blueprint.jpg, id=62, 571.8966pt x 722.7pt>
 File: image/blueprint.jpg Graphic file (type jpg)
 <use image/blueprint.jpg>
 Package pdftex.def Info: image/blueprint.jpg  used on input line 31.
@@ -1136,17 +1154,38 @@ Package pdftex.def Info: image/blueprint.jpg  used on input line 31.
 
  <./image/blueprint.jpg>]
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 File: image/blueprint.jpg Graphic file (type jpg)
 <use image/blueprint.jpg>
 Package pdftex.def Info: image/blueprint.jpg  used on input line 45.
 (pdftex.def)             Requested size: 597.52472pt x 845.05936pt.
 [2]
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 File: image/blueprint.jpg Graphic file (type jpg)
 <use image/blueprint.jpg>
 Package pdftex.def Info: image/blueprint.jpg  used on input line 67.
 (pdftex.def)             Requested size: 597.52472pt x 845.05936pt.
 [3]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 File: image/blueprint.jpg Graphic file (type jpg)
 <use image/blueprint.jpg>
@@ -1156,7 +1195,7 @@ Package pdftex.def Info: image/blueprint.jpg  used on input line 79.
 Chapitre 2.
 
 
-<image/water-texture.jpg, id=82, 4516.875pt x 3011.25pt>
+<image/water-texture.jpg, id=84, 4516.875pt x 3011.25pt>
 File: image/water-texture.jpg Graphic file (type jpg)
 <use image/water-texture.jpg>
 Package pdftex.def Info: image/water-texture.jpg  used on input line 27.
@@ -1167,6 +1206,13 @@ Package pdftex.def Info: image/water-texture.jpg  used on input line 27.
 
  <./image/water-texture.jpg>]
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 File: image/water-texture.jpg Graphic file (type jpg)
 <use image/water-texture.jpg>
 Package pdftex.def Info: image/water-texture.jpg  used on input line 31.
@@ -1175,7 +1221,7 @@ Package pdftex.def Info: image/water-texture.jpg  used on input line 31.
 Chapitre 3.
 
 
-<image/carte-maritine.png, id=93, 770.88pt x 524.71031pt>
+<image/carte-maritine.png, id=95, 770.88pt x 524.71031pt>
 File: image/carte-maritine.png Graphic file (type png)
 <use image/carte-maritine.png>
 Package pdftex.def Info: image/carte-maritine.png  used on input line 19.
@@ -1188,7 +1234,7 @@ Package pdftex.def Info: image/carte-maritine.png  used on input line 19.
 Chapitre 4.
 
 
-<image/prisme.jpg, id=100, 3035.34pt x 4047.12pt>
+<image/prisme.jpg, id=102, 3035.34pt x 4047.12pt>
 File: image/prisme.jpg Graphic file (type jpg)
 <use image/prisme.jpg>
 Package pdftex.def Info: image/prisme.jpg  used on input line 31.
@@ -1198,6 +1244,13 @@ Package pdftex.def Info: image/prisme.jpg  used on input line 31.
 
 
  <./image/prisme.jpg>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 File: image/prisme.jpg Graphic file (type jpg)
 <use image/prisme.jpg>
@@ -1248,21 +1301,23 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30711 strings out of 468130
- 593011 string characters out of 5430633
- 1493177 words of memory out of 5000000
- 58836 multiletter control sequences out of 15000+600000
- 669989 words of font info for 62 fonts, out of 8000000 for 9000
+ 31059 strings out of 468130
+ 599384 string characters out of 5430633
+ 1500843 words of memory out of 5000000
+ 59178 multiletter control sequences out of 15000+600000
+ 677242 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,91p,1025b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.p
-fb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pf
-b><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pf
-b>
-Output written on main.pdf (17 pages, 7761507 bytes).
+fb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pf
+b><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
+><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb
+><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb
+>
+Output written on main.pdf (17 pages, 7807547 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
+ 233 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)
  190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
