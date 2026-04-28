@@ -1,0 +1,19 @@
+# LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.run.xml
+*.toc
+*.pdf
+*.out
+*.synctex.gz
+*.bbl
+*.blg
+
+# Windows
+Thumbs.db
+Desktop.ini

@@ -1,13 +1,175 @@
-\begin{thebibliography}{}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem[Lafortune and Deaudin, 2001]{lafortune2001}
-Lafortune, L. and Deaudin, C. (2001).
-\newblock {\em Accompagnement socioconstructiviste}.
-\newblock Presses de l'université du Québec, Québec.
 
-\bibitem[Tardif, 2006]{tardif2006}
-Tardif, J. (2006).
-\newblock {\em L'évaluation des compétences}.
-\newblock Chenelière Éducation, Montréal.
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{lafortune2001}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8a4add9c53e6eb2b3c5bffc2e73e70a2}{%
+           family={Lafortune},
+           familyi={L\bibinitperiod},
+           given={Louise},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9d1da1232fba33e771290f946d3378f}{%
+           family={Deaudin},
+           familyi={D\bibinitperiod},
+           given={Colette},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Québec}%
+      }
+      \list{publisher}{1}{%
+        {Presses de l'université du Québec}%
+      }
+      \strng{namehash}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{fullhash}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{fullhashraw}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{bibnamehash}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{authorbibnamehash}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{authornamehash}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{authorfullhash}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{authorfullhashraw}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Pour s'approprier une réforme en éducation}
+      \field{title}{Accompagnement socioconstructiviste}
+      \field{year}{2001}
+    \endentry
+    \entry{tardif2006}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e49644ed986842962d8afb5a05cccd81}{%
+           family={Tardif},
+           familyi={T\bibinitperiod},
+           given={Jacques},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Montréal}%
+      }
+      \list{publisher}{1}{%
+        {Chenelière Éducation}%
+      }
+      \strng{namehash}{e49644ed986842962d8afb5a05cccd81}
+      \strng{fullhash}{e49644ed986842962d8afb5a05cccd81}
+      \strng{fullhashraw}{e49644ed986842962d8afb5a05cccd81}
+      \strng{bibnamehash}{e49644ed986842962d8afb5a05cccd81}
+      \strng{authorbibnamehash}{e49644ed986842962d8afb5a05cccd81}
+      \strng{authornamehash}{e49644ed986842962d8afb5a05cccd81}
+      \strng{authorfullhash}{e49644ed986842962d8afb5a05cccd81}
+      \strng{authorfullhashraw}{e49644ed986842962d8afb5a05cccd81}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Documenter le parcours de développement}
+      \field{title}{L'évaluation des compétences}
+      \field{year}{2006}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{lafortune2001}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8a4add9c53e6eb2b3c5bffc2e73e70a2}{%
+           family={Lafortune},
+           familyi={L\bibinitperiod},
+           given={Louise},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9d1da1232fba33e771290f946d3378f}{%
+           family={Deaudin},
+           familyi={D\bibinitperiod},
+           given={Colette},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Québec}%
+      }
+      \list{publisher}{1}{%
+        {Presses de l'université du Québec}%
+      }
+      \strng{namehash}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{fullhash}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{fullhashraw}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{bibnamehash}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{authorbibnamehash}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{authornamehash}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{authorfullhash}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \strng{authorfullhashraw}{8751ea3cc8fd8ade0ce67f9c23ba4f44}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Pour s'approprier une réforme en éducation}
+      \field{title}{Accompagnement socioconstructiviste}
+      \field{year}{2001}
+    \endentry
+    \entry{tardif2006}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e49644ed986842962d8afb5a05cccd81}{%
+           family={Tardif},
+           familyi={T\bibinitperiod},
+           given={Jacques},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Montréal}%
+      }
+      \list{publisher}{1}{%
+        {Chenelière Éducation}%
+      }
+      \strng{namehash}{e49644ed986842962d8afb5a05cccd81}
+      \strng{fullhash}{e49644ed986842962d8afb5a05cccd81}
+      \strng{fullhashraw}{e49644ed986842962d8afb5a05cccd81}
+      \strng{bibnamehash}{e49644ed986842962d8afb5a05cccd81}
+      \strng{authorbibnamehash}{e49644ed986842962d8afb5a05cccd81}
+      \strng{authornamehash}{e49644ed986842962d8afb5a05cccd81}
+      \strng{authorfullhash}{e49644ed986842962d8afb5a05cccd81}
+      \strng{authorfullhashraw}{e49644ed986842962d8afb5a05cccd81}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Documenter le parcours de développement}
+      \field{title}{L'évaluation des compétences}
+      \field{year}{2006}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
 
-\end{thebibliography}
