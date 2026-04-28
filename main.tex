@@ -3,23 +3,20 @@
 % --- Polices et encodage ---
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
-\usepackage{lmodern}
+\usepackage{lmodern} % Indispensable pour éviter les polices floues (PK fonts)
 \usepackage[autostyle]{csquotes}
 
 % --- Mise en page ---
 \usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage{setspace}
 \onehalfspacing
-\usepackage{graphicx}
-\usepackage{eso-pic}
-\usepackage{tikz}
-\usepackage{xcolor}
 
-% --- Bibliographie (Version Natbib - Ultra robuste pour MiKTeX) ---
-\usepackage[round]{natbib}
-\bibliographystyle{apalike} % Style type APA universel
+% --- Bibliographie APA ---
+\usepackage[backend=biber, style=apa, language=french]{biblatex}
+\addbibresource{references.bib}
 
 % --- Liens et navigation ---
+% On utilise hypertexnames=false pour éviter les erreurs de "duplicate identifier" sur la page 1
 \usepackage[hidelinks, hypertexnames=false]{hyperref}
 \usepackage{bookmark}
 
@@ -31,16 +28,16 @@
 \begin{document}
 
 % --- Partie Préliminaire ---
-\pagenumbering{Alph}
+\pagenumbering{Alph} % Identifiant unique pour la couverture (A, B...)
 \input{sections/titlepage}
 
 \clearpage
-\pagenumbering{roman}
+\pagenumbering{roman} % i, ii, iii pour le sommaire
 \tableofcontents
 \cleardoublepage
 
 % --- Corps du document ---
-\pagenumbering{arabic}
+\pagenumbering{arabic} % 1, 2, 3...
 \input{sections/but_portfolio}
 \input{sections/titre_portfolio_justification}
 \input{sections/contrat_apprentissage}
@@ -53,7 +50,6 @@
 
 % --- Bibliographie ---
 \newpage
-\addcontentsline{toc}{chapter}{Bibliographie}
-\bibliography{references} % Note : pas de .bib ici
+\printbibliography[title={Bibliographie}]
 
 \end{document}
