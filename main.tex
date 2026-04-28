@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper]{report}
+
+% --- Polices et encodage ---
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage[autostyle]{csquotes}
+
+% --- Mise en page ---
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% --- Bibliographie (Version Natbib - Ultra robuste pour MiKTeX) ---
+\usepackage[round]{natbib}
+\bibliographystyle{apalike} % Style type APA universel
+
+% --- Liens et navigation ---
+\usepackage[hidelinks, hypertexnames=false]{hyperref}
+\usepackage{bookmark}
+
+% --- Informations du document ---
+\title{Au-delà du code : construire une professionnalité transdisciplinaire (DRAFT)}
+\author{Alexandre Gati}
+\date{1er juin 2026}
+
+\begin{document}
+
+% --- Partie Préliminaire ---
+\pagenumbering{Alph}
+\input{sections/titlepage}
+
+\clearpage
+\pagenumbering{roman}
+\tableofcontents
+\cleardoublepage
+
+% --- Corps du document ---
+\pagenumbering{arabic}
+\input{sections/but_portfolio}
+\input{sections/titre_portfolio_justification}
+\input{sections/contrat_apprentissage}
+\input{sections/pec_documents}
+\input{sections/espace_modules}
+\input{sections/journal_bord}
+\input{sections/ressources_significatives}
+\input{sections/situations_professionnalisantes}
+\input{sections/perspectives}
+
+% --- Bibliographie ---
+\newpage
+\addcontentsline{toc}{chapter}{Bibliographie}
+\bibliography{references} % Note : pas de .bib ici
+
+\end{document}
