@@ -18,3 +18,4 @@
 \contentsline {chapter}{\numberline {7}Ressources significatives}{12}{chapter.18}%
 \contentsline {chapter}{\numberline {8}Situations professionnalisantes}{13}{chapter.19}%
 \contentsline {chapter}{\numberline {9}Perspectives pour la suite}{14}{chapter.20}%
+\contentsline {chapter}{Annexe \numberline {A}Contrat d'apprentissage}{16}{appendix.22}%

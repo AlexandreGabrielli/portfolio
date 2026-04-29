@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  28 APR 2026 15:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  29 APR 2026 08:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -840,7 +840,43 @@ Package: xparse 2024-08-16 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
-(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2026/03/30 v0.6h Insert pages of external PDF documents (AM)
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count461
+\calc@Bcount=\count462
+\calc@Adimen=\dimen277
+\calc@Bdimen=\dimen278
+\calc@Askip=\skip73
+\calc@Bskip=\skip74
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count463
+\calc@Cskip=\skip75
+)
+\AM@pagewidth=\dimen279
+\AM@pageheight=\dimen280
+\AM@fboxrule=\dimen281
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count464
+\AM@pagebox=\box64
+\AM@global@opts=\toks33
+\AM@pagecnt=\count465
+\AM@toc@title=\toks34
+\AM@lof@heading=\toks35
+\c@AM@survey=\count466
+\AM@templatesizebox=\box65
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count467
+\c@@ppsavesec=\count468
+\c@@ppsaveapp=\count469
+) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
@@ -862,16 +898,16 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count461
+\c@section@level=\count470
 )
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
 ty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen277
-\Hy@linkcounter=\count462
-\Hy@pagecounter=\count463
+\@linkdim=\dimen282
+\Hy@linkcounter=\count471
+\Hy@pagecounter=\count472
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -879,7 +915,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count464
+\Hy@SavedSpaceFactor=\count473
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -893,9 +929,9 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count465
+\c@Hy@tempcnt=\count474
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen278
+\XeTeXLinkMargin=\dimen283
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -905,9 +941,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count466
-\Field@Width=\dimen279
-\Fld@charsize=\dimen280
+\Fld@menulength=\count475
+\Field@Width=\dimen284
+\Fld@charsize=\dimen285
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -915,16 +951,16 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count467
-\c@Item=\count468
-\c@Hfootnote=\count469
+\Hy@abspage=\count476
+\c@Item=\count477
+\c@Hfootnote=\count478
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count470
-\c@bookmark@seq@number=\count471
+\Fld@listcount=\count479
+\c@bookmark@seq@number=\count480
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -937,7 +973,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip73
+\Hy@SectionHShift=\skip76
 )
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
@@ -945,30 +981,30 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count472
+\BKM@id=\count481
 ))
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip74
-\f@nch@offset@elh=\skip75
-\f@nch@offset@erh=\skip76
-\f@nch@offset@olh=\skip77
-\f@nch@offset@orh=\skip78
-\f@nch@offset@elf=\skip79
-\f@nch@offset@erf=\skip80
-\f@nch@offset@olf=\skip81
-\f@nch@offset@orf=\skip82
-\f@nch@height=\skip83
-\f@nch@footalignment=\skip84
-\f@nch@widthL=\skip85
-\f@nch@widthC=\skip86
-\f@nch@widthR=\skip87
-\@temptokenb=\toks33
+\f@nch@headwidth=\skip77
+\f@nch@offset@elh=\skip78
+\f@nch@offset@erh=\skip79
+\f@nch@offset@olh=\skip80
+\f@nch@offset@orh=\skip81
+\f@nch@offset@elf=\skip82
+\f@nch@offset@erf=\skip83
+\f@nch@offset@olf=\skip84
+\f@nch@offset@orf=\skip85
+\f@nch@height=\skip86
+\f@nch@footalignment=\skip87
+\f@nch@widthL=\skip88
+\f@nch@widthC=\skip89
+\f@nch@widthR=\skip90
+\@temptokenb=\toks36
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 60
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 71
 .
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
@@ -979,25 +1015,25 @@ Package babel Info: 'french' activates 'french' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Info: Redefining \degres on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Info: Redefining \degres on input line 71.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1036,17 +1072,17 @@ LaTeX Info: Redefining \degres on input line 60.
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count473
-\scratchdimen=\dimen281
-\scratchbox=\box64
-\nofMPsegments=\count474
-\nofMParguments=\count475
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count476
-\MPscratchDim=\dimen282
-\MPnumerator=\count477
-\makeMPintoPDFobject=\count478
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count482
+\scratchdimen=\dimen286
+\scratchbox=\box66
+\nofMPsegments=\count483
+\nofMParguments=\count484
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count485
+\MPscratchDim=\dimen287
+\MPnumerator=\count486
+\makeMPintoPDFobject=\count487
+\everyMPtoPDFconversion=\toks38
 )
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1084,10 +1120,25 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 60.
-Package biblatex Info: Reference segment=0 on input line 60.
-Package hyperref Info: Link coloring OFF on input line 60.
- (sections/titlepage.tex
+Package biblatex Info: Reference section=0 on input line 71.
+Package biblatex Info: Reference segment=0 on input line 71.
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nom
+etadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+Package hyperref Info: Link coloring OFF on input line 71.
+
+(sections/titlepage.tex
 <image/HES-SO-Logo.jpg, id=6, 259.97125pt x 168.63pt>
 File: image/HES-SO-Logo.jpg Graphic file (type jpg)
 <use image/HES-SO-Logo.jpg>
@@ -1143,11 +1194,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 Chapitre 1.
 
 
-<image/blueprint.jpg, id=62, 571.8966pt x 722.7pt>
+<image/blueprint.jpg, id=64, 6274.44125pt x 4392.41pt>
 File: image/blueprint.jpg Graphic file (type jpg)
 <use image/blueprint.jpg>
 Package pdftex.def Info: image/blueprint.jpg  used on input line 31.
-(pdftex.def)             Requested size: 597.52472pt x 845.05936pt.
+(pdftex.def)             Requested size: 597.41849pt x 845.02214pt.
 [1
 
 
@@ -1164,7 +1215,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: image/blueprint.jpg Graphic file (type jpg)
 <use image/blueprint.jpg>
 Package pdftex.def Info: image/blueprint.jpg  used on input line 45.
-(pdftex.def)             Requested size: 597.52472pt x 845.05936pt.
+(pdftex.def)             Requested size: 597.41849pt x 845.02214pt.
 [2]
 
 
@@ -1177,7 +1228,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: image/blueprint.jpg Graphic file (type jpg)
 <use image/blueprint.jpg>
 Package pdftex.def Info: image/blueprint.jpg  used on input line 67.
-(pdftex.def)             Requested size: 597.52472pt x 845.05936pt.
+(pdftex.def)             Requested size: 597.41849pt x 845.02214pt.
 [3]
 
 
@@ -1190,12 +1241,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: image/blueprint.jpg Graphic file (type jpg)
 <use image/blueprint.jpg>
 Package pdftex.def Info: image/blueprint.jpg  used on input line 79.
-(pdftex.def)             Requested size: 597.52472pt x 845.05936pt.
+(pdftex.def)             Requested size: 597.41849pt x 845.02214pt.
 [4]) (sections/titre_portfolio_justification.tex
 Chapitre 2.
 
 
-<image/water-texture.jpg, id=84, 4516.875pt x 3011.25pt>
+<image/water-texture.jpg, id=86, 4516.875pt x 3011.25pt>
 File: image/water-texture.jpg Graphic file (type jpg)
 <use image/water-texture.jpg>
 Package pdftex.def Info: image/water-texture.jpg  used on input line 27.
@@ -1221,7 +1272,7 @@ Package pdftex.def Info: image/water-texture.jpg  used on input line 31.
 Chapitre 3.
 
 
-<image/carte-maritine.png, id=95, 770.88pt x 524.71031pt>
+<image/carte-maritine.png, id=97, 770.88pt x 524.71031pt>
 File: image/carte-maritine.png Graphic file (type png)
 <use image/carte-maritine.png>
 Package pdftex.def Info: image/carte-maritine.png  used on input line 19.
@@ -1234,7 +1285,7 @@ Package pdftex.def Info: image/carte-maritine.png  used on input line 19.
 Chapitre 4.
 
 
-<image/prisme.jpg, id=102, 3035.34pt x 4047.12pt>
+<image/prisme.jpg, id=104, 3035.34pt x 4047.12pt>
 File: image/prisme.jpg Graphic file (type jpg)
 <use image/prisme.jpg>
 Package pdftex.def Info: image/prisme.jpg  used on input line 31.
@@ -1287,11 +1338,177 @@ Chapitre 9.
 
 [14
 
-]
+] (annexes/annexes_main.tex
 
 [15
 
-] (main.aux)
+]
+Annexe A.
+
+
+pdfTeX warning: pdflatex.exe (file ./annexes/pdfs/annexe-A-contrat-apprentissag
+e.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=139, 614.295pt x 794.97pt>
+
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf  used 
+on input line 21.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./annexes/pdfs/annexe-A-contrat-apprentissag
+e.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+
+
+pdfTeX warning: pdflatex.exe (file ./annexes/pdfs/annexe-A-contrat-apprentissag
+e.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=141, page=1, 614.295pt x 7
+94.97pt>
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 1>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+1 used on input line 21.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 1>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+1 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+
+[16
+
+]
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 1>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+1 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 1>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+1 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 1>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+1 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[17
+
+ <./annexes/pdfs/annexe-A-contrat-apprentissage.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./annexes/pdfs/annexe-A-contrat-apprentissag
+e.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=205, page=2, 614.295pt x 7
+94.97pt>
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 2>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+2 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 2>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+2 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 2>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+2 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[18
+
+ <./annexes/pdfs/annexe-A-contrat-apprentissage.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./annexes/pdfs/annexe-A-contrat-apprentissag
+e.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=218, page=3, 614.295pt x 7
+94.97pt>
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 3>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+3 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 3>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+3 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 3>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+3 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[19
+
+ <./annexes/pdfs/annexe-A-contrat-apprentissage.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./annexes/pdfs/annexe-A-contrat-apprentissag
+e.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=231, page=4, 614.295pt x 7
+94.97pt>
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 4>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+4 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 4>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+4 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
+<use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 4>
+Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
+4 used on input line 21.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[20
+
+ <./annexes/pdfs/annexe-A-contrat-apprentissage.pdf>]) (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
@@ -1301,13 +1518,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31059 strings out of 468130
- 599384 string characters out of 5430633
- 1500843 words of memory out of 5000000
- 59178 multiletter control sequences out of 15000+600000
+ 31943 strings out of 468130
+ 616214 string characters out of 5430633
+ 1515342 words of memory out of 5000000
+ 60027 multiletter control sequences out of 15000+600000
  677242 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,91p,1025b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,17n,91p,1025b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.p
 fb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pf
@@ -1315,9 +1532,9 @@ b><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
 ><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb
 ><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb
 >
-Output written on main.pdf (17 pages, 7807547 bytes).
+Output written on main.pdf (22 pages, 12032868 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 336 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
 

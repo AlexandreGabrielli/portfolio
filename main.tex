@@ -18,6 +18,17 @@
 \usepackage[backend=biber, style=apa, language=french, natbib=true, citestyle=apa]{biblatex}
 \addbibresource{references.bib}
 
+% --- Annexes ---
+\usepackage{pdfpages}   % Inclusion de fichiers PDF externes
+\usepackage[titletoc,title]{appendix} % Gestion des annexes (numérotation A, B, C...)
+
+% Commande personnalisée pour inclure un PDF comme annexe
+% Usage : \annexepdf[options pdfpages]{Titre}{chemin/vers/fichier.pdf}
+\newcommand{\annexepdf}[3][]{%
+  \chapter{#2}%
+  \includepdf[pages=-, pagecommand={\thispagestyle{fancy}}, #1]{#3}%
+}
+
 % --- Liens et navigation ---
 % On utilise hypertexnames=false pour éviter les erreurs de "duplicate identifier" sur la page 1
 \usepackage[hidelinks, hypertexnames=false]{hyperref}
@@ -84,5 +95,10 @@
 % --- Bibliographie ---
 \newpage
 \printbibliography[title={Bibliographie}]
+
+% --- Annexes ---
+\begin{appendices}
+  \input{annexes/annexes_main}
+\end{appendices}
 
 \end{document}
