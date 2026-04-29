@@ -1,12 +1,12 @@
-\documentclass[12pt,a4paper]{report}
+﻿\documentclass[12pt,a4paper]{report}
 
-% --- Polices et encodage ---
+% : Polices et encodage ---
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 \usepackage{lmodern} % Indispensable pour éviter les polices floues (PK fonts)
 \usepackage[autostyle]{csquotes}
 
-% --- Mise en page ---
+% : Mise en page ---
 \usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage{setspace}
 \onehalfspacing
@@ -14,11 +14,70 @@
 \usepackage{tikz}
 \usepackage{eso-pic}
 
-% --- Bibliographie APA ---
+% : Tableaux et boîtes colorées ---
+\usepackage{booktabs}    % Filets de tableaux professionnels (\toprule, \midrule, \bottomrule)
+\usepackage{tabularx}    % Tableaux à largeur fixe avec colonnes flexibles
+\usepackage{colortbl}    % Couleurs de cellules et lignes (\rowcolor, \cellcolor)
+\usepackage[many]{tcolorbox} % Boîtes colorées (brouillons, notes, callouts)
+
+% Boîte "brouillon" — fond jaune, utilisée pour signaler le contenu à compléter
+\newtcolorbox{brouillon}{
+  colback=yellow!15, colframe=orange!70!black,
+  title={BROUILLON : \`{A} compl\'eter avec le contenu r\'eel},
+  fonttitle=\bfseries\small, boxrule=0.6pt, arc=3pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt
+}
+
+% Boîte "à compléter" — fond vert, 1 argument = titre de la note
+\newtcolorbox{acompleter}[1]{
+  colback=green!8, colframe=green!40!black,
+  title={\`{A} compl\'eter : #1},
+  fonttitle=\bfseries\small, boxrule=0.6pt, arc=3pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt
+}
+
+% Commande pour afficher les compétences associées à une phase
+\newcommand{\competences}[1]{%
+  \noindent{\small\itshape Comp\'etences associ\'ees : #1}\par\medskip
+}
+
+% --- Commandes pour les annexes formelles ---
+\usepackage{pifont} % Symboles (\ding{})
+
+% Caviardage : barre noire pour masquer une information confidentielle ou manquante
+% Usage : \caviarder          (largeur par défaut 3 cm)
+%         \caviarder[5cm]     (largeur personnalisée)
+\newcommand{\caviarder}[1][3cm]{\rule[-0.15em]{#1}{0.85em}}
+
+% Symboles colorés pour les tableaux critères (OK / NON / MOYEN)
+\newcommand{\ok}[1]{\textcolor{green!60!black}{\ding{51}~#1}}
+\newcommand{\nok}[1]{\textcolor{red!70!black}{\ding{55}~#1}}
+\newcommand{\warn}[1]{\textcolor{orange!80!black}{\ding{115}~#1}}
+
+% Boîte "décision retenue" — fond vert foncé, pour les décisions formelles
+\newtcolorbox{decisionbox}{
+  colback=green!10, colframe=green!40!black,
+  title={D\'ecision retenue},
+  fonttitle=\bfseries\normalsize, boxrule=0.8pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt
+}
+
+% Badges de priorité pour les backlogs
+\newcommand{\highprio}{\colorbox{red!20}{\small\bfseries\textcolor{red!75!black}{HIGH}}}
+\newcommand{\mediumprio}{\colorbox{orange!25}{\small\bfseries\textcolor{orange!85!black}{MEDIUM}}}
+\newcommand{\lowprio}{\colorbox{blue!12}{\small\bfseries\textcolor{blue!60!black}{LOW}}}
+
+% Badges de statut pour les backlogs
+\newcommand{\sdone}{\textcolor{green!55!black}{\ding{51}~\textbf{Done}}}
+\newcommand{\sinprogress}{\textcolor{orange!80!black}{\textbf{In Progress}}}
+\newcommand{\stodo}{\textcolor{blue!60!black}{\textbf{To Do}}}
+\newcommand{\sbacklog}{\textcolor{gray!65!black}{\textbf{Backlog}}}
+
+% : Bibliographie APA ---
 \usepackage[backend=biber, style=apa, language=french, natbib=true, citestyle=apa]{biblatex}
 \addbibresource{references.bib}
 
-% --- Annexes ---
+% : Annexes ---
 \usepackage{pdfpages}   % Inclusion de fichiers PDF externes
 \usepackage[titletoc,title]{appendix} % Gestion des annexes (numérotation A, B, C...)
 
@@ -29,12 +88,12 @@
   \includepdf[pages=-, pagecommand={\thispagestyle{fancy}}, #1]{#3}%
 }
 
-% --- Liens et navigation ---
+% : Liens et navigation ---
 % On utilise hypertexnames=false pour éviter les erreurs de "duplicate identifier" sur la page 1
 \usepackage[hidelinks, hypertexnames=false]{hyperref}
 \usepackage{bookmark}
 
-% --- Entête et Pied de page ---
+% : Entête et Pied de page ---
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
@@ -63,14 +122,14 @@
   \rfoot{\small Page \thepage}
 }
 
-% --- Informations du document ---
+% : Informations du document ---
 \title{Au-delà du code : construire une professionnalité transdisciplinaire (DRAFT)}
 \author{Alexandre Gati}
 \date{1er juin 2026}
 
 \begin{document}
 
-% --- Partie Préliminaire ---
+% : Partie Préliminaire ---
 \pagenumbering{Alph} % Identifiant unique pour la couverture (A, B...)
 \input{sections/titlepage}
 \thispagestyle{empty}
@@ -80,7 +139,7 @@
 \tableofcontents
 \cleardoublepage
 
-% --- Corps du document ---
+% : Corps du document ---
 \pagenumbering{arabic} % 1, 2, 3...
 \input{sections/but_portfolio}
 \input{sections/titre_portfolio_justification}
@@ -92,13 +151,14 @@
 \input{sections/situations_professionnalisantes}
 \input{sections/perspectives}
 
-% --- Bibliographie ---
+% : Bibliographie ---
 \newpage
 \printbibliography[title={Bibliographie}]
 
-% --- Annexes ---
+% : Annexes ---
 \begin{appendices}
   \input{annexes/annexes_main}
 \end{appendices}
 
 \end{document}
+

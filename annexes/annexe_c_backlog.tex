@@ -1,0 +1,221 @@
+﻿% =============================================================================
+% ANNEX C — PRIORITISED BACKLOG EXTRACT
+% =============================================================================
+
+\chapter{Prioritised Backlog Extract}
+\label{annex:backlog}
+
+% --- Note de mise en contexte (portfolio) -------------------------------------
+\begin{tcolorbox}[colback=blue!5, colframe=blue!40!black, boxrule=0.5pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt]
+  \small\itshape
+  \textbf{Note du portfolio.} Ce document est un extrait du backlog de
+  l'\'equipe logicielle TWIICE, export\'e depuis le board GitLab du projet.
+  Il illustre la hi\'erarchisation des t\^aches apr\`es application de la
+  matrice d'Eisenhower (cf. Phase~2, Espace modules du pr\'esent portfolio).
+
+  Conform\'ement aux r\`egles de confidentialit\'e de l'entreprise, les
+  informations sensibles (num\'eros d'issues, noms des collaborateurs, dates,
+  jalons internes) ont \'et\'e \textbf{caviard\'ees} et sont repr\'esent\'ees
+  par des barres noires (\caviarder[1.2cm]). Les intitul\'es des t\^aches et
+  leur description technique sont, quant \`a eux, int\'egralement reproduits.
+\end{tcolorbox}
+
+\bigskip
+
+% --- Sprint / Project header --------------------------------------------------
+\begin{tcolorbox}[colback=gray!8, colframe=gray!50, boxrule=0.5pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt]
+  \begin{tabularx}{\linewidth}{@{}p{4cm}X@{}}
+    \textbf{Project}   & TWIICE Exoskeleton --- Software \\[3pt]
+    \textbf{Milestone} & \caviarder[3cm] \\[3pt]
+    \textbf{Sprint}    & \caviarder[2cm]\quad
+                         (\caviarder[2cm]\;--\;\caviarder[2cm]) \\[3pt]
+    \textbf{Board}     & \caviarder[5cm] \\[3pt]
+    \textbf{Exported by} & Alexandre Gati \\[3pt]
+    \textbf{Export date} & \caviarder[2.5cm] \\
+  \end{tabularx}
+\end{tcolorbox}
+
+\bigskip
+
+% ==============================================================================
+\section*{Context}
+% ==============================================================================
+
+The following extract lists the software issues identified and re-prioritised
+following an Eisenhower matrix exercise conducted with the team (see Annex~B,
+\S1). Issues are grouped by priority level --- \highprio, \mediumprio,
+\lowprio{} --- and ordered within each group by creation date. Redacted fields
+(\caviarder[0.9cm]) contain information covered by the company's
+confidentiality policy.
+
+\bigskip
+
+% ==============================================================================
+% BACKLOG TABLE
+% ==============================================================================
+
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\begin{table}[h!]
+  \centering\footnotesize
+  \begin{tabularx}{\textwidth}{|p{1.4cm}|p{1.1cm}|X|p{2.0cm}|p{1.4cm}|p{1.7cm}|}
+    \hline
+    \rowcolor{gray!15}
+    \textbf{Priority} & \textbf{Issue\,\#} & \textbf{Title \& description} &
+    \textbf{Assignee} & \textbf{Due} & \textbf{Status} \\
+    \hline
+
+    % ------------------------------------------------------------------
+    % HIGH PRIORITY
+    % ------------------------------------------------------------------
+
+    \highprio
+      & \caviarder[0.8cm]
+      & \textbf{Set up SOUP traceability --- GitLab Package Registry}
+        \newline{\footnotesize
+          Register all third-party libraries (SOUP list) in the GitLab Package
+          Registry. Ensure each entry includes version, licence, source URL and
+          checksum, per IEC~62304 \S8.1.2.
+          \newline\textit{Labels:} \texttt{iec-62304}, \texttt{certification},
+          \texttt{sprint-\caviarder[0.4cm]}}
+      & \caviarder[2.2cm]
+      & \caviarder[1.5cm]
+      & \sinprogress \\
+    \hline
+
+    \highprio
+      & \caviarder[0.8cm]
+      & \textbf{Document all third-party components (IEC~62304 \S8)}
+        \newline{\footnotesize
+          Produce the SOUP list artefact required by IEC~62304 clause~8:
+          component name, version, publisher, risk classification.
+          Cross-reference with the software requirements specification.
+          \newline\textit{Labels:} \texttt{iec-62304}, \texttt{documentation},
+          \texttt{sprint-\caviarder[0.4cm]}}
+      & \caviarder[2.2cm]
+      & \caviarder[1.5cm]
+      & \sinprogress \\
+    \hline
+
+    \highprio
+      & \caviarder[0.8cm]
+      & \textbf{Define CI/CD pipeline --- automated build \& test artefacts}
+        \newline{\footnotesize
+          Configure the GitLab CI pipeline to produce reproducible build
+          artefacts (binary, SBOM, test report) and publish them to the
+          Package Registry with immutable versioning tags.
+          \newline\textit{Labels:} \texttt{ci-cd}, \texttt{iec-62304},
+          \texttt{sprint-\caviarder[0.4cm]}}
+      & \caviarder[2.2cm]
+      & \caviarder[1.5cm]
+      & \stodo \\
+    \hline
+
+    % ------------------------------------------------------------------
+    % MEDIUM PRIORITY
+    % ------------------------------------------------------------------
+
+    \mediumprio
+      & \caviarder[0.8cm]
+      & \textbf{Standardise documentation templates (IEC~62304)}
+        \newline{\footnotesize
+          Create shared GitLab Wiki templates for: SOUP list, change request,
+          software release note, design review record. Reduces manual overhead
+          and ensures consistent artefact format across sprints.
+          \newline\textit{Labels:} \texttt{documentation},
+          \texttt{sprint-\caviarder[0.4cm]}}
+      & \caviarder[2.2cm]
+      & \caviarder[1.5cm]
+      & \stodo \\
+    \hline
+
+    \mediumprio
+      & \caviarder[0.8cm]
+      & \textbf{Update SOUP risk assessment --- IEC~62304 \S7.2}
+        \newline{\footnotesize
+          Review existing risk assessments for embedded SOUP (FreeRTOS,
+          libmodbus, \caviarder[1.5cm]). Align severity classifications with
+          the updated device risk file (MDR class~IIa context).
+          \newline\textit{Labels:} \texttt{risk}, \texttt{iec-62304}}
+      & \caviarder[2.2cm]
+      & \caviarder[1.5cm]
+      & \sbacklog \\
+    \hline
+
+    % ------------------------------------------------------------------
+    % LOW PRIORITY
+    % ------------------------------------------------------------------
+
+    \lowprio
+      & \caviarder[0.8cm]
+      & \textbf{Evaluate MCU vs Jetson for user interface module}
+        \newline{\footnotesize
+          Comparative benchmark: processing power, energy budget, SDK
+          maturity, lead time. Decision deferred --- not blocking
+          certification. To be scheduled post-milestone
+          \caviarder[1.2cm].
+          \newline\textit{Labels:} \texttt{hardware}, \texttt{research}}
+      & \caviarder[2.2cm]
+      & \caviarder[1.5cm]
+      & \sbacklog \\
+    \hline
+
+    \lowprio
+      & \caviarder[0.8cm]
+      & \textbf{Benchmark supplementary DevOps tools}
+        \newline{\footnotesize
+          Evaluate JFrog Artifactory, Nexus Repository and Harbor as
+          potential complements to the GitLab Package Registry. No
+          blocker identified --- team comfort improvement only.
+          \newline\textit{Labels:} \texttt{devops}, \texttt{tooling}}
+      & \caviarder[2.2cm]
+      & \caviarder[1.5cm]
+      & \sbacklog \\
+    \hline
+
+  \end{tabularx}
+  \caption{Prioritised backlog extract --- TWIICE Software, post-Eisenhower
+    matrix triage}
+  \label{tab:backlog}
+\end{table}
+\endgroup
+
+% ==============================================================================
+\section*{Traceability to the Eisenhower matrix}
+% ==============================================================================
+
+The table below maps each priority group to the corresponding quadrant of the
+Eisenhower matrix applied during the Phase~2 (Definition) workshop.
+
+\begin{table}[h!]
+  \centering\small
+  \begin{tabularx}{\textwidth}{|p{1.6cm}|p{3.5cm}|X|}
+    \hline
+    \textbf{Priority} & \textbf{Eisenhower quadrant} & \textbf{Rationale} \\
+    \hline
+    \highprio
+      & Urgent \& Important
+      & Directly blocks the IEC~62304 certification audit. Must be resolved
+        within the current or immediately following sprint. \\
+    \hline
+    \mediumprio
+      & Important, not urgent
+      & Required for long-term compliance and team efficiency, but does not
+        block the next certification milestone. Scheduled in upcoming sprints. \\
+    \hline
+    \lowprio
+      & Not important (current context)
+      & Debated actively during the workshop but identified as non-blocking.
+        Deferred to the post-certification backlog. \\
+    \hline
+  \end{tabularx}
+  \caption{Mapping between backlog priority levels and Eisenhower quadrants}
+  \label{tab:backlog-eisenhower}
+\end{table}
+
+
+
+
+

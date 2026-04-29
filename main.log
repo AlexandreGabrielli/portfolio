@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  29 APR 2026 08:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  29 APR 2026 10:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -530,20 +530,231 @@ Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
 \ESO@tempdima=\dimen275
 \ESO@tempdimb=\dimen276
 )
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen277
+\lightrulewidth=\dimen278
+\cmidrulewidth=\dimen279
+\belowrulesep=\dimen280
+\belowbottomsep=\dimen281
+\aboverulesep=\dimen282
+\abovetopsep=\dimen283
+\cmidrulesep=\dimen284
+\cmidrulekern=\dimen285
+\defaultaddspace=\dimen286
+\@cmidla=\count324
+\@cmidlb=\count325
+\@aboverulesep=\dimen287
+\@belowrulesep=\dimen288
+\@thisruleclass=\count326
+\@lastruleclass=\count327
+\@thisrulewidth=\dimen289
+)
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+\col@sep=\dimen290
+\ar@mcellbox=\box64
+\extrarowheight=\dimen291
+\NC@list=\toks33
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box65
+)
+\TX@col@width=\dimen292
+\TX@old@table=\dimen293
+\TX@old@col=\dimen294
+\TX@target=\dimen295
+\TX@delta=\dimen296
+\TX@cols=\count328
+\TX@ftn=\toks34
+)
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
+\everycr=\toks35
+\minrowclearance=\skip53
+\rownum=\count329
+)
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2025/09/09 version 6.8.0 text color boxes
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks36
+\verbatim@line=\toks37
+\verbatim@in@stream=\read4
+)
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
+ty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks38
+)
+\tcb@titlebox=\box66
+\tcb@upperbox=\box67
+\tcb@lowerbox=\box68
+\tcb@phantombox=\box69
+\c@tcbbreakpart=\count330
+\c@tcblayer=\count331
+\c@tcolorbox@number=\count332
+\l__tcobox_tmpa_box=\box70
+\l__tcobox_tmpa_dim=\dimen297
+\tcb@temp=\box71
+\tcb@temp=\box72
+\tcb@temp=\box73
+\tcb@temp=\box74
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.cod
+e.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.8.0'
+\c@tcbrastercolumn=\count333
+\c@tcbrasterrow=\count334
+\c@tcbrasternum=\count335
+\c@tcbraster=\count336
+)
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code
+.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.8.0'
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image
+.sty
+Package: tikzfill.image 2026/03/26 v1.1.0 Image filling library for TikZ
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfil
+l.image.code.tex
+File: tikzlibraryfill.image.code.tex 2026/03/26 v1.1.0 Image filling library
+\l__tikzfill_tmpa_dim=\dimen298
+\l__tikzfill_tmpb_dim=\dimen299
+\l__tikzfill_img_box=\box75
+))
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsa
+w.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.8.0'
+))
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.
+code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.8.0'
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+))
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box76
+\tcb@totalupperbox=\box77
+\tcb@totallowerbox=\box78
+)
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbhooks.code
+.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.8.0'
+)
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.c
+ode.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.8.0'
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/06/16 v2.17y AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks39
+\ex@=\dimen300
+))
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen301
+)
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count337
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count338
+\leftroot@=\count339
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count340
+\DOTSCASE@=\count341
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box79
+\strutbox@=\box80
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen302
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count342
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count343
+\dotsspace@=\muskip17
+\c@parentequation=\count344
+\dspbrk@lvl=\count345
+\tag@help=\toks40
+\row@=\count346
+\column@=\count347
+\maxfields@=\count348
+\andhelp@=\toks41
+\eqnshift@=\dimen303
+\alignsep@=\dimen304
+\tagshift@=\dimen305
+\tagwidth@=\dimen306
+\totwidth@=\dimen307
+\lineht@=\dimen308
+\@envbody=\toks42
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks43
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
+))
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.co
+de.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.8.0'
+\tcbfitdim=\dimen309
+\tcb@lowerfitdim=\dimen310
+\tcb@upperfitdim=\dimen311
+\tcb@cur@hbadness=\count349
+)) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
 .sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -556,7 +767,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count324
+\lrq@indent=\count350
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -565,66 +776,66 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
-\Urlmuskip=\muskip17
+\Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count325
-\c@listtotal=\count326
-\c@listcount=\count327
-\c@liststart=\count328
-\c@liststop=\count329
-\c@citecount=\count330
-\c@citetotal=\count331
-\c@multicitecount=\count332
-\c@multicitetotal=\count333
-\c@instcount=\count334
-\c@maxnames=\count335
-\c@minnames=\count336
-\c@maxitems=\count337
-\c@minitems=\count338
-\c@citecounter=\count339
-\c@maxcitecounter=\count340
-\c@savedcitecounter=\count341
-\c@uniquelist=\count342
-\c@uniquename=\count343
-\c@refsection=\count344
-\c@refsegment=\count345
-\c@maxextratitle=\count346
-\c@maxextratitleyear=\count347
-\c@maxextraname=\count348
-\c@maxextradate=\count349
-\c@maxextraalpha=\count350
-\c@abbrvpenalty=\count351
-\c@highnamepenalty=\count352
-\c@lownamepenalty=\count353
-\c@maxparens=\count354
-\c@parenlevel=\count355
-\blx@tempcnta=\count356
-\blx@tempcntb=\count357
-\blx@tempcntc=\count358
-\c@blx@maxsection=\count359
-\blx@maxsegment@0=\count360
-\blx@notetype=\count361
-\blx@parenlevel@text=\count362
-\blx@parenlevel@foot=\count363
-\blx@sectionciteorder@0=\count364
-\blx@sectionciteorderinternal@0=\count365
-\blx@entrysetcounter=\count366
-\blx@biblioinstance=\count367
-\labelnumberwidth=\skip51
-\labelalphawidth=\skip52
-\biblabelsep=\skip53
-\bibitemsep=\skip54
-\bibnamesep=\skip55
-\bibinitsep=\skip56
-\bibparsep=\skip57
-\bibhang=\skip58
-\blx@bcfin=\read4
+\c@tabx@nest=\count351
+\c@listtotal=\count352
+\c@listcount=\count353
+\c@liststart=\count354
+\c@liststop=\count355
+\c@citecount=\count356
+\c@citetotal=\count357
+\c@multicitecount=\count358
+\c@multicitetotal=\count359
+\c@instcount=\count360
+\c@maxnames=\count361
+\c@minnames=\count362
+\c@maxitems=\count363
+\c@minitems=\count364
+\c@citecounter=\count365
+\c@maxcitecounter=\count366
+\c@savedcitecounter=\count367
+\c@uniquelist=\count368
+\c@uniquename=\count369
+\c@refsection=\count370
+\c@refsegment=\count371
+\c@maxextratitle=\count372
+\c@maxextratitleyear=\count373
+\c@maxextraname=\count374
+\c@maxextradate=\count375
+\c@maxextraalpha=\count376
+\c@abbrvpenalty=\count377
+\c@highnamepenalty=\count378
+\c@lownamepenalty=\count379
+\c@maxparens=\count380
+\c@parenlevel=\count381
+\blx@tempcnta=\count382
+\blx@tempcntb=\count383
+\blx@tempcntc=\count384
+\c@blx@maxsection=\count385
+\blx@maxsegment@0=\count386
+\blx@notetype=\count387
+\blx@parenlevel@text=\count388
+\blx@parenlevel@foot=\count389
+\blx@sectionciteorder@0=\count390
+\blx@sectionciteorderinternal@0=\count391
+\blx@entrysetcounter=\count392
+\blx@biblioinstance=\count393
+\labelnumberwidth=\skip57
+\labelalphawidth=\skip58
+\biblabelsep=\skip59
+\bibitemsep=\skip60
+\bibnamesep=\skip61
+\bibinitsep=\skip62
+\bibparsep=\skip63
+\bibhang=\skip64
+\blx@bcfin=\read5
 \blx@bcfout=\write4
 \blx@langwohyphens=\language80
-\c@mincomprange=\count368
-\c@maxcomprange=\count369
-\c@mincompwidth=\count370
+\c@mincomprange=\count394
+\c@maxcomprange=\count395
+\c@mincompwidth=\count396
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -639,98 +850,98 @@ File: apa.dbx 2025/08/27 v9.20 APA biblatex style data model
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count371
-\c@savedafterword=\count372
-\c@annotator=\count373
-\c@savedannotator=\count374
-\c@author=\count375
-\c@savedauthor=\count376
-\c@bookauthor=\count377
-\c@savedbookauthor=\count378
-\c@commentator=\count379
-\c@savedcommentator=\count380
-\c@editor=\count381
-\c@savededitor=\count382
-\c@editora=\count383
-\c@savededitora=\count384
-\c@editorb=\count385
-\c@savededitorb=\count386
-\c@editorc=\count387
-\c@savededitorc=\count388
-\c@foreword=\count389
-\c@savedforeword=\count390
-\c@holder=\count391
-\c@savedholder=\count392
-\c@introduction=\count393
-\c@savedintroduction=\count394
-\c@namea=\count395
-\c@savednamea=\count396
-\c@nameb=\count397
-\c@savednameb=\count398
-\c@namec=\count399
-\c@savednamec=\count400
-\c@translator=\count401
-\c@savedtranslator=\count402
-\c@shortauthor=\count403
-\c@savedshortauthor=\count404
-\c@shorteditor=\count405
-\c@savedshorteditor=\count406
-\c@narrator=\count407
-\c@savednarrator=\count408
-\c@execproducer=\count409
-\c@savedexecproducer=\count410
-\c@execdirector=\count411
-\c@savedexecdirector=\count412
-\c@with=\count413
-\c@savedwith=\count414
-\c@labelname=\count415
-\c@savedlabelname=\count416
-\c@institution=\count417
-\c@savedinstitution=\count418
-\c@lista=\count419
-\c@savedlista=\count420
-\c@listb=\count421
-\c@savedlistb=\count422
-\c@listc=\count423
-\c@savedlistc=\count424
-\c@listd=\count425
-\c@savedlistd=\count426
-\c@liste=\count427
-\c@savedliste=\count428
-\c@listf=\count429
-\c@savedlistf=\count430
-\c@location=\count431
-\c@savedlocation=\count432
-\c@organization=\count433
-\c@savedorganization=\count434
-\c@origlocation=\count435
-\c@savedoriglocation=\count436
-\c@origpublisher=\count437
-\c@savedorigpublisher=\count438
-\c@publisher=\count439
-\c@savedpublisher=\count440
-\c@language=\count441
-\c@savedlanguage=\count442
-\c@origlanguage=\count443
-\c@savedoriglanguage=\count444
-\c@citation=\count445
-\c@savedcitation=\count446
-\c@pageref=\count447
-\c@savedpageref=\count448
-\shorthandwidth=\skip59
-\shortjournalwidth=\skip60
-\shortserieswidth=\skip61
-\shorttitlewidth=\skip62
-\shortauthorwidth=\skip63
-\shorteditorwidth=\skip64
-\locallabelnumberwidth=\skip65
-\locallabelalphawidth=\skip66
-\localshorthandwidth=\skip67
-\localshortjournalwidth=\skip68
-\localshortserieswidth=\skip69
-\localshorttitlewidth=\skip70
-\localshortauthorwidth=\skip71
-\localshorteditorwidth=\skip72
+\c@afterword=\count397
+\c@savedafterword=\count398
+\c@annotator=\count399
+\c@savedannotator=\count400
+\c@author=\count401
+\c@savedauthor=\count402
+\c@bookauthor=\count403
+\c@savedbookauthor=\count404
+\c@commentator=\count405
+\c@savedcommentator=\count406
+\c@editor=\count407
+\c@savededitor=\count408
+\c@editora=\count409
+\c@savededitora=\count410
+\c@editorb=\count411
+\c@savededitorb=\count412
+\c@editorc=\count413
+\c@savededitorc=\count414
+\c@foreword=\count415
+\c@savedforeword=\count416
+\c@holder=\count417
+\c@savedholder=\count418
+\c@introduction=\count419
+\c@savedintroduction=\count420
+\c@namea=\count421
+\c@savednamea=\count422
+\c@nameb=\count423
+\c@savednameb=\count424
+\c@namec=\count425
+\c@savednamec=\count426
+\c@translator=\count427
+\c@savedtranslator=\count428
+\c@shortauthor=\count429
+\c@savedshortauthor=\count430
+\c@shorteditor=\count431
+\c@savedshorteditor=\count432
+\c@narrator=\count433
+\c@savednarrator=\count434
+\c@execproducer=\count435
+\c@savedexecproducer=\count436
+\c@execdirector=\count437
+\c@savedexecdirector=\count438
+\c@with=\count439
+\c@savedwith=\count440
+\c@labelname=\count441
+\c@savedlabelname=\count442
+\c@institution=\count443
+\c@savedinstitution=\count444
+\c@lista=\count445
+\c@savedlista=\count446
+\c@listb=\count447
+\c@savedlistb=\count448
+\c@listc=\count449
+\c@savedlistc=\count450
+\c@listd=\count451
+\c@savedlistd=\count452
+\c@liste=\count453
+\c@savedliste=\count454
+\c@listf=\count455
+\c@savedlistf=\count456
+\c@location=\count457
+\c@savedlocation=\count458
+\c@organization=\count459
+\c@savedorganization=\count460
+\c@origlocation=\count461
+\c@savedoriglocation=\count462
+\c@origpublisher=\count463
+\c@savedorigpublisher=\count464
+\c@publisher=\count465
+\c@savedpublisher=\count466
+\c@language=\count467
+\c@savedlanguage=\count468
+\c@origlanguage=\count469
+\c@savedoriglanguage=\count470
+\c@citation=\count471
+\c@savedcitation=\count472
+\c@pageref=\count473
+\c@savedpageref=\count474
+\shorthandwidth=\skip65
+\shortjournalwidth=\skip66
+\shortserieswidth=\skip67
+\shorttitlewidth=\skip68
+\shortauthorwidth=\skip69
+\shorteditorwidth=\skip70
+\locallabelnumberwidth=\skip71
+\locallabelalphawidth=\skip72
+\localshorthandwidth=\skip73
+\localshortjournalwidth=\skip74
+\localshortserieswidth=\skip75
+\localshorttitlewidth=\skip76
+\localshortauthorwidth=\skip77
+\localshorteditorwidth=\skip78
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -741,19 +952,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count449
-\c@textcitetotal=\count450
-\c@textcitemaxnames=\count451
-\c@biburlbigbreakpenalty=\count452
-\c@biburlbreakpenalty=\count453
-\c@biburlnumpenalty=\count454
-\c@biburlucpenalty=\count455
-\c@biburllcpenalty=\count456
-\biburlbigskip=\muskip18
-\biburlnumskip=\muskip19
-\biburlucskip=\muskip20
-\biburllcskip=\muskip21
-\c@smartand=\count457
+\c@textcitecount=\count475
+\c@textcitetotal=\count476
+\c@textcitemaxnames=\count477
+\c@biburlbigbreakpenalty=\count478
+\c@biburlbreakpenalty=\count479
+\c@biburlnumpenalty=\count480
+\c@biburlucpenalty=\count481
+\c@biburllcpenalty=\count482
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count483
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
@@ -773,8 +984,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
 bx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count458
-\c@bbx:relatedtotal=\count459
+\c@bbx:relatedcount=\count484
+\c@bbx:relatedtotal=\count485
 )
 Package biblatex Info: Delimiter 'nameyeardelim' in context 'bib' already defin
 ed, overwriting.
@@ -825,7 +1036,7 @@ Package: expl3 2025-09-02 L3 programming layer (loader)
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count460
+\l__color_backend_stack_int=\count486
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2025-09-02 L3 programming layer (loader) 
@@ -845,37 +1056,37 @@ Package: pdfpages 2026/03/30 v0.6h Insert pages of external PDF documents (AM)
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count461
-\calc@Bcount=\count462
-\calc@Adimen=\dimen277
-\calc@Bdimen=\dimen278
-\calc@Askip=\skip73
-\calc@Bskip=\skip74
+\calc@Acount=\count487
+\calc@Bcount=\count488
+\calc@Adimen=\dimen312
+\calc@Bdimen=\dimen313
+\calc@Askip=\skip79
+\calc@Bskip=\skip80
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count463
-\calc@Cskip=\skip75
+\calc@Ccount=\count489
+\calc@Cskip=\skip81
 )
-\AM@pagewidth=\dimen279
-\AM@pageheight=\dimen280
-\AM@fboxrule=\dimen281
+\AM@pagewidth=\dimen314
+\AM@pageheight=\dimen315
+\AM@fboxrule=\dimen316
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count464
-\AM@pagebox=\box64
-\AM@global@opts=\toks33
-\AM@pagecnt=\count465
-\AM@toc@title=\toks34
-\AM@lof@heading=\toks35
-\c@AM@survey=\count466
-\AM@templatesizebox=\box65
+\pdfpages@includegraphics@status=\count490
+\AM@pagebox=\box81
+\AM@global@opts=\toks44
+\AM@pagecnt=\count491
+\AM@toc@title=\toks45
+\AM@lof@heading=\toks46
+\c@AM@survey=\count492
+\AM@templatesizebox=\box82
 ) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count467
-\c@@ppsavesec=\count468
-\c@@ppsaveapp=\count469
+\c@@pps=\count493
+\c@@ppsavesec=\count494
+\c@@ppsaveapp=\count495
 ) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
 
@@ -898,16 +1109,16 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count470
+\c@section@level=\count496
 )
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
 ty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen282
-\Hy@linkcounter=\count471
-\Hy@pagecounter=\count472
+\@linkdim=\dimen317
+\Hy@linkcounter=\count497
+\Hy@pagecounter=\count498
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -915,7 +1126,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count473
+\Hy@SavedSpaceFactor=\count499
  (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -929,9 +1140,9 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count474
+\c@Hy@tempcnt=\count500
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen283
+\XeTeXLinkMargin=\dimen318
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -941,9 +1152,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count475
-\Field@Width=\dimen284
-\Fld@charsize=\dimen285
+\Fld@menulength=\count501
+\Field@Width=\dimen319
+\Fld@charsize=\dimen320
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -951,16 +1162,16 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count476
-\c@Item=\count477
-\c@Hfootnote=\count478
+\Hy@abspage=\count502
+\c@Item=\count503
+\c@Hfootnote=\count504
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count479
-\c@bookmark@seq@number=\count480
+\Fld@listcount=\count505
+\c@bookmark@seq@number=\count506
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -973,7 +1184,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip76
+\Hy@SectionHShift=\skip82
 )
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
@@ -981,31 +1192,31 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count481
+\BKM@id=\count507
 ))
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip77
-\f@nch@offset@elh=\skip78
-\f@nch@offset@erh=\skip79
-\f@nch@offset@olh=\skip80
-\f@nch@offset@orh=\skip81
-\f@nch@offset@elf=\skip82
-\f@nch@offset@erf=\skip83
-\f@nch@offset@olf=\skip84
-\f@nch@offset@orf=\skip85
-\f@nch@height=\skip86
-\f@nch@footalignment=\skip87
-\f@nch@widthL=\skip88
-\f@nch@widthC=\skip89
-\f@nch@widthR=\skip90
-\@temptokenb=\toks36
+\f@nch@headwidth=\skip83
+\f@nch@offset@elh=\skip84
+\f@nch@offset@erh=\skip85
+\f@nch@offset@olh=\skip86
+\f@nch@offset@orh=\skip87
+\f@nch@offset@elf=\skip88
+\f@nch@offset@erf=\skip89
+\f@nch@offset@olf=\skip90
+\f@nch@offset@orf=\skip91
+\f@nch@height=\skip92
+\f@nch@footalignment=\skip93
+\f@nch@widthL=\skip94
+\f@nch@widthC=\skip95
+\f@nch@widthR=\skip96
+\@temptokenb=\toks47
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 71
-.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 13
+0.
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1015,25 +1226,25 @@ Package babel Info: 'french' activates 'french' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Info: Redefining \degres on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Info: Redefining \degres on input line 130.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1072,17 +1283,17 @@ LaTeX Info: Redefining \degres on input line 71.
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count482
-\scratchdimen=\dimen286
-\scratchbox=\box66
-\nofMPsegments=\count483
-\nofMParguments=\count484
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count485
-\MPscratchDim=\dimen287
-\MPnumerator=\count486
-\makeMPintoPDFobject=\count487
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count508
+\scratchdimen=\dimen321
+\scratchbox=\box83
+\nofMPsegments=\count509
+\nofMParguments=\count510
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count511
+\MPscratchDim=\dimen322
+\MPnumerator=\count512
+\makeMPintoPDFobject=\count513
+\everyMPtoPDFconversion=\toks49
 )
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1120,8 +1331,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 71.
-Package biblatex Info: Reference segment=0 on input line 71.
+Package biblatex Info: Reference section=0 on input line 130.
+Package biblatex Info: Reference segment=0 on input line 130.
 
 (C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1136,14 +1347,14 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-Package hyperref Info: Link coloring OFF on input line 71.
+Package hyperref Info: Link coloring OFF on input line 130.
 
 (sections/titlepage.tex
-<image/HES-SO-Logo.jpg, id=6, 259.97125pt x 168.63pt>
+<image/HES-SO-Logo.jpg, id=6, 219.82124pt x 94.10156pt>
 File: image/HES-SO-Logo.jpg Graphic file (type jpg)
 <use image/HES-SO-Logo.jpg>
 Package pdftex.def Info: image/HES-SO-Logo.jpg  used on input line 5.
-(pdftex.def)             Requested size: 142.26378pt x 92.27847pt.
+(pdftex.def)             Requested size: 142.26378pt x 60.90251pt.
 
 
 [1
@@ -1181,20 +1392,29 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
-)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
 
 
 [1
 
 
-] (sections/but_portfolio.tex
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[2] (sections/but_portfolio.tex
 Chapitre 1.
 
 
-<image/blueprint.jpg, id=64, 6274.44125pt x 4392.41pt>
+<image/blueprint.jpg, id=105, 6274.44125pt x 4392.41pt>
 File: image/blueprint.jpg Graphic file (type jpg)
 <use image/blueprint.jpg>
 Package pdftex.def Info: image/blueprint.jpg  used on input line 31.
@@ -1246,7 +1466,7 @@ Package pdftex.def Info: image/blueprint.jpg  used on input line 79.
 Chapitre 2.
 
 
-<image/water-texture.jpg, id=86, 4516.875pt x 3011.25pt>
+<image/water-texture.jpg, id=127, 4516.875pt x 3011.25pt>
 File: image/water-texture.jpg Graphic file (type jpg)
 <use image/water-texture.jpg>
 Package pdftex.def Info: image/water-texture.jpg  used on input line 27.
@@ -1272,7 +1492,7 @@ Package pdftex.def Info: image/water-texture.jpg  used on input line 31.
 Chapitre 3.
 
 
-<image/carte-maritine.png, id=97, 770.88pt x 524.71031pt>
+<image/carte-maritine.png, id=137, 770.88pt x 524.71031pt>
 File: image/carte-maritine.png Graphic file (type png)
 <use image/carte-maritine.png>
 Package pdftex.def Info: image/carte-maritine.png  used on input line 19.
@@ -1285,7 +1505,7 @@ Package pdftex.def Info: image/carte-maritine.png  used on input line 19.
 Chapitre 4.
 
 
-<image/prisme.jpg, id=104, 3035.34pt x 4047.12pt>
+<image/prisme.jpg, id=144, 3035.34pt x 4047.12pt>
 File: image/prisme.jpg Graphic file (type jpg)
 <use image/prisme.jpg>
 Package pdftex.def Info: image/prisme.jpg  used on input line 31.
@@ -1309,38 +1529,235 @@ Package pdftex.def Info: image/prisme.jpg  used on input line 41.
 (pdftex.def)             Requested size: 597.46994pt x 845.04173pt.
 [9]) (sections/espace_modules.tex
 Chapitre 5.
-) (sections/journal_bord.tex
 
+
+<image/plante.png, id=153, 508.0581pt x 874.467pt>
+File: image/plante.png Graphic file (type png)
+<use image/plante.png>
+Package pdftex.def Info: image/plante.png  used on input line 39.
+(pdftex.def)             Requested size: 597.57303pt x 845.06961pt.
 [10
 
 
-]
+
+ <./image/plante.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+File: image/plante.png Graphic file (type png)
+<use image/plante.png>
+Package pdftex.def Info: image/plante.png  used on input line 78.
+(pdftex.def)             Requested size: 597.57303pt x 845.06961pt.
+[11]
+Overfull \hbox (9.74934pt too wide) in paragraph at lines 96--97
+ []\T1/lmr/bx/n/12 Cours de veille et in-tel-li-gence éco-no-mique[] \T1/lmr/m/
+n/12 Les mé-thodes de veille struc-tu-rée (sources,
+ []
+
+
+Overfull \hbox (3.09567pt too wide) in paragraph at lines 104--105
+[]\T1/lmr/bx/n/12 Jakobiak, F. (1998). \T1/lmr/m/it/12 L'in-tel-li-gence éco-no
+-mique \T1/lmr/m/n/12 : La veille in-for-ma-tion-nelle comme
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+File: image/plante.png Graphic file (type png)
+<use image/plante.png>
+Package pdftex.def Info: image/plante.png  used on input line 115.
+(pdftex.def)             Requested size: 597.57303pt x 845.06961pt.
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+[]|\T1/lmr/bx/n/12 Non im-por-
+ []
+
+
+Underfull \hbox (badness 5288) in paragraph at lines 128--129
+[]|\T1/lmr/m/n/12 Évaluation d'ou-tils De-vOps
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+File: image/plante.png Graphic file (type png)
+<use image/plante.png>
+Package pdftex.def Info: image/plante.png  used on input line 159.
+(pdftex.def)             Requested size: 597.57303pt x 845.06961pt.
+[13{C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.e
+nc}]
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+[]|\T1/lmr/bx/n/12 Non im-por-
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 174--175
+\T1/lmr/m/n/12 son pour l'in-ter-face uti-li-sa-
+ []
+
+
+Underfull \hbox (badness 5288) in paragraph at lines 175--176
+[]|\T1/lmr/m/n/12 Évaluation d'ou-tils De-vOps
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+\T1/lmr/m/n/12 com-plé-men-taires : confort
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 224--224
+[]|\T1/lmr/m/n/10.95 Élevée : dé-ve-lop-pe-
+ []
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 224--224
+[]|\T1/lmr/m/n/10.95 Moyenne : in-té-gra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+[]|\T1/lmr/m/n/10.95 Élevé (heures de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+\T1/lmr/m/n/10.95 dé-ve-lop-pe-ment in-
+ []
+
+
+Underfull \hbox (badness 7362) in paragraph at lines 224--224
+[]|\T1/lmr/m/n/10.95 Licence sup-plé-men-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+[]|\T1/lmr/bx/n/10.95 Traçabilité
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+[]|\T1/lmr/m/n/10.95 Totale : contrôle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+[]|\T1/lmr/m/n/10.95 Plusieurs se-
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 224--224
+[]|\T1/lmr/bx/n/10.95 Dépendance four-
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 224--224
+[]|\T1/lmr/m/n/10.95 Moyenne : don-nées
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+\T1/lmr/m/n/10.95 ex-por-tables, mais
+ []
+
+
+Underfull \hbox (badness 5832) in paragraph at lines 224--224
+[]|\T1/lmr/m/n/10.95 Modéré : hé-ber-ge-
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+File: image/plante.png Graphic file (type png)
+<use image/plante.png>
+Package pdftex.def Info: image/plante.png  used on input line 245.
+(pdftex.def)             Requested size: 597.57303pt x 845.06961pt.
+[14]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+File: image/plante.png Graphic file (type png)
+<use image/plante.png>
+Package pdftex.def Info: image/plante.png  used on input line 269.
+(pdftex.def)             Requested size: 597.57303pt x 845.06961pt.
+[15]
+Overfull \hbox (1.21512pt too wide) in paragraph at lines 274--274
+\T1/lmr/m/it/10.95 Compétences as-so-ciées : A6 (Com-mu-ni-ca-tion et pro-mo-ti
+on), B6 (Pla-ni-fi-ca-tion de mise en ÷uvre),
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+File: image/plante.png Graphic file (type png)
+<use image/plante.png>
+Package pdftex.def Info: image/plante.png  used on input line 280.
+(pdftex.def)             Requested size: 597.57303pt x 845.06961pt.
+[16]) (sections/journal_bord.tex
 Chapitre 6.
 ) (sections/ressources_significatives.tex
 
-[11
+[17
+
 
 ]
 Chapitre 7.
 ) (sections/situations_professionnalisantes.tex
 
-[12
+[18
 
 ]
 Chapitre 8.
 ) (sections/perspectives.tex
 
-[13
+[19
 
 ]
 Chapitre 9.
 )
 
-[14
+[20
 
 ] (annexes/annexes_main.tex
 
-[15
+[21
 
 ]
 Annexe A.
@@ -1349,7 +1766,7 @@ Annexe A.
 pdfTeX warning: pdflatex.exe (file ./annexes/pdfs/annexe-A-contrat-apprentissag
 e.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=139, 614.295pt x 794.97pt>
+<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=228, 614.295pt x 794.97pt>
 
 File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
 <use annexes/pdfs/annexe-A-contrat-apprentissage.pdf>
@@ -1366,7 +1783,7 @@ ed
 pdfTeX warning: pdflatex.exe (file ./annexes/pdfs/annexe-A-contrat-apprentissag
 e.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=141, page=1, 614.295pt x 7
+<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=230, page=1, 614.295pt x 7
 94.97pt>
 File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
 <use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 1>
@@ -1380,7 +1797,7 @@ Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
-[16
+[22
 
 ]
 File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
@@ -1407,14 +1824,14 @@ File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
 Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
 1 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[17
+[23
 
  <./annexes/pdfs/annexe-A-contrat-apprentissage.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./annexes/pdfs/annexe-A-contrat-apprentissag
 e.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=205, page=2, 614.295pt x 7
+<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=294, page=2, 614.295pt x 7
 94.97pt>
 File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
 <use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 2>
@@ -1440,14 +1857,14 @@ File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
 Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
 2 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[18
+[24
 
  <./annexes/pdfs/annexe-A-contrat-apprentissage.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./annexes/pdfs/annexe-A-contrat-apprentissag
 e.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=218, page=3, 614.295pt x 7
+<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=307, page=3, 614.295pt x 7
 94.97pt>
 File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
 <use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 3>
@@ -1473,14 +1890,14 @@ File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
 Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
 3 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[19
+[25
 
  <./annexes/pdfs/annexe-A-contrat-apprentissage.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./annexes/pdfs/annexe-A-contrat-apprentissag
 e.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=231, page=4, 614.295pt x 7
+<annexes/pdfs/annexe-A-contrat-apprentissage.pdf, id=320, page=4, 614.295pt x 7
 94.97pt>
 File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
 <use annexes/pdfs/annexe-A-contrat-apprentissage.pdf, page 4>
@@ -1506,9 +1923,350 @@ File: annexes/pdfs/annexe-A-contrat-apprentissage.pdf Graphic file (type pdf)
 Package pdftex.def Info: annexes/pdfs/annexe-A-contrat-apprentissage.pdf , page
 4 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[20
+[26
 
- <./annexes/pdfs/annexe-A-contrat-apprentissage.pdf>]) (main.aux)
+ <./annexes/pdfs/annexe-A-contrat-apprentissage.pdf>]
+(annexes/annexe_b_ndt.tex
+Annexe B.
+
+
+[27
+
+]
+Underfull \hbox (badness 7186) in paragraph at lines 112--112
+[]|\T1/lmr/bx/n/10.95 Custom so-lu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[]|\T1/lmr/m/n/10.95 Integration com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[]|\T1/lmr/m/n/10.95 Cost (li-cence +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[]|\T1/lmr/m/n/10.95 Implementation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[]|\T1/lmr/m/n/10.95 Vendor de-pen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[]|[]\U/pzd/m/n/10.95 s \T1/lmr/m/n/10.95 Mo-de-rate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[]|[]\U/pzd/m/n/10.95 s \T1/lmr/m/n/10.95 Mo-de-rate
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[28]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[29]
+Overfull \hbox (0.5145pt too wide) in paragraph at lines 177--177
+[]|\T1/lmr/bx/n/10.95 Likelihood| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+[]|\T1/lmr/m/n/10.95 Vendor com-pliance ana-ly-sis
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 177--177
+\T1/lmr/m/n/10.95 bet-ween IEC 62304 re-qui-re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+[]|\T1/lmr/m/n/10.95 Supplemented by ma-nual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+\T1/lmr/m/n/10.95 do-cu-men-ta-tion (SOUP list,
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 177--177
+[]|\T1/lmr/m/n/10.95 Cloud ser-vice avai-la-bi-lity ---
+ []
+
+
+Underfull \hbox (badness 4819) in paragraph at lines 177--177
+[]|\T1/lmr/m/n/10.95 Local Git clones on every
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+[]|\T1/lmr/m/n/12 Author (Soft-ware
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (annexes/annexe_c_backlog.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[30]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[31]
+Annexe C.
+(C:\Users\alexa\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd)
+Overfull \hbox (5.29483pt too wide) in paragraph at lines 178--178
+[]|\T1/lmr/bx/n/10 Issue#| 
+ []
+
+
+Overfull \hbox (0.55254pt too wide) in paragraph at lines 178--178
+[]|[][][][][][]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+\T1/lmr/m/it/10 Labels : \T1/lmtt/m/n/10 iec-62304\T1/lmr/m/n/10 , \T1/lmtt/m/n
+/10 certification\T1/lmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (5.69046pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Overfull \hbox (2.84544pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+[]|[]\T1/lmr/bx/n/10 In Pro-
+ []
+
+
+Overfull \hbox (0.55254pt too wide) in paragraph at lines 178--178
+[]|[][][][][][]| 
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 178--178
+\T1/lmr/m/n/10 Produce the SOUP list ar-te-fact re-qui-red
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 178--178
+\T1/lmr/m/n/10 reference with the soft-ware re-qui-re-ments
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+\T1/lmr/m/it/10 Labels : \T1/lmtt/m/n/10 iec-62304\T1/lmr/m/n/10 , \T1/lmtt/m/n
+/10 documentation\T1/lmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (5.69046pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Overfull \hbox (2.84544pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+[]|[]\T1/lmr/bx/n/10 In Pro-
+ []
+
+
+Overfull \hbox (0.55254pt too wide) in paragraph at lines 178--178
+[]|[][][][][][]| 
+ []
+
+
+Overfull \hbox (5.69046pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Overfull \hbox (2.84544pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Overfull \hbox (22.46733pt too wide) in paragraph at lines 178--178
+[]|[][][][][][]| 
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 178--178
+[]|\T1/lmr/bx/n/10 Standardise do-cu-men-ta-tion tem-plates
+ []
+
+
+Overfull \hbox (5.69046pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Overfull \hbox (2.84544pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Overfull \hbox (22.46733pt too wide) in paragraph at lines 178--178
+[]|[][][][][][]| 
+ []
+
+
+Underfull \hbox (badness 6876) in paragraph at lines 178--178
+[]|\T1/lmr/bx/n/10 Update SOUP risk as-sess-ment ---
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 178--178
+\T1/lmr/m/n/10 SOUP (FreeR-TOS, lib-mod-bus, []).
+ []
+
+
+Overfull \hbox (5.69046pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Overfull \hbox (2.84544pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Overfull \hbox (5.69046pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Overfull \hbox (2.84544pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+[]|\T1/lmr/bx/n/10 Benchmark sup-ple-men-tary De-vOps
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 178--178
+\T1/lmr/m/n/10 and Har-bor as po-ten-tial com-ple-ments to
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 178--178
+\T1/lmr/m/n/10 the Git-Lab Pa-ckage Re-gis-try. No blo-cker
+ []
+
+
+Overfull \hbox (5.69046pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+Overfull \hbox (2.84544pt too wide) in paragraph at lines 178--178
+[]|[]| 
+ []
+
+
+LaTeX Warning: Float too large for page by 0.69893pt on input line 182.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+[]|\T1/lmr/bx/n/10.95 Eisenhower qua-
+ []
+
+
+Overfull \hbox (16.77643pt too wide) in paragraph at lines 213--213
+[]|[][][][][][]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+[]|\T1/lmr/m/n/10.95 Important, not
+ []
+
+
+
+[32
+
+]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+))
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[33]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[34]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[35] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
@@ -1518,23 +2276,29 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31943 strings out of 468130
- 616214 string characters out of 5430633
- 1515342 words of memory out of 5000000
- 60027 multiletter control sequences out of 15000+600000
- 677242 words of font info for 64 fonts, out of 8000000 for 9000
+ 37508 strings out of 468130
+ 756922 string characters out of 5430633
+ 1698848 words of memory out of 5000000
+ 65416 multiletter control sequences out of 15000+600000
+ 719051 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,17n,91p,1025b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
-b><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.p
-fb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pf
-b><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
-><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb
-><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb
->
-Output written on main.pdf (22 pages, 12032868 bytes).
+ 84i,17n,93p,1199b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
+b><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
+b><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.p
+fb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.
+pfb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.p
+fb><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pf
+b><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pf
+b><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pf
+b><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb
+><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb
+><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb
+><C:/Users/alexa/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pf
+b>
+Output written on main.pdf (38 pages, 24048598 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 228 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 578 PDF objects out of 1000 (max. 8388607)
+ 117 named destinations out of 1000 (max. 500000)
+ 377 words of extra memory for PDF output out of 10000 (max. 10000000)
 

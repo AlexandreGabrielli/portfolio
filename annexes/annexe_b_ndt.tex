@@ -1,0 +1,203 @@
+% =============================================================================
+% ANNEX B — TECHNICAL DECISION NOTE NDT-SW-001
+% =============================================================================
+
+\chapter{Technical Decision Note: NDT-SW-001}
+\label{annex:ndt-sw-001}
+
+% --- Note de mise en contexte (portfolio) -------------------------------------
+\begin{tcolorbox}[colback=blue!5, colframe=blue!40!black, boxrule=0.5pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt]
+  \small\itshape
+  \textbf{Note du portfolio.} Ce document est un artefact professionnel r\'eel,
+  produit dans le cadre de la certification IEC~62304 chez TWIICE. Il a \'et\'e
+  reformatt\'e en \LaTeX{} afin de pouvoir \^etre int\'egr\'e directement dans
+  ce portfolio sous forme de source compilable.
+
+  Conform\'ement aux r\`egles de confidentialit\'e de l'entreprise, les
+  informations propres \`a TWIICE (noms des collaborateurs, dates internes,
+  signatures) ont \'et\'e \textbf{caviard\'ees} et sont repr\'esent\'ees par
+  des barres noires (\caviarder[1.2cm]). Le contenu technique et m\'ethodologique
+  du document est, quant \`a lui, int\'egralement reproduit.
+\end{tcolorbox}
+
+\bigskip
+
+% --- Document header ----------------------------------------------------------
+\begin{tcolorbox}[colback=gray!8, colframe=gray!50, boxrule=0.5pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt]
+  \begin{tabularx}{\linewidth}{@{}p{4.2cm}X@{}}
+    \textbf{Reference}          & NDT-SW-001 \\[3pt]
+    \textbf{Subject}            & Selection of tooling for SOUP and software artefact traceability \\[3pt]
+    \textbf{Applicable standard}& IEC~62304:2006+A1:2015 --- Clause~8 (Software configuration management) \\[3pt]
+    \textbf{Author}             & Alexandre Gati --- Software Engineer \\[3pt]
+    \textbf{Date}               & \caviarder[2.5cm] \\[3pt]
+    \textbf{Status}             & \textbf{Under Review} \\
+  \end{tabularx}
+\end{tcolorbox}
+
+\bigskip
+
+% ==============================================================================
+\section*{1.\quad Context and problem statement}
+% ==============================================================================
+
+The TWIICE software team develops the embedded software for a class~IIa medical exoskeleton (MDR Regulation 2017/745). This software incorporates several third-party components (SOUP --- \textit{Software of Unknown Provenance}) whose management is governed by the IEC~62304 standard.
+
+Clause~8 of IEC~62304 mandates a software configuration management system that ensures:
+
+\begin{itemize}
+  \item \textbf{Unique identification} of every configuration item (source code, SOUP, build artefacts, documents);
+  \item \textbf{Change control} with full traceability;
+  \item \textbf{Reproducibility} of any released version of the software;
+  \item \textbf{End-to-end traceability}: requirement $\rightarrow$ specification $\rightarrow$ code $\rightarrow$ test $\rightarrow$ release.
+\end{itemize}
+
+The team lacked a formalised system meeting these requirements. Several parallel technical debates (processor selection, communication architecture, DevOps tooling) were dispersing collective energy. An Eisenhower matrix prioritisation (cf. Phase~2, Espace modules chapter, in this portfolio) identified SOUP traceability as the \textbf{urgent and important} issue, directly blocking certification.
+
+% ==============================================================================
+\section*{2.\quad Options evaluated}
+% ==============================================================================
+
+Three options were analysed using a multi-criteria build-vs-buy framework.
+
+\paragraph{Option A --- GitLab (cloud)}
+Use of the existing GitLab instance for source code versioning, extended to package registries (GitLab Container Registry, Package Registry) and CI/CD pipelines for automated builds and tests.
+
+\begin{itemize}
+  \item \textit{Main advantage}: tool already mastered by the team, marginal cost (included in the existing subscription), immediate deployment.
+  \item \textit{Main limitation}: cloud hosting requires a cybersecurity compliance analysis for a medical device.
+\end{itemize}
+
+\paragraph{Option B --- Custom solution (in-house development)}
+Design and development of a bespoke storage and versioning system, hosted on-premises.
+
+\begin{itemize}
+  \item \textit{Main advantage}: full control over format, hosting and security.
+  \item \textit{Main limitation}: high development cost (estimate: several person-weeks), ongoing maintenance burden, timeline incompatible with the certification schedule.
+\end{itemize}
+
+\paragraph{Option C --- JFrog Artifactory}
+Dedicated package manager specialised in binary artefact storage with metadata, checksums and CI/CD integration.
+
+\begin{itemize}
+  \item \textit{Main advantage}: native artefact traceability and integrity features.
+  \item \textit{Main limitation}: additional licence required, high vendor dependency (proprietary solution).
+\end{itemize}
+
+% ==============================================================================
+\section*{3.\quad Decision criteria}
+% ==============================================================================
+
+The options were assessed against six criteria defined collectively by the software team and the quality team.
+
+\begin{table}[h!]
+  \centering\small
+  \begin{tabularx}{\textwidth}{|p{3.2cm}|p{2cm}|X|X|X|}
+    \hline
+    \textbf{Criterion} & \textbf{Weight} & \textbf{GitLab (cloud)} & \textbf{Custom solution} & \textbf{JFrog Artifactory} \\
+    \hline
+    Integration complexity & High     & \ok{Low}       & \nok{High}          & \warn{Medium} \\
+    \hline
+    Cost (licence + hours) & High     & \ok{Included}  & \nok{High}          & \warn{Extra licence} \\
+    \hline
+    IEC~62304 traceability & Critical & \ok{Good}      & \ok{Full}           & \ok{Good} \\
+    \hline
+    Implementation lead time & High   & \ok{Immediate} & \nok{Weeks/months}  & \ok{A few days} \\
+    \hline
+    Vendor dependency      & Medium   & \warn{Medium}  & \ok{None}           & \nok{High} \\
+    \hline
+    Cybersecurity risk     & High     & \warn{Moderate (cloud)} & \ok{Low (on-prem)} & \warn{Moderate (self-hosted possible)} \\
+    \hline
+  \end{tabularx}
+  \caption{Multi-criteria grid --- IEC~62304 configuration management options}
+  \label{tab:ndt-criteres}
+\end{table}
+
+% ==============================================================================
+\section*{4.\quad Analysis and recommendation}
+% ==============================================================================
+
+\textbf{Option A (GitLab cloud)} offers the best overall balance:
+
+\begin{itemize}
+  \item \textbf{Lead time}: immediate deployment, compatible with the certification schedule.
+  \item \textbf{Cost}: zero additional cost (existing subscription).
+  \item \textbf{Skills}: tool already mastered by the team, no learning curve.
+  \item \textbf{Traceability}: native versioning (tags, releases), package registries, CI/CD pipeline automating tests and builds.
+\end{itemize}
+
+Option B (custom) was rejected despite offering full control, due to a timeline and cost incompatible with the resources of a startup in certification phase.
+
+Option C (JFrog) was rejected due to high vendor dependency and additional licence cost, offering marginal functional gain over GitLab in this context.
+
+% ==============================================================================
+\section*{5.\quad Selected decision}
+% ==============================================================================
+
+\begin{decisionbox}
+\textbf{Option A --- GitLab (cloud)}
+
+Use of the existing GitLab instance as the primary software configuration management system, including:
+
+\begin{itemize}
+  \item Source code versioning (Git);
+  \item Package and build artefact registry (GitLab Package Registry);
+  \item CI/CD pipeline for automated unit, integration and artefact generation;
+  \item Tags and releases for unique identification of each delivered version.
+\end{itemize}
+\end{decisionbox}
+
+% ==============================================================================
+\section*{6.\quad Residual risks and mitigation measures}
+% ==============================================================================
+
+\begin{table}[h!]
+  \centering\small
+  \begin{tabularx}{\textwidth}{|X|p{2cm}|p{1.8cm}|X|}
+    \hline
+    \textbf{Risk} & \textbf{Likelihood} & \textbf{Impact} & \textbf{Mitigation} \\
+    \hline
+    Cloud hosting --- cybersecurity compliance for a medical device
+      & Medium & High
+      & Vendor compliance analysis (SOC~2, ISO~27001 certifications). Evaluate migration to GitLab self-hosted if required by audit. \\
+    \hline
+    Vendor dependency --- pricing or terms-of-service change
+      & Low & Medium
+      & Data exportable (native Git). Migration plan to an alternative (Gitea, GitLab self-hosted) documented. \\
+    \hline
+    Incomplete traceability --- gap between IEC~62304 requirements and native features
+      & Low & High
+      & Supplemented by manual documentation (SOUP list, requirements-code-tests traceability matrix). Integrated into the \textit{Definition of Done}. \\
+    \hline
+    Cloud service availability --- outage impacting development
+      & Low & Low
+      & Local Git clones on every workstation. Periodic backups of the package registry. \\
+    \hline
+  \end{tabularx}
+  \caption{Residual risks and mitigation measures --- NDT-SW-001}
+  \label{tab:ndt-risques}
+\end{table}
+
+% ==============================================================================
+\section*{8.\quad Approval}
+% ==============================================================================
+
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|p{4cm}|p{3.5cm}|p{2.5cm}|p{3cm}|}
+    \hline
+    \textbf{Role} & \textbf{Name} & \textbf{Date} & \textbf{Signature} \\
+    \hline
+    Author (Software Eng.) & Alexandre Gati     & \caviarder[2cm] & \caviarder[2.5cm] \\[6pt]
+    \hline
+    Software Architect     & \caviarder[2.5cm]  & \caviarder[2cm] & \caviarder[2.5cm] \\[6pt]
+    \hline
+    Quality Manager        & \caviarder[2.5cm]  & \caviarder[2cm] & \caviarder[2.5cm] \\[6pt]
+    \hline
+  \end{tabular}
+  \caption{Approval table --- NDT-SW-001}
+  \label{tab:ndt-approbation}
+\end{table}
+
+
