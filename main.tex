@@ -1,4 +1,4 @@
-﻿\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper]{report}
 
 % : Polices et encodage ---
 \usepackage[T1]{fontenc}
@@ -17,7 +17,9 @@
 % : Tableaux et boîtes colorées ---
 \usepackage{booktabs}    % Filets de tableaux professionnels (\toprule, \midrule, \bottomrule)
 \usepackage{tabularx}    % Tableaux à largeur fixe avec colonnes flexibles
+\usepackage{longtable}   % Tableaux multi-pages
 \usepackage{colortbl}    % Couleurs de cellules et lignes (\rowcolor, \cellcolor)
+\usepackage{ragged2e}    % \RaggedRight dans les cellules longtable
 \usepackage[many]{tcolorbox} % Boîtes colorées (brouillons, notes, callouts)
 
 % Boîte "brouillon" — fond jaune, utilisée pour signaler le contenu à compléter
@@ -60,6 +62,56 @@
   title={D\'ecision retenue},
   fonttitle=\bfseries\normalsize, boxrule=0.8pt, arc=3pt,
   left=8pt, right=8pt, top=6pt, bottom=6pt
+}
+
+% --- Journal de bord : chronologie verticale ---
+\definecolor{jbblue}{RGB}{25, 95, 165}
+\definecolor{jbbluebg}{RGB}{228, 241, 255}
+
+% Boîte d'entrée de journal : {date}{contexte}{compétences (vide si aucune)}
+\newtcolorbox{jbentry}[3]{%
+  breakable, enhanced, parbox=false,
+  colback=white, colframe=jbblue!20,
+  borderline west={3pt}{0pt}{jbblue},
+  arc=2pt, outer arc=2pt, boxrule=0.4pt,
+  left=10pt, right=8pt, top=2pt, bottom=8pt,
+  before upper={\setlength{\parindent}{0pt}\setlength{\parskip}{3pt}\small},
+  before={\par\vspace{3pt}}, after={\vspace{1pt}},
+  title={%
+    \textcolor{jbblue}{\textbf{#1}}\enspace\textbar\enspace{\small\bfseries #2}%
+    \if\relax\detokenize{#3}\relax\else
+      \hfill\colorbox{jbblue!15}{\textcolor{jbblue}{\small\bfseries #3}}%
+    \fi},
+  colbacktitle=jbbluebg, coltitle=black,
+  fonttitle=\small, toptitle=4pt, bottomtitle=4pt, titlerule=0.3pt,
+}
+% Étiquette "Observation" à placer en début de contenu
+\newcommand{\jbobs}{%
+  {\footnotesize\bfseries\color{jbblue}\textsc{Observation}}\par\smallskip}
+% Séparateur + étiquette "Résonance personnelle"
+\newcommand{\jbres}{%
+  \par\medskip
+  \noindent\textcolor{jbblue!25}{\rule{\linewidth}{0.4pt}}\par\smallskip
+  {\footnotesize\bfseries\color{jbblue!80}\textsc{R\'esonance personnelle}}\par\smallskip}
+% En-tête coloré pour les grandes périodes
+\newcommand{\tlperiod}[1]{%
+  \par\vspace{6pt}%
+  \noindent\colorbox{jbblue}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+      \vspace{2pt}\textcolor{white}{\bfseries\small #1}\vspace{2pt}%
+    }%
+  }\par\vspace{3pt}\noindent%
+}
+
+% --- Puces personnalisées globales ---
+% \AtBeginDocument garantit que la redéfinition s'applique APRÈS babel/french
+\AtBeginDocument{%
+  % Niveau 1 : guillemet simple droit  ›
+  \renewcommand{\labelitemi}{\guilsinglright}%
+  % Niveau 2 : point médian            ·
+  \renewcommand{\labelitemii}{\textperiodcentered}%
+  % Niveau 3 : tiret demi-cadratin     –
+  \renewcommand{\labelitemiii}{\textendash}%
 }
 
 % Badges de priorité pour les backlogs
