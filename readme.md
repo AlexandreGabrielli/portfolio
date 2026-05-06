@@ -55,4 +55,4 @@ En cas d'erreur liée à des fichiers auxiliaires corrompus, utilisez `clean.bat
   - Compétences méthodologiques
   - Compétences personnelles
 - Pour chaque compétence, il faut fournir au moins trois preuves d'apprentissage et les analyser en lien avec la compétence choisie.
-- il semble y avoir une importance donné au radar comme preuve d'évolution. 
+- il semble y avoir une importance donnée au radar comme preuve d'évolution. 
