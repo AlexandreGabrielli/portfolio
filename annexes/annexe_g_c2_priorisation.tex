@@ -1,0 +1,106 @@
+% =============================================================================
+% ANNEX G — C2 PRIORISATION PACKAGE (MATRICE + ATELIER + ROADMAP)
+% =============================================================================
+
+\chapter{Package C2 : priorisation, atelier et feuille de route}
+\label{annex:c2-priorisation}
+
+\begin{tcolorbox}[colback=blue!5, colframe=blue!40!black, boxrule=0.5pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt]
+  \small\itshape
+  \textbf{Avertissement.} Les extraits ci-dessous reproduisent les artefacts de synthese utilises pour la competence C2. Les informations sensibles (noms, identifiants internes, references outillage, metadonnees projet) sont volontairement caviardees.
+\end{tcolorbox}
+
+\section*{1. Matrice de priorisation des evolutions}
+
+\begin{tabularx}{\textwidth}{|p{3.1cm}|X|X|}
+\hline
+ & \textbf{Faisabilite elevee} & \textbf{Faisabilite faible/moyenne} \\
+\hline
+\textbf{Impact utilisateur eleve}
+&
+\begin{itemize}
+  \item Stabilite mode marche assistee (Must)
+  \item Fiabilite calibration capteurs (Must)
+\end{itemize}
+&
+\begin{itemize}
+  \item Refonte \texttt{[CAVIARDE]} pipeline telemetry (Should)
+\end{itemize} \\
+\hline
+\textbf{Impact utilisateur moyen}
+&
+\begin{itemize}
+  \item Optimisation UX ecran coach (Should)
+\end{itemize}
+&
+\begin{itemize}
+  \item Evolution architecture \texttt{[CAVIARDE]} (Could)
+\end{itemize} \\
+\hline
+\textbf{Impact utilisateur faible}
+&
+\begin{itemize}
+  \item Ajustements cosmetiques interface (Could)
+\end{itemize}
+&
+\begin{itemize}
+  \item Recherche exploratoire hors sprint (Won't now)
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\medskip
+\noindent\textbf{Resultat.} La matrice a permis de reduire un portefeuille d'environ 150 demandes a un noyau prioritaire de \caviarder[1.1cm] axes d'action valides en atelier.
+
+\section*{2. Compte-rendu de l'atelier de definition des problematiques}
+
+\begin{tcolorbox}[colback=gray!8, colframe=gray!50, boxrule=0.5pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt]
+\begin{tabularx}{\linewidth}{@{}p{4.3cm}X@{}}
+\textbf{Date} & \caviarder[2.3cm] \\
+\textbf{Participants} & Equipe software, qualite, representants usage \texttt{[CAVIARDE]} \\
+\textbf{Facilitateur} & \caviarder[2.6cm] \\
+\textbf{Objectif} & Passer des demandes brutes a 3-5 problematiques priorisees et actionnables \\
+\end{tabularx}
+\end{tcolorbox}
+
+\textbf{Problematique 1 (priorite haute).}
+Securiser la fiabilite des fonctions critiques avant extension de fonctionnalites secondaires.
+
+\textbf{Problematique 2 (priorite haute).}
+Reduire le delai de traitement des anomalies bloquantes en clarifiant ownership et criteres de priorisation.
+
+\textbf{Problematique 3 (priorite moyenne).}
+Ameliorer la lisibilite des decisions techniques pour limiter les reouvertures de debat inter-equipes.
+
+\medskip
+\noindent\textbf{Mecanisme de convergence.} Chaque problematique retenue est issue d'un vote structure, puis reformulee en phrase-probleme partagee, validee par toutes les parties prenantes presentes.
+
+\section*{3. Feuille de route issue de la priorisation}
+
+\begin{tabularx}{\textwidth}{|p{3.7cm}|p{2.3cm}|X|p{2.1cm}|}
+\hline
+\textbf{Axe} & \textbf{Horizon} & \textbf{Objectif operationnel} & \textbf{Indicateur} \\
+\hline
+Fiabilite fonctions critiques & Sprint S+1 a S+2 & Fermer les tickets critiques lies a la stabilite de marche assistee & Taux de fermeture >= \caviarder[1.1cm] \\
+\hline
+Flux anomalies et priorisation & Sprint S+1 & Mettre en place un rituel de tri hebdomadaire + regle de classement MoSCoW & Delai moyen de tri <= \caviarder[1.4cm] \\
+\hline
+Traçabilite des decisions & Sprint S+1 a S+3 & Standardiser note de decision + lien backlog + preuve de verification & 100\% des decisions majeures tracees \\
+\hline
+\end{tabularx}
+
+\section*{4. Pourquoi cette annexe prouve la competence C2}
+
+Cette annexe montre une chaine complete :
+\begin{enumerate}
+  \item collecte des demandes brutes,
+  \item synthese par matrice,
+  \item convergence en atelier,
+  \item traduction en feuille de route mesuree.
+\end{enumerate}
+
+Le point probant pour C2 est la transformation d'un volume heterogene de demandes en problematiques priorisees, partagees et pilotables dans le temps.
+
+

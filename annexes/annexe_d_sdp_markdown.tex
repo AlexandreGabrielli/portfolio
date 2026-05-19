@@ -1,0 +1,225 @@
+% =============================================================================
+% ANNEX D — SOFTWARE DEVELOPMENT PLAN (VERSION FORMALISEE ET CAVIARDEE)
+% =============================================================================
+
+\chapter{Software Development Plan (version formalisee et caviardee)}
+\label{annex:sdp-markdown}
+
+\begin{tcolorbox}[colback=blue!5, colframe=blue!40!black, boxrule=0.5pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt]
+  \small\itshape
+  \textbf{Avertissement.} Le contenu ci-dessous est une reproduction formalisee en \LaTeX{} du Software Development Plan original. Les informations sensibles (identites, identifiants documentaires internes, liens, details d'infrastructure et metadonnees de pilotage) ont ete volontairement caviardees par precaution et remplacees par \texttt{[CAVIARDE]}.
+\end{tcolorbox}
+
+\section*{1. Document control}
+
+\subsection*{1.1 Roles}
+\begin{tabularx}{\textwidth}{|p{3.3cm}|p{2.5cm}|X|p{3cm}|}
+\hline
+\textbf{Role} & \textbf{Name} & \textbf{Reason for signature} & \textbf{Signature \& date} \\
+\hline
+System Quality Manager & \caviarder[2.8cm] & Document Owner, Author & \caviarder[2.8cm] \\
+\hline
+Software Engineer & \caviarder[2.8cm] & Reviewer & \caviarder[2.8cm] \\
+\hline
+Software Manager & \caviarder[2.8cm] & Approver & \caviarder[2.8cm] \\
+\hline
+\end{tabularx}
+
+\subsection*{1.2 Version history}
+\begin{tabularx}{\textwidth}{|p{2.5cm}|X|}
+\hline
+\textbf{Version} & \textbf{Description} \\
+\hline
+1 & Initial version \\
+\hline
+\end{tabularx}
+
+\subsection*{1.3 References (caviardees)}
+\begin{longtable}{|p{1.4cm}|p{12cm}|}
+\hline
+\textbf{Ref.} & \textbf{Document} \\
+\hline
+R1 & SOP-025 Software Development Process v1 (\texttt{[CAVIARDE]}) \\
+\hline
+R2 & SOP-027 Software Configuration Management v1 (\texttt{[CAVIARDE]}) \\
+\hline
+R3 & SOP-006 Design and Development v1 (\texttt{[CAVIARDE]}) \\
+\hline
+R4 & SOP-005 Risk Management v1 (\texttt{[CAVIARDE]}) \\
+\hline
+R5 & IEC~62304:2006+AMD1:2015, Medical device software life cycle processes \\
+\hline
+R6 & SOP-021 Design Input / Design Output / Traceability v1 (\texttt{[CAVIARDE]}) \\
+\hline
+R7 & SOP-026 Software Maintenance \& Problem Resolution v1 (\texttt{[CAVIARDE]}) \\
+\hline
+R8 & SOP-017 Change Control v1 (\texttt{[CAVIARDE]}) \\
+\hline
+R9 & SOP-019 Control of Records v1 (\texttt{[CAVIARDE]}) \\
+\hline
+R10 & SOP-002 Document Controls v1 (\texttt{[CAVIARDE]}) \\
+\hline
+R11 & FDA: Content of Premarket Submissions for Device Software Functions \\
+\hline
+R12-R19 & Documents projet internes (plans, architecture, risques, detailed design) : \texttt{[CAVIARDE]} \\
+\hline
+\end{longtable}
+
+\subsection*{1.4 Definitions (extrait)}
+\begin{longtable}{|p{3cm}|p{10.4cm}|}
+\hline
+\textbf{Term} & \textbf{Definition} \\
+\hline
+Software System & Integrated collection of Software Items organized to accomplish a function set (IEC~62304 3.28). \\
+\hline
+Software Item & Any identifiable part of a computer program (IEC~62304 3.25). \\
+\hline
+Software Unit & Software Item not subdivided into other items (IEC~62304 3.29). \\
+\hline
+SOUP / OTS & Third-party software not fully controlled through manufacturer life cycle. \\
+\hline
+SDP & Software Development Plan. \\
+\hline
+SRS & Software Requirements Specification : defines what software shall do. \\
+\hline
+SDDD & Software Detailed Design Document : internal design of software items/units. \\
+\hline
+Software Anomaly & Condition deviating from expected behavior. \\
+\hline
+\end{longtable}
+
+\section*{2. Purpose and scope}
+
+Le SDP definit les processus de developpement logiciel du dispositif medical en conformite avec IEC~62304, SOP-025 et SOP-027.
+
+\subsection*{2.1 Scope}
+Le plan couvre : firmware, controle embarque, applications et composants SOUP.
+
+Le document est revu a chaque Gate Review (G1 a G4) et mis a jour sous change control.
+
+\section*{3. Software safety classification}
+
+\textbf{Classification preliminaire :} Class C (hypothese conservative pour dispositif actif).
+
+\textbf{Strategie de segregation :}
+\begin{itemize}
+  \item Boucles de controle critiques traitees en Class C.
+  \item Applications auxiliaires potentiellement Class B/A si segregation architecturale demontree.
+\end{itemize}
+
+\section*{4. Roles and responsibilities (extrait)}
+
+\begin{tabularx}{\textwidth}{|p{3cm}|X|p{3cm}|}
+\hline
+\textbf{Role} & \textbf{Responsibilities} & \textbf{Assigned to} \\
+\hline
+Software Lead & Execute SDP, arbitre architecture, coordonne verification et impacts de changement. & \caviarder[2.8cm] \\
+\hline
+Software Developer & Developpement, unit tests, static analysis, merge requests. & \caviarder[2.8cm] \\
+\hline
+Configuration Manager & SCM, pipelines CI/CD, gestion SOUP, baselines de release. & \caviarder[2.8cm] \\
+\hline
+Quality Manager & Revue traceabilite, validation de gate, conformite SOP. & \caviarder[2.8cm] \\
+\hline
+Risk Manager & Suivi RMF\footnote{\textbf{RMF} signifie \textit{Risk Management File}. C'est l'ensemble des enregistrements qui documentent l'analyse des risques, les mesures de maitrise et leurs verifications.}, revue impacts securite des anomalies/changements. & \caviarder[2.8cm] \\
+\hline
+\end{tabularx}
+
+\section*{5. Development life cycle model}
+
+Le projet suit un V-Model integre au Stage-Gate process.
+
+\begin{tabularx}{\textwidth}{|p{1.2cm}|p{2.2cm}|p{2.5cm}|X|}
+\hline
+\textbf{Gate} & \textbf{Phase} & \textbf{IEC~62304} & \textbf{Key software activities} \\
+\hline
+G0 & Planning & 5.1 & Definition des besoins utilisateurs \\
+\hline
+G1 & Input \& Arch. & 5.1, 5.2, 5.3 & SDP, SRS\footnote{\textbf{SRS} signifie \textit{Software Requirements Specification}. Ce document formalise les exigences logicielles verifiables.}, architecture, analyse de risques, initialisation SOUP \\
+\hline
+G2 & Detailed design & 5.4, 5.5 & SDDD\footnote{\textbf{SDDD} signifie \textit{Software Detailed Design Document}. Il decompose l'architecture en composants et unites implementables et testables.}, implementation, revues, analyses statiques, unit tests \\
+\hline
+G3 & Verification & 5.6, 5.7 & Integration, system testing, correction/regression \\
+\hline
+G4 & Validation & 5.8 & Release logicielle et validation finale \\
+\hline
+\end{tabularx}
+
+\medskip
+\textbf{Deviation planifiee :} SDP produit en G1 (au lieu de G0) car le scope logiciel et la classification de securite dependent de l'architecture systeme.
+
+\section*{6. Traceability and verification framework}
+
+\textbf{Traceability rules :}
+\begin{itemize}
+  \item Requirement logicielle : lien amont vers exigence systeme et/ou mesure de maitrise du risque.
+  \item Requirement logicielle : lien aval vers design, code et activite de verification.
+  \item Revue de completude avant chaque gate.
+\end{itemize}
+
+\textbf{Verification strategy (synthese) :}
+\begin{tabularx}{\textwidth}{|p{1.2cm}|p{3.1cm}|X|}
+\hline
+\textbf{Gate} & \textbf{Verification activity} & \textbf{Acceptance criteria} \\
+\hline
+G1 & Design review & Exigences et architecture baselined, coherence et traceabilite verifiees \\
+\hline
+G2 & Unit verification & Static analysis conforme, code review approuvee, unit tests passants \\
+\hline
+G3 & Integration \& system verification & Couverture exigences et tests integration/system valides, regression maitrissee \\
+\hline
+G4 & Release verification & Package de release complet, anomalies critiques resolues ou justifiees \\
+\hline
+\end{tabularx}
+
+\section*{7. Software configuration management (SCM)}
+
+SCM aligne sur SOP-027 avec strategie multi-repo et branching controle.
+
+\begin{itemize}
+  \item \texttt{main}: baseline de release, commits directs interdits.
+  \item \texttt{develop}: integration continue des evolutions.
+  \item \texttt{release}: preparation de version officielle.
+  \item \texttt{hotfix}: correction post-release avec impact analysis.
+  \item \texttt{feature}/\texttt{bugfix}: branches de developpement.
+\end{itemize}
+
+\section*{8. SOUP, cybersecurity, release and maintenance}
+
+\textbf{SOUP management :}
+\begin{itemize}
+  \item Liste SOUP maintenue et revue periodiquement.
+  \item Verification des composants SOUP dans les plans de test.
+  \item Surveillance des vulnerabilites et des fins de vie.
+\end{itemize}
+
+\textbf{Release :}
+la release inclut version, hash, anomalies residuelles, composants SOUP et environnement de build, puis archivage controle.
+
+\textbf{Problem resolution et maintenance :}
+toute anomalie suit un cycle log, triage, investigation, resolution, regression, puis traceabilite vers commit et enregistrement qualite.
+
+\section*{9. Deliverables matrix (resume caviarde)}
+
+\begin{tabularx}{\textwidth}{|X|p{2.4cm}|p{1.5cm}|p{2.1cm}|}
+\hline
+\textbf{Deliverable} & \textbf{Format} & \textbf{Gate} & \textbf{IEC~62304} \\
+\hline
+SDP & Notion/PDF signe & G1 & 5.1 \\
+\hline
+SRS / Architecture & Notion/PDF signe & G1 & 5.2 / 5.3 \\
+\hline
+SDDD + unit evidence & CI artifacts + PDF signe & G2 & 5.4 / 5.5 \\
+\hline
+Integration/System tests + traceability matrix & Records signes & G3 & 5.6 / 5.7 \\
+\hline
+Release notes + SOUP final + RMF section logicielle & Records signes & G4 & 5.8 / clause 7 \\
+\hline
+\end{tabularx}
+
+\medskip
+\noindent\textit{Note : les identifiants documentaires fins, liens de stockage, pistes d'audit internes et references operationnelles detaillees sont caviardes dans cette version de portfolio.}
+
+
+
