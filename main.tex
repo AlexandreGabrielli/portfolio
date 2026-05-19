@@ -23,9 +23,9 @@
 \usepackage{colortbl}    % Couleurs de cellules et lignes (\rowcolor, \cellcolor)
 \usepackage{ragged2e}    % \RaggedRight dans les cellules longtable
 \usepackage[many]{tcolorbox} % Boîtes colorées (brouillons, notes, callouts)
-\usepackage[framemethod=tikz]{mdframed} % Boîte acompleter — supporte \footnote nativement
+\usepackage[framemethod=tikz]{mdframed} % Boite acompleter : supporte \footnote nativement
 
-% Boîte "brouillon" — fond jaune, utilisée pour signaler le contenu à compléter
+% Boite "brouillon" : fond jaune, utilisee pour signaler le contenu a completer
 \newtcolorbox{brouillon}{
   colback=yellow!15, colframe=orange!70!black,
   title={BROUILLON : À compléter avec le contenu réel},
@@ -33,7 +33,7 @@
   left=6pt, right=6pt, top=4pt, bottom=4pt
 }
 
-% Boîte "à compléter" — fond vert, 1 argument = titre de la note
+% Boite "a completer" : fond vert, 1 argument = titre de la note
 % Implémentée avec mdframed (pas tcolorbox) pour supporter \footnote et \footnotemark
 % sans aucune restriction liée aux minipages internes de tcolorbox.
 \newenvironment{acompleter}[1]{%
@@ -70,7 +70,7 @@
 \newcommand{\nok}[1]{\textcolor{red!70!black}{\ding{55}~#1}}
 \newcommand{\warn}[1]{\textcolor{orange!80!black}{\ding{115}~#1}}
 
-% Boîte "décision retenue" — fond vert foncé, pour les décisions formelles
+% Boite "decision retenue" : fond vert fonce, pour les decisions formelles
 \newtcolorbox{decisionbox}{
   colback=green!10, colframe=green!40!black,
   title={D\'ecision retenue},
@@ -124,7 +124,7 @@
   \renewcommand{\labelitemi}{\guilsinglright}%
   % Niveau 2 : point médian            ·
   \renewcommand{\labelitemii}{\textperiodcentered}%
-  % Niveau 3 : tiret demi-cadratin     –
+  % Niveau 3 : tiret demi-cadratin
   \renewcommand{\labelitemiii}{\textendash}%
 }
 
@@ -205,6 +205,16 @@
 \tableofcontents
 \cleardoublepage
 
+% : Liste des figures ---
+\listoffigures
+\addcontentsline{toc}{chapter}{\listfigurename}
+\cleardoublepage
+
+% : Liste des tableaux ---
+\listoftables
+\addcontentsline{toc}{chapter}{\listtablename}
+\cleardoublepage
+
 % : Corps du document ---
 \pagenumbering{arabic} % 1, 2, 3...
 \input{sections/but_portfolio}
@@ -218,7 +228,7 @@
 
 % : Bibliographie ---
 \newpage
-\printbibliography[title={Bibliographie}]
+\printbibliography[heading=bibintoc, title={Bibliographie}]
 
 % : Annexes ---
 \begin{appendices}
