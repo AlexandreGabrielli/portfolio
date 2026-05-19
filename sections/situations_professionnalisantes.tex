@@ -1,2 +1,438 @@
-\chapter{Situations professionnalisantes}
+﻿\clearpage
+
+\AddToShipoutPictureBG{
+    \begin{tikzpicture}[remember picture, overlay]
+        \node[opacity=0.04] at (current page.center) {
+            \includegraphics[width=\paperwidth,height=\paperheight]{image/fouilles}
+        };
+    \end{tikzpicture}
+}
+
+\chapter{Situations professionnalisantes et analyse des compétences}
 \label{chap:situations_professionnalisantes}
+
+\begin{tcolorbox}[colback=blue!6, colframe=blue!55!black, boxrule=0.5pt, arc=4pt,
+  left=10pt, right=10pt, top=8pt, bottom=8pt,
+  title={\textbf{\small Note de lecture : nature des situations décrites}},
+  fonttitle=\small\bfseries, coltitle=white, attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=blue!55!black, arc=3pt, boxrule=0pt}]
+\small
+Les situations professionnelles présentées dans ce chapitre sont \textbf{volontairement reconstituées et amplifiées} à des fins pédagogiques. Certains éléments contextuels (tensions, blocages, dysfonctionnements) ont été grossis ou restructurés afin de rendre visible la problématique de compétence traitée et d'en illustrer clairement les enjeux. Ces situations ne constituent pas un compte rendu factuel exhaustif des événements tels qu'ils se sont déroulés, mais un support de démonstration réflexive au service de l'analyse de compétences. L'objectif n'est pas de décrire la réalité à la virgule près, mais de mettre en lumière \textbf{ce que la formation a permis d'apprendre, et comment}.
+\end{tcolorbox}
+
+\bigskip
+
+Chaque situation professionnelle est un gisement. En surface, elle ressemble à un événement parmi d'autres : une réunion difficile, un choix technique à trancher, un processus à faire évoluer. C'est le travail de fouille qui en révèle la valeur : creuser sous l'anecdote pour dégager les strates d'apprentissage, tamiser les matériaux accumulés pour en extraire les traces significatives, et mettre au jour les artefacts\footnote{Un \textbf{artefact} désigne, dans le contexte de la gestion de projet et du Design Thinking, tout document, outil ou livrable produit au cours d'une démarche et qui témoigne d'une action réelle. L'artefact sert à la fois de preuve de travail et de support de réflexion.} qui, une fois exhumés et analysés, attestent d'une transformation réelle. Ce chapitre est le compte rendu de trois fouilles. Pour chacune des compétences retenues, il documente ce qui a été sondé, ce qui a été extrait, et ce que la profondeur atteinte révèle sur le chemin parcouru.
+
+% ==============================================================================
+\section{Compétence A2 : Anticiper et gérer les divergences}
+\label{sec:competence-a2}
+% ==============================================================================
+
+\begin{tcolorbox}[colback=gray!5, colframe=gray!40, boxrule=0.4pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt]
+\small\itshape
+\textbf{Définition (référentiel Innokick, Phase Définition).}
+Anticiper et gérer les divergences afin de faciliter un processus participatif de convergence en intégrant les préconceptions, les besoins et les enjeux des différents acteurs à l'aide de méthodes agiles\footnotemark, de méthodes de communication et de médiation\footnotemark.
+\end{tcolorbox}
+\addtocounter{footnote}{-2}%
+\addtocounter{footnote}{1}\footnotetext{Les \textbf{méthodes agiles} sont des approches de gestion de projet privilégiant des cycles courts, la collaboration et l'adaptation au changement plutôt qu'une planification rigide et exhaustive. Elles reposent sur des itérations fréquentes et une livraison continue de valeur.}%
+\addtocounter{footnote}{1}\footnotetext{La \textbf{médiation} est un processus structuré par lequel un tiers neutre aide deux parties en désaccord à trouver un terrain d'entente sans imposer de décision. Elle se distingue de l'arbitrage (décision imposée) et de la négociation directe (sans tiers).}
+
+\bigskip
+
+\bigskip
+
+% : A2.1 : Autoévaluation ---
+\subsection{Autoévaluation de ma progression}
+
+
+Parmi toutes les compétences sondées durant la formation, A2 est celle dont la fouille a mis au jour les strates les plus inattendues. En surface, je savais gérer un désaccord : bon sens, expérience, intuition sociale. Mais en creusant, la formation a révélé que je ne disposais d'aucun protocole pour transformer une divergence en convergence structurée. Mon score auto-évalué reflète cette excavation : la couche supérieure était déjà présente à l'entrée en formation ; c'est la profondeur, la capacité à opérer avec méthode et reproductibilité, qui a été véritablement dégagée.
+
+% : A2.2 : Situation et preuves ---
+\subsection{Situation professionnalisante et preuves}
+
+\subsubsection*{La situation}
+
+    La scène se déroule dans le département reporting\footnote{Le \textbf{reporting} financier désigne la production périodique de rapports synthétisant la performance d'un portefeuille d'investissement à destination des clients d'une banque privée. Ces documents peuvent couvrir la performance financière, la durabilité ESG ou la gestion des risques.} d'une banque privée. L'équipe doit faire évoluer un outil de génération de rapports clients : le processus actuel est trop coûteux en heures et la direction demande une optimisation. Plusieurs options techniques existent : automatiser davantage avec des outils internes, adopter un outil tiers, ou refondre le processus en standardisant les templates\footnote{Un \textbf{template} (ou gabarit) est un modèle pré-conçu réutilisable qui standardise la structure d'un document. L'utilisation de templates réduit le temps de production et les variations inutiles entre livrables similaires.}.
+
+La discussion dérape rapidement. Chaque membre de l'équipe défend son approche favorite, adossée à son expérience personnelle. Les arguments s'accumulent, mais aucun critère partagé ne permet de les comparer. La réunion se termine sans décision. Une deuxième réunion produit le même résultat. Ce qui devait être un débat technique devient un débat de positions\footnote{La distinction entre \textbf{positions} et \textbf{intérêts}, théorisée par Fisher \& Ury (1981) dans \textit{Getting to Yes}, est centrale en négociation : une position est ce qu'une personne demande (« je veux cet outil ») ; un intérêt est la raison sous-jacente (« je veux gagner du temps »). Travailler sur les intérêts permet de trouver des solutions que les positions seules bloquent.} où chacun campe sur ses convictions. Le client final : ses besoins, ses contraintes, ce qu'il valorise dans un rapport : a disparu de la conversation.
+
+Le problème de fond : l'équipe diverge sans avoir les outils pour converger. Il n'existe pas de cadre commun pour structurer la décision, pas de données partagées sur la situation de départ, et aucun processus pour trancher objectivement.
+
+\subsubsection*{Les trois artefacts exhumés}
+
+\paragraph{Preuve 1 : Veille concurrentielle}
+
+\begin{acompleter}{Preuve 1 A2 : à reconstituer}
+Produire un tableau synthétique comparant 5 à 6 rapports clients issus d'acteurs comparables (banques privées, asset managers\footnote{Un \textbf{asset manager} (gestionnaire d'actifs) est une société qui gère des portefeuilles d'investissement pour le compte de clients institutionnels ou privés. Les grandes maisons comme BlackRock, Pictet ou Vanguard sont des exemples typiques.}). Critères : structure (sommaire, sections), type de données mis en avant, niveau de personnalisation visible, lisibilité générale, format de livraison. Ce document objectivait le débat en montrant ce que font les concurrents, indépendamment des préférences internes.
+\end{acompleter}
+
+\paragraph{Preuve 2 : Grille de décision avec critères pondérés}
+
+\begin{acompleter}{Preuve 2 A2 : à reconstituer}
+Produire une grille comparant les 2--3 options technologiques sur des critères explicites et pondérés par l'équipe : coût de développement, délai de mise en œuvre, maintenabilité, compatibilité avec les contraintes compliance\footnote{La \textbf{compliance} (conformité réglementaire) désigne l'ensemble des règles légales, internes et sectorielles auxquelles une organisation doit se conformer. Dans le secteur financier, elle couvre notamment la protection des données clients, les obligations de reporting réglementaire et les licences d'utilisation des données.}, niveau de personnalisation atteignable. La pondération des critères doit avoir été réalisée collectivement, avant de scorer les options, pour neutraliser les biais individuels.
+\end{acompleter}
+
+\paragraph{Preuve 3 : Compte-rendu de réunion de cadrage}
+
+\begin{acompleter}{Preuve 3 A2 : à reconstituer}
+Rédiger un CR de la réunion de décision finale : option retenue, justification au regard des critères, périmètre du déploiement, risques identifiés, responsabilités (qui valide quoi, à quelle étape). Ce document actait la sortie du débat d'opinions et le passage à une décision traçable\footnote{Une \textbf{décision traçable} est une décision dont le raisonnement, les options écartées et les critères utilisés sont documentés de façon à pouvoir être audités ou revisités ultérieurement. La traçabilité est essentielle dans les contextes réglementés et pour éviter les retours en arrière.} et assumée collectivement.
+\end{acompleter}
+
+% : A2.3 : Ressources ---
+\subsection{Ressources mobilisées et combinées}
+
+\begin{acompleter}{Ressources A2}
+Rédiger ici les ressources théoriques et pratiques mobilisées, en les présentant de façon autonome (le lecteur n'a pas accès au journal réflexif en cours de lecture). À couvrir : (1) la posture de médiation et la distinction entre positions et intérêts (Fisher \& Ury, 1981 : \textit{Getting to Yes}) ; (2) les méthodes de convergence structurée : timeboxing\footnotemark, grille de critères pondérés, vote par points\footnotemark{} ; (3) la veille concurrentielle comme outil d'objectivation d'un débat ; (4) le recadrage prosodique\footnotemark{} (ramener le groupe à l'objectif commun plutôt qu'aux positions individuelles).
+\end{acompleter}
+% 3 footnotes dans la boîte ci-dessus — compteur remis en position correcte
+\addtocounter{footnote}{-3}%
+\addtocounter{footnote}{1}\footnotetext{Le \textbf{timeboxing} est une technique de gestion du temps qui consiste à allouer une durée fixe et non extensible à une activité ou une discussion. Dans un contexte de convergence de groupe, il empêche les échanges de s'enliser : une fois la durée écoulée, l'équipe doit produire une décision ou un résultat, même imparfait.}%
+\addtocounter{footnote}{1}\footnotetext{Le \textbf{vote par points} est une méthode de sélection collective rapide : chaque participant dispose d'un nombre limité de votes (souvent sous forme d'autocollants) qu'il attribue aux options qu'il juge les plus prometteuses. La convergence repose sur les données du groupe, pas sur l'autorité d'un individu.}%
+\addtocounter{footnote}{1}\footnotetext{Le \textbf{recadrage prosodique} est une technique de facilitation qui consiste à intervenir sur le ton et le registre d'une conversation pour la ramener vers l'objectif commun. Là où le recadrage sémantique modifie le contenu, le recadrage prosodique agit sur la façon dont les choses sont dites, en signalant qu'on change de registre (des opinions aux données, par exemple).}
+
+% : A2.4 : Analyse réflexive ---
+\subsection{Analyse réflexive}
+
+\begin{acompleter}{Analyse réflexive A2}
+Rédiger ici l'analyse réflexive de façon autonome. Points à développer : (1) la divergence n'était pas le problème : l'absence de cadre de convergence l'était ; l'équipe était compétente, pas dysfonctionnelle ; (2) la veille et la grille de critères ont transformé un débat d'autorité en débat de données, ce qui a permis à chacun de « lâcher » sa position préférée sans perdre la face ; (3) ce que cette expérience révèle sur la compétence A2 : ce n'est pas une qualité naturelle, c'est une méthode : la facilitation\footnote{La \textbf{facilitation} est l'art de créer les conditions pour qu'un groupe puisse travailler efficacement ensemble vers un objectif commun. Le facilitateur ne décide pas pour le groupe : il structure le processus, gère le temps et la parole, et s'assure que chaque voix est entendue.} s'apprend et se prépare.
+\end{acompleter}
+
+% : A2.5 : Apprentissages à entreprendre ---
+\subsection{Apprentissages à entreprendre}
+
+\begin{acompleter}{Apprentissages A2}
+Reprendre et actualiser les apprentissages identifiés dans le journal réflexif (section A2, §5) : ritualiser un recadrage simple, passer le groupe du registre opinions au registre données + critères, documenter les décisions de convergence.
+\end{acompleter}
+
+% ==============================================================================
+\section{Compétence B4 : Méthodes agiles au service du prototypage itératif}
+\label{sec:competence-b4}
+% ==============================================================================
+
+\begin{tcolorbox}[colback=gray!5, colframe=gray!40, boxrule=0.4pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt]
+\small\itshape
+\textbf{Définition (référentiel Innokick, Phase Prototypage).}
+Choisir et mettre en œuvre des méthodes agiles, telle que la méthode lean\footnotemark, favorisant la réalisation de prototypes\footnotemark, de manière itérative\footnotemark, dans le but de créer un maximum de valeur en optimisant les ressources disponibles.
+\end{tcolorbox}
+\addtocounter{footnote}{-3}%
+\addtocounter{footnote}{1}\footnotetext{La \textbf{méthode lean} (ou \emph{lean management}) est une approche issue de l'industrie automobile japonaise (Toyota Production System) qui vise à maximiser la valeur produite tout en éliminant les gaspillages (temps, ressources, fonctionnalités inutiles). Appliquée au développement logiciel, elle privilégie la livraison continue de petits incréments utiles plutôt que de grands blocs monolithiques.}%
+\addtocounter{footnote}{1}\footnotetext{Un \textbf{prototype} est une version partielle et simplifiée d'un produit, conçue pour tester une hypothèse de conception ou valider un besoin utilisateur. Il peut être papier, numérique ou physique, selon le niveau de fidélité recherché.}%
+\addtocounter{footnote}{1}\footnotetext{Une démarche \textbf{itérative} procède par cycles successifs : chaque itération produit un livrable utilisable, recueille des retours, et nourrit le cycle suivant. Contrairement à l'approche en cascade, les erreurs sont détectées et corrigées tôt plutôt qu'à la fin.}
+
+\bigskip
+
+% : B4.1 : Autoévaluation ---
+\subsection{Autoévaluation de ma progression}
+
+
+La fouille de cette compétence a révélé un paradoxe : le gisement existait déjà, mais restait inexploité. Je pratiquais des itérations courtes depuis plusieurs années. Ce que la formation a mis au jour, c'est l'épaisseur de ce que je ne savais pas faire : adapter la méthode à un terrain réglementé, articuler agilité et traçabilité sans sacrifier l'une à l'autre. Les sédiments de la certification médicale (IEC~62304\footnote{L'\textbf{IEC~62304} est la norme internationale qui régit le cycle de vie des logiciels de dispositifs médicaux. Elle impose une documentation rigoureuse à chaque étape du développement : conception, tests, maintenance : afin de garantir la sécurité du logiciel. Elle classe les logiciels en trois classes de sécurité (A, B, C) selon le niveau de risque potentiel pour le patient.}) rendaient le sol difficile à sonder ; la formation m'a fourni les instruments pour en extraire quelque chose d'utilisable.
+
+% : B4.2 : Situation et preuves ---
+\subsection{Situation professionnalisante et preuves}
+
+\subsubsection*{La situation}
+
+Chez TWIICE\footnote{\textbf{TWIICE} est une entreprise suisse spécialisée dans le développement d'exosquelettes médicaux destinés à la rééducation de personnes atteintes de paralysie partielle ou totale des membres inférieurs.}, le développement logiciel de l'exosquelette\footnote{Un \textbf{exosquelette médical} est un dispositif mécatronique porté par le patient par-dessus le corps, qui assiste ou remplace la motricité des membres. Dans le cas d'un exosquelette de rééducation, il guide les mouvements des jambes pour permettre à des patients paraplégiques de remarcher en séance de kinésithérapie.} suivait jusqu'alors une logique séquentielle : concevoir en entier, développer en entier, tester en entier, certifier. Ce modèle dit \emph{en cascade}\footnote{Le développement \textbf{en cascade} (ou \emph{waterfall}) est une méthode où chaque phase doit être entièrement terminée avant que la suivante commence. Il donne une impression rassurante de maîtrise, mais masque un risque énorme : les erreurs de conception ne sont découvertes que lors des tests finaux, souvent plusieurs mois après avoir été commises, à un moment où les corriger est très coûteux.} donne une impression rassurante de maîtrise : chaque phase semble bouclée avant de passer à la suivante. En pratique, les erreurs de conception ne se révèlent que lors des tests finaux, plusieurs mois après avoir été commises, à un moment où les corriger coûte cher en temps et en documentation.
+
+L'enjeu était d'introduire une logique itérative : des cycles courts (deux semaines), des livrables partiels mais testables à chaque sprint\footnote{Un \textbf{sprint} est une période de travail courte et fixe (généralement 1 à 3 semaines) à l'issue de laquelle l'équipe livre un incrément fonctionnel testable. Le sprint est l'unité de base de la méthode Scrum.}, et des rétrospectives\footnote{Une \textbf{rétrospective} est une réunion structurée tenue à la fin de chaque sprint, où l'équipe analyse collectivement ce qui a fonctionné, ce qui a échoué, et définit des actions d'amélioration concrètes pour le sprint suivant. C'est le principal moteur d'amélioration continue dans les méthodes agiles.} permettant d'apprendre en chemin. La résistance de l'équipe qualité était légitime et formulée clairement : \emph{« Comment certifier quelque chose qu'on change en permanence ? »} Cette tension entre la culture de l'agilité (accepter le changement, livrer vite, itérer) et les exigences de la certification médicale (tout documenter, tout tracer, tout valider) est le nœud central de cette compétence.
+
+La réponse apportée n'a pas consisté à choisir l'un ou l'autre, mais à montrer que la contradiction est fausse : une approche itérative bien outillée produit des preuves de certification plus granulaires et plus fiables qu'un développement monolithique, à condition d'intégrer les exigences documentaires directement dans la \textit{Definition of Done}\footnote{La \textbf{Definition of Done} (définition de « terminé ») est l'ensemble des critères qu'un livrable doit satisfaire pour être considéré comme réellement fini. Dans un projet logiciel médical, elle inclut : le code écrit et relu, les tests réalisés, la documentation produite, et la revue qualité effectuée. Elle constitue un contrat interne entre les membres de l'équipe.} de chaque sprint.
+
+\subsubsection*{Les trois artefacts exhumés}
+
+\medskip\noindent\textbf{Preuve 1 : Proposition de découpage en sprints adaptée IEC~62304}\par\smallskip
+
+\begin{acompleter}{Preuve 1 B4 : à reconstituer}
+Reconstituer le document interne présentant la structure sprint de 2 semaines : objectifs du sprint, livrables attendus, Definition of Done adaptée (code + tests + documentation IEC~62304 + revue qualité + archivage GitLab\footnote{\textbf{GitLab} est une plateforme de gestion de code source et de collaboration qui intègre des fonctionnalités de suivi de tickets, de gestion de backlogs et de pipelines d'intégration continue. Elle est utilisée ici comme outil central de traçabilité du développement, permettant d'associer chaque livrable à son contexte de certification.}), et le tableau de correspondance entre les livrables de sprint et les enregistrements requis par la norme. Ce document a été présenté à l'équipe qualité pour démontrer que l'agilité et la traçabilité réglementaire sont compatibles.
+\end{acompleter}
+
+\medskip\noindent\textbf{Preuve 2 : Backlog\footnotemark{} priorisé du premier trimestre (Annexe~\ref{annex:backlog})}\par\smallskip
+\footnotetext{Le \textbf{backlog} est la liste priorisée de tout ce qu'il reste à réaliser dans un projet. Il est « vivant » : on y ajoute, retire et réordonne les tâches en fonction de ce qu'on apprend au fil des sprints. Le backlog est la propriété du Product Owner dans le cadre Scrum.}
+
+L'artefact central de cette compétence est reproduit en intégralité en Annexe~\ref{annex:backlog}. Il s'agit d'un extrait du board\footnote{Un \textbf{board} (tableau de bord agile) est une représentation visuelle des tâches d'un projet, généralement organisée en colonnes (À faire / En cours / Terminé). Il donne à toute l'équipe une vision instantanée de l'avancement et des éventuels blocages.} GitLab de l'équipe TWIICE, exporté après l'application de la grille de priorisation par \emph{valeur fonctionnelle $\times$ risque certification}. Chaque item est classifié par niveau de priorité (HIGH, MEDIUM, LOW) et tracé jusqu'au quadrant Eisenhower\footnote{La \textbf{matrice d'Eisenhower} (ou matrice importance/urgence) classe les tâches selon deux axes : leur importance (impact réel sur l'objectif) et leur urgence (délai de traitement). Elle permet de distinguer ce qui doit être fait immédiatement (important et urgent) de ce qui peut être planifié, délégué ou supprimé.} correspondant. Ce backlog documente le passage d'une liste de débats parallèles à une file de travail ordonnée et actionnable, dans laquelle les sujets bloquants pour la certification ont été remontés en tête de sprint.
+
+\paragraph{Preuve 3 : Compte-rendu de la première rétrospective d'équipe}
+
+\begin{acompleter}{Preuve 3 B4 : à reconstituer}
+Reconstituer le CR de la première rétrospective (format Start/Stop/Continue\footnote{Le format \textbf{Start / Stop / Continue} est un outil de rétrospective structuré en trois colonnes : qu'est-ce que l'équipe doit \emph{commencer} à faire ? Qu'est-ce qu'elle doit \emph{arrêter} ? Qu'est-ce qu'elle doit \emph{continuer} ? Il transforme le bilan en levier d'action concret et s'applique aussi bien à un projet collectif qu'à un développement individuel.}) tenue après le premier sprint complet. Le document doit contenir : les points qui ont fonctionné (Continue), les pratiques à abandonner (Stop), et les trois actions d'amélioration retenues pour le sprint suivant (Start). Ce CR documente la capacité d'apprentissage en cours de processus : non pas la perfection du premier sprint, mais la volonté d'ajuster méthodiquement.
+\end{acompleter}
+
+% : B4.3 : Ressources ---
+\subsection{Ressources mobilisées et combinées}
+
+\begin{acompleter}{Ressources B4}
+Rédiger ici les ressources de façon autonome. À couvrir : (1) Scrum\footnotemark{} : le cycle sprint-revue-rétrospective comme boucle d'apprentissage (Sutherland, 2014) ; (2) la Definition of Done comme contrat qualité interne, et son adaptation aux exigences IEC~62304 (code + tests + doc + revue) ; (3) la priorisation backlog par valeur fonctionnelle × risque certification : justifier pourquoi ce double critère est indispensable dans un contexte médical ; (4) la rétrospective comme moteur d'amélioration continue : le format Start/Stop/Continue et son usage en équipe pluridisciplinaire\footnotemark.
+\end{acompleter}
+% 2 footnotes dans la boîte ci-dessus — compteur remis en position correcte
+\addtocounter{footnote}{-2}%
+\addtocounter{footnote}{1}\footnotetext{\textbf{Scrum} est le framework agile le plus répandu, structuré autour de sprints à durée fixe, de rôles définis (\emph{Product Owner} : responsable du backlog et de la valeur ; \emph{Scrum Master} : garant du processus ; équipe de développement) et de cérémonies régulières (planification du sprint, revue, rétrospective).}%
+\addtocounter{footnote}{1}\footnotetext{Une \textbf{équipe pluridisciplinaire} regroupe des membres ayant des formations et expertises différentes (ici : ingénieurs logiciels, responsable qualité, ingénieurs matériel, cliniciens). La richesse de cette diversité est aussi sa difficulté : les référentiels, vocabulaires et priorités de chaque discipline ne sont pas spontanément alignés.}
+
+% : B4.4 : Analyse réflexive ---
+\subsection{Analyse réflexive}
+
+\begin{acompleter}{Analyse réflexive B4}
+Rédiger ici l'analyse de façon autonome. Points à développer : (1) l'opposition agilité / certification est fausse : une approche itérative bien documentée produit des preuves plus granulaires et plus défendables qu'un développement monolithique, car les erreurs sont découvertes et corrigées tôt ; (2) la résistance de l'équipe qualité n'était pas irrationnelle : elle reflétait une expérience réelle de projets agiles sans discipline documentaire ; convaincre demandait de montrer, pas d'affirmer ; (3) ce qui a changé dans ma posture : ne plus subir la certification comme une contrainte externe mais la traiter comme un critère de conception à intégrer dès le sprint planning\footnote{Le \textbf{sprint planning} est la cérémonie d'ouverture de chaque sprint au cours de laquelle l'équipe sélectionne les éléments du backlog à réaliser, estime l'effort et planifie le travail pour les jours à venir. C'est le moment où les exigences documentaires de la norme peuvent être intégrées dès la définition des tâches.}.
+\end{acompleter}
+
+% : B4.5 : Apprentissages à entreprendre ---
+\subsection{Apprentissages à entreprendre}
+
+\begin{acompleter}{Apprentissages B4}
+Reprendre et actualiser les apprentissages identifiés dans le journal réflexif (section B4, §5) : frameworks agile certifiables pour dispositifs médicaux (SAFe for Medical\footnote{\textbf{SAFe for Medical} (\emph{Scaled Agile Framework for Medical Devices}) est un framework qui adapte les pratiques agiles aux contraintes réglementaires des dispositifs médicaux. Il fournit des lignes directrices pour garantir la traçabilité exigée par les normes IEC~62304 et IEC~62366 tout en maintenant la cadence itérative propre aux méthodes agiles.}), Definition of Done standard, pratique des rétrospectives.
+\end{acompleter}
+
+% ==============================================================================
+\section{Compétence C2 : Synthèse et définition des problématiques prioritaires}
+\label{sec:competence-c2}
+% ==============================================================================
+
+\begin{tcolorbox}[colback=gray!5, colframe=gray!40, boxrule=0.4pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt]
+\small\itshape
+\textbf{Définition (référentiel Innokick, Phase Définition).}
+Synthétiser les informations recueillies dans la phase d'empathie\footnotemark{} pour définir des problématiques à résoudre et/ou des opportunités à développer.
+\end{tcolorbox}
+\footnotetext{La \textbf{phase d'empathie} est la première étape du Design Thinking. Elle consiste à observer, interviewer et comprendre les utilisateurs pour saisir leurs besoins réels, leurs frustrations et leurs contextes d'usage, avant toute tentative de définir un problème ou de proposer une solution.}
+
+\bigskip
+
+% : C2.1 : Autoévaluation ---
+\subsection{Autoévaluation de ma progression}
+
+
+C'est le gisement le mieux documenté des trois fouilles. La formation a mis au jour quelque chose de précis : ma tendance à me précipiter vers les solutions sans avoir d'abord bien cerné le problème. Les outils de définition de problème et de priorisation\footnote{La \textbf{priorisation} est le processus qui consiste à classer des éléments (problèmes, tâches, fonctionnalités) par ordre d'importance ou d'urgence, afin de concentrer les efforts sur ce qui apporte le plus de valeur ou ce qui est le plus critique. Dans un contexte agile, cela se fait souvent par des techniques collaboratives comme le vote pondéré ou la matrice d'Eisenhower.} ont permis de structurer ma réflexion et d'éviter les solutions hâtives. La profondeur de la fouille a également été limitée par ma méconnaissance des méthodes de recherche utilisateur\footnote{Les \textbf{méthodes de recherche utilisateur} sont des techniques utilisées pour comprendre les besoins, comportements et motivations des utilisateurs finaux d'un produit ou service. Elles incluent des méthodes qualitatives (entretiens, observations) et quantitatives (sondages, analyses de données).}.
+
+% : C2.2 : Situation et preuves ---
+\subsection{Situation professionnalisante et preuves}
+
+\subsubsection*{La situation}
+
+Dans le cadre de mes fonctions chez TWIICE, j'ai été confronté à un défi récurrent : comment prioriser les évolutions à apporter à notre exosquelette en fonction des retours utilisateurs et des contraintes techniques ? Les demandes d'amélioration provenaient à la fois des utilisateurs finaux (patients, thérapeutes) et des équipes internes (ingénierie, qualité, réglementation). Chacun avait ses propres priorités, souvent divergentes.
+
+Une première approche a consisté à rassembler toutes les demandes dans une liste unique, sans distinction ni hiérarchisation. Rapidement, cette liste est devenue ingérable : plus de 150 items hétérogènes, allant de la simple suggestion d'amélioration à des demandes complexes nécessitant des études de faisabilité. Les réunions pour en discuter se terminaient systématiquement par des frustrations, chaque partie campant sur ses positions sans parvenir à un accord.
+
+Il est vite apparu que cette méthode, ou plutôt ce manque de méthode, générait plus de conflits que de solutions. L'absence de critères clairs pour évaluer et prioriser les demandes conduisait à des débats stériles et à une paralysie décisionnelle. Il était urgent de trouver un cadre commun permettant d'aligner les différentes parties prenantes sur des priorités partagées.
+
+\subsubsection*{Les trois artefacts exhumés}
+
+\paragraph{Preuve 1 : Matrice de priorisation des évolutions}
+
+\begin{acompleter}{Preuve 1 C2 : à reconstituer}
+Produire la matrice de priorisation utilisée pour classer les demandes d'évolutions selon deux axes : l'impact potentiel sur l'utilisateur (élevé, moyen, faible) et la faisabilité technique (facile, moyen, difficile). Cette matrice a permis d'objectiver les discussions en se basant sur des critères communs et visibles par tous.
+\end{acompleter}
+
+\paragraph{Preuve 2 : Compte-rendu de l'atelier de définition des problématiques}
+
+\begin{acompleter}{Preuve 2 C2 : à reconstituer}
+Rédiger le CR d'un atelier réunissant les principales parties prenantes (utilisateurs, ingénieurs, qualité) visant à définir collectivement les 3 à 5 problématiques prioritaires à résoudre. Le document doit retracer les échanges, les points de vue divergents, et comment ils ont été intégrés dans la problématique finale.
+\end{acompleter}
+
+\paragraph{Preuve 3 : Feuille de route des évolutions}
+
+\begin{acompleter}{Preuve 3 C2 : à reconstituer}
+Produire la feuille de route actualisée des évolutions du produit, intégrant les problématiques prioritaires définies, les objectifs associés, et les indicateurs de succès. Ce document sert de guide pour les développements futurs et de contrat d'objectifs entre les équipes.
+\end{acompleter}
+
+% : C2.3 : Ressources ---
+\subsection{Ressources mobilisées et combinées}
+
+\begin{acompleter}{Ressources C2}
+Rédiger ici les ressources de façon autonome. À couvrir : (1) la définition et l'importance de la phase d'empathie dans le Design Thinking (Brown, 2009) ; (2) les méthodes de recherche utilisateur : entretiens, questionnaires, observations, et comment en tirer des insights exploitables ; (3) la priorisation par la matrice d'Eisenhower et la méthode MoSCoW (Must, Should, Could, Won't) ; (4) l'animation d'ateliers de co-création avec des parties prenantes pluridisciplinaires.
+\end{acompleter}
+
+% : C2.4 : Analyse réflexive ---
+\subsection{Analyse réflexive}
+
+\begin{acompleter}{Analyse réflexive C2}
+Rédiger ici l'analyse de façon autonome. Points à développer : (1) l'importance cruciale de la phase d'empathie pour éviter les solutions imposées et déconnectées des besoins réels ; (2) comment la matrice de priorisation a transformé notre approche : passer d'une liste de souhaits à une feuille de route stratégique ; (3) les enseignements tirés sur la gestion des parties prenantes : impliquer en amont pour éviter les résistances et favoriser l'adhésion.
+\end{acompleter}
+
+% : C2.5 : Apprentissages à entreprendre ---
+\subsection{Apprentissages à entreprendre}
+
+\begin{acompleter}{Apprentissages C2}
+Reprendre et actualiser les apprentissages identifiés dans le journal réflexif (section C2, §5) : approfondir les méthodes de recherche utilisateur, s'entraîner à l'animation d'ateliers, expérimenter la priorisation par la valeur et le risque.
+\end{acompleter}
+
+
+% ==============================================================================
+\section{Bilan de progression : vue d'ensemble}
+\label{sec:bilan-progression}
+% ==============================================================================
+
+Les trois radars ci-dessous restituent l'évolution auto-évaluée sur chacune des familles de compétences (A, B, C). Les tableaux associés précisent pour chaque dimension le score estimé avant et après la formation, ainsi que la justification de l'autoévaluation initiale. Ces données sont à lire comme des \emph{instantanés réflexifs}, non comme des mesures objectives.
+
+% -----------------------------------------------------------------------
+% RADARS
+% -----------------------------------------------------------------------
+\begin{figure}[ht]
+\centering
+% ---- Radar famille A ----
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.62]
+\pgfmathsetmacro{\R}{3}
+\foreach \r in {0.6,1.2,1.8,2.4,3.0}{
+  \draw[gray!25](90:\r)--(30:\r)--(-30:\r)--(-90:\r)--(-150:\r)--(150:\r)--cycle;}
+\foreach \r/\v in {0.6/2,1.2/4,1.8/6,2.4/8,3.0/10}{
+  \node[gray!60,font=\tiny] at (100:\r) {\v};}
+\draw[gray!40](0,0)--(90:\R);
+\draw[gray!40](0,0)--(30:\R);
+\draw[gray!40](0,0)--(-30:\R);
+\draw[gray!40](0,0)--(-90:\R);
+\draw[gray!40](0,0)--(-150:\R);
+\draw[gray!40](0,0)--(150:\R);
+\node[font=\tiny] at (90:3.7)  {A1};
+\node[font=\tiny] at (30:3.7)  {A2};
+\node[font=\tiny] at (-30:3.7) {A3};
+\node[font=\tiny] at (-90:3.7) {A4};
+\node[font=\tiny] at (-150:3.7){A5};
+\node[font=\tiny] at (150:3.7) {A6};
+\draw[thick,blue!70!black,fill=blue!40,fill opacity=0.20]
+  (90:0.9)--(30:1.5)--(-30:1.8)--(-90:1.5)--(-150:0.9)--(150:1.5)--cycle;
+\draw[thick,red!70!black,fill=red!40,fill opacity=0.20]
+  (90:1.8)--(30:2.4)--(-30:2.1)--(-90:2.1)--(-150:1.8)--(150:2.1)--cycle;
+\end{tikzpicture}
+\par\smallskip{\small\textbf{Famille A}}\par{\footnotesize Compétences sociales et personnelles}
+\end{minipage}
+\hfill
+% ---- Radar famille B ----
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.62]
+\pgfmathsetmacro{\R}{3}
+\foreach \r in {0.6,1.2,1.8,2.4,3.0}{
+  \draw[gray!25](90:\r)--(30:\r)--(-30:\r)--(-90:\r)--(-150:\r)--(150:\r)--cycle;}
+\foreach \r/\v in {0.6/2,1.2/4,1.8/6,2.4/8,3.0/10}{
+  \node[gray!60,font=\tiny] at (100:\r) {\v};}
+\draw[gray!40](0,0)--(90:\R);
+\draw[gray!40](0,0)--(30:\R);
+\draw[gray!40](0,0)--(-30:\R);
+\draw[gray!40](0,0)--(-90:\R);
+\draw[gray!40](0,0)--(-150:\R);
+\draw[gray!40](0,0)--(150:\R);
+\node[font=\tiny] at (90:3.7)  {B1};
+\node[font=\tiny] at (30:3.7)  {B2};
+\node[font=\tiny] at (-30:3.7) {B3};
+\node[font=\tiny] at (-90:3.7) {B4};
+\node[font=\tiny] at (-150:3.7){B5};
+\node[font=\tiny] at (150:3.7) {B6};
+\draw[thick,blue!70!black,fill=blue!40,fill opacity=0.20]
+  (90:1.5)--(30:1.5)--(-30:1.2)--(-90:0.6)--(-150:1.8)--(150:2.1)--cycle;
+\draw[thick,red!70!black,fill=red!40,fill opacity=0.20]
+  (90:2.1)--(30:2.1)--(-30:1.8)--(-90:1.8)--(-150:2.1)--(150:2.4)--cycle;
+\end{tikzpicture}
+\par\smallskip{\small\textbf{Famille B}}\par{\footnotesize Compétences méthodologiques}
+\end{minipage}
+\hfill
+% ---- Radar famille C ----
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.62]
+\pgfmathsetmacro{\R}{3}
+\foreach \r in {0.6,1.2,1.8,2.4,3.0}{
+  \draw[gray!25](90:\r)--(30:\r)--(-30:\r)--(-90:\r)--(-150:\r)--(150:\r)--cycle;}
+\foreach \r/\v in {0.6/2,1.2/4,1.8/6,2.4/8,3.0/10}{
+  \node[gray!60,font=\tiny] at (100:\r) {\v};}
+\draw[gray!40](0,0)--(90:\R);
+\draw[gray!40](0,0)--(30:\R);
+\draw[gray!40](0,0)--(-30:\R);
+\draw[gray!40](0,0)--(-90:\R);
+\draw[gray!40](0,0)--(-150:\R);
+\draw[gray!40](0,0)--(150:\R);
+\node[font=\tiny] at (90:3.7)  {C1};
+\node[font=\tiny] at (30:3.7)  {C2};
+\node[font=\tiny] at (-30:3.7) {C3};
+\node[font=\tiny] at (-90:3.7) {C4};
+\node[font=\tiny] at (-150:3.7){C5};
+\node[font=\tiny] at (150:3.7) {C6};
+\draw[thick,blue!70!black,fill=blue!40,fill opacity=0.20]
+  (90:2.1)--(30:1.5)--(-30:1.8)--(-90:2.1)--(-150:0.9)--(150:0.6)--cycle;
+\draw[thick,red!70!black,fill=red!40,fill opacity=0.20]
+  (90:2.4)--(30:2.1)--(-30:2.1)--(-90:2.4)--(-150:1.5)--(150:1.5)--cycle;
+\end{tikzpicture}
+\par\smallskip{\small\textbf{Famille C}}\par{\footnotesize Compétences métier}
+\end{minipage}
+
+\bigskip
+\begin{center}
+\textcolor{blue!70!black}{\rule{0.35cm}{0.35cm}}~\small Avant la formation (estimé)\qquad
+\textcolor{red!70!black}{\rule{0.35cm}{0.35cm}}~\small Après la formation\qquad
+\footnotesize Scores sur 10
+\end{center}
+\caption{Bilan de progression par famille de compétences (A, B, C) : autoévaluation avant/après formation.}
+\end{figure}
+
+\medskip
+
+La lecture comparée des trois radars met en évidence plusieurs dynamiques que le texte seul ne suffit pas à rendre visibles.
+
+\textbf{Sur la famille A (compétences sociales et personnelles)}, la surface bleue (avant formation) est clairement asymétrique : les dimensions A3 et A4 : capacité de réorientation et d'adaptation : étaient déjà relativement développées, adossées à une expérience professionnelle existante. En revanche, A1 et A5 restaient très en retrait, révélant un angle mort sur la diversification des méthodes et les démarches réflexives. La surface rouge (après formation) montre une expansion homogène et un rééquilibrage : les points faibles ont progressé davantage que les points forts, ce qui traduit un apprentissage ciblé plutôt qu'une simple consolidation de l'acquis.
+
+\textbf{Sur la famille B (compétences méthodologiques)}, le radar illustre une asymétrie radicale dans mon point de départ : B4 (prototypage itératif) était à 2/10 : une lacune franche, pas une faiblesse relative : tandis que B6 (élaboration de roadmaps) constituait déjà une zone d'expertise à 7/10. La formation a permis de combler la lacune de B4 et d'harmoniser l'ensemble, sans écraser les acquis. Le fait que la surface rouge soit nettement plus régulière que la surface bleue signale précisément cela : moins de creux, moins de pics extrêmes, une posture méthodologique plus équilibrée.
+
+\textbf{Sur la famille C (compétences métier)}, la forme bleue est caractéristique d'un profil d'expert sectoriel partiel : C1 et C4 sont élevés (ancrage dans l'expérience bancaire et professionnelle directe), mais C5 et C6 sont très faibles (angles morts sur les dimensions sociales et environnementales). La formation n'a pas tout résorbé : les scores après restent modestes sur C5--C6 : mais elle a rendu visible ce qui était invisible : ces zones ne sont plus des angles morts ignorés, elles sont devenues des axes de développement conscients et nommés.
+
+\medskip
+Les tableaux ci-dessous détaillent les scores et les justifications sous-jacentes à chacune de ces positions.
+
+% -----------------------------------------------------------------------
+% TABLEAUX DE DESCRIPTION
+% -----------------------------------------------------------------------
+\bigskip
+\noindent\textbf{Famille A : Compétences sociales et personnelles}
+
+\smallskip
+\noindent\begin{tabularx}{\textwidth}{@{} c c c X @{}}
+\toprule
+\textbf{Dim.} & \textbf{Avant /10} & \textbf{Après /10} & \textbf{Justification de l'autoévaluation initiale} \\
+\midrule
+A1 & 3 & 6 & Difficultés marquées à diversifier les méthodes de travail. \\
+A2 & 5 & 8 & Maîtrise partielle des approches agiles, mais compétences limitées en médiation et communication. \\
+A3 & 6 & 7 & Bonne capacité à réorienter le groupe lorsqu'il est confronté à une impasse. \\
+A4 & 5 & 7 & Aptitude correcte à ajuster l'approche lorsque la méthode initiale échoue. \\
+A5 & 3 & 6 & Difficultés à mobiliser d'autres démarches réflexives. \\
+A6 & 5 & 7 & Compétence effective mais seulement jusqu'à un certain niveau de complexité. \\
+\bottomrule
+\end{tabularx}
+
+\bigskip
+\noindent\textbf{Famille B : Compétences méthodologiques}
+
+\smallskip
+\noindent\begin{tabularx}{\textwidth}{@{} c c c X @{}}
+\toprule
+\textbf{Dim.} & \textbf{Avant /10} & \textbf{Après /10} & \textbf{Justification de l'autoévaluation initiale} \\
+\midrule
+B1 & 5 & 7 & Capacité à réaliser la tâche, mais avec un manque de méthodologie structurée. \\
+B2 & 5 & 7 & Compétence correcte, nécessitant toutefois un approfondissement. \\
+B3 & 4 & 6 & Approche globalement neutre. \\
+B4 & 2 & 6 & Aucune expérience préalable de prototypage itératif. \\
+B5 & 6 & 7 & Bonne aptitude à suivre une méthodologie, mais besoin d'en renforcer la maîtrise. \\
+B6 & 7 & 8 & Expérience confirmée dans l'élaboration de roadmaps cohérentes et professionnelles. \\
+\bottomrule
+\end{tabularx}
+
+\bigskip
+\noindent\textbf{Famille C : Compétences métier}
+
+\smallskip
+\noindent\begin{tabularx}{\textwidth}{@{} c c c X @{}}
+\toprule
+\textbf{Dim.} & \textbf{Avant /10} & \textbf{Après /10} & \textbf{Justification de l'autoévaluation initiale} \\
+\midrule
+C1 & 7 & 8 & Expérience professionnelle dans le secteur bancaire, domaine du reporting transversal. \\
+C2 & 5 & 7 & Compétence à tester et vérifier l'efficacité d'une synthèse. \\
+C3 & 6 & 7 & Bonne capacité d'évaluation pour anticiper ce qui est fonctionnel ou non. \\
+C4 & 7 & 8 & Expertise directement issue de l'activité professionnelle. \\
+C5 & 3 & 5 & Connaissance limitée des impacts sociaux et environnementaux. \\
+C6 & 2 & 5 & Maîtrise insuffisante des enjeux environnementaux. \\
+\bottomrule
+\end{tabularx}
+
+\clearpage
+\ClearShipoutPictureBG

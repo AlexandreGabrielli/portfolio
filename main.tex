@@ -1,6 +1,7 @@
-\documentclass[12pt,a4paper]{report}
+﻿\documentclass[12pt,a4paper]{report}
 
 % : Polices et encodage ---
+\usepackage[utf8]{inputenc}  % Permet d'écrire les accents directement (à, é, ç…)
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 \usepackage{lmodern} % Indispensable pour éviter les polices floues (PK fonts)
@@ -8,6 +9,7 @@
 
 % : Mise en page ---
 \usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\setlength{\headheight}{13.6pt}  % évite l'avertissement fancyhdr
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{graphicx}
@@ -21,21 +23,33 @@
 \usepackage{colortbl}    % Couleurs de cellules et lignes (\rowcolor, \cellcolor)
 \usepackage{ragged2e}    % \RaggedRight dans les cellules longtable
 \usepackage[many]{tcolorbox} % Boîtes colorées (brouillons, notes, callouts)
+\usepackage[framemethod=tikz]{mdframed} % Boîte acompleter — supporte \footnote nativement
 
 % Boîte "brouillon" — fond jaune, utilisée pour signaler le contenu à compléter
 \newtcolorbox{brouillon}{
   colback=yellow!15, colframe=orange!70!black,
-  title={BROUILLON : \`{A} compl\'eter avec le contenu r\'eel},
+  title={BROUILLON : À compléter avec le contenu réel},
   fonttitle=\bfseries\small, boxrule=0.6pt, arc=3pt,
   left=6pt, right=6pt, top=4pt, bottom=4pt
 }
 
 % Boîte "à compléter" — fond vert, 1 argument = titre de la note
-\newtcolorbox{acompleter}[1]{
-  colback=green!8, colframe=green!40!black,
-  title={\`{A} compl\'eter : #1},
-  fonttitle=\bfseries\small, boxrule=0.6pt, arc=3pt,
-  left=6pt, right=6pt, top=4pt, bottom=4pt
+% Implémentée avec mdframed (pas tcolorbox) pour supporter \footnote et \footnotemark
+% sans aucune restriction liée aux minipages internes de tcolorbox.
+\newenvironment{acompleter}[1]{%
+  \begin{mdframed}[
+    backgroundcolor=green!8,
+    linecolor=green!40!black,
+    linewidth=0.6pt,
+    roundcorner=3pt,
+    innerleftmargin=8pt, innerrightmargin=8pt,
+    innertopmargin=6pt,  innerbottommargin=6pt,
+    skipabove=4pt, skipbelow=4pt,
+  ]%
+  \noindent{\bfseries\small\color{green!40!black}À compléter : #1}\par\smallskip
+  \normalfont\small\color{black}%
+}{%
+  \end{mdframed}%
 }
 
 % Commande pour afficher les compétences associées à une phase
@@ -43,7 +57,7 @@
   \noindent{\small\itshape Comp\'etences associ\'ees : #1}\par\medskip
 }
 
-% --- Commandes pour les annexes formelles ---
+% : Commandes pour les annexes formelles ---
 \usepackage{pifont} % Symboles (\ding{})
 
 % Caviardage : barre noire pour masquer une information confidentielle ou manquante
@@ -64,7 +78,7 @@
   left=8pt, right=8pt, top=6pt, bottom=6pt
 }
 
-% --- Journal de bord : chronologie verticale ---
+% : Journal de bord : chronologie verticale ---
 \definecolor{jbblue}{RGB}{25, 95, 165}
 \definecolor{jbbluebg}{RGB}{228, 241, 255}
 
@@ -103,7 +117,7 @@
   }\par\vspace{3pt}\noindent%
 }
 
-% --- Puces personnalisées globales ---
+% : Puces personnalisées globales ---
 % \AtBeginDocument garantit que la redéfinition s'applique APRÈS babel/french
 \AtBeginDocument{%
   % Niveau 1 : guillemet simple droit  ›

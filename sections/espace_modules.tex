@@ -251,11 +251,87 @@ Ins\'erer ici les notes de cours, mindmaps, synth\`eses de lectures et travaux r
 \section{Phase 4 : Prototypage}
 % ==============================================================================
 
-\competences{A4 (Agilit\'e et adaptabilit\'e), B4 (Outils de mat\'erialisation), C4 (\'Evaluation du projet)}
+\competences{A4 (Agilit\'e et adaptabilit\'e), \textbf{B4 (M\'ethodes agiles et lean : comp\'etence retenue)}, C4 (\'Evaluation du projet)}
 
-\begin{acompleter}{notes de cours, mindmaps et travaux relatifs \`a la phase Prototypage}
-Ins\'erer ici les notes de cours, mindmaps, synth\`eses de lectures et travaux relatifs \`a la phase Prototypage.
-\end{acompleter}
+% ------------------------------------------------------------------------------
+\subsection{Semences th\'eoriques}
+% ------------------------------------------------------------------------------
+
+\paragraph{Cours de m\'ethodes agiles et prototypage it\'eratif}
+Introduction aux cycles sprint--revue--r\'etrospective et \`a la logique lean de r\'eduction du gaspillage dans le processus de d\'eveloppement. Graine centrale pl\^ant\'ee ici : la valeur d'un livrable ne se mesure pas \`a sa compl\'etude, mais \`a ce qu'il permet d'apprendre sur les hypoth\`eses sous-jacentes.
+
+\paragraph{Cours sur l'adaptation des m\'ethodes agiles aux contextes r\'eglement\'es}
+Tension entre la culture de l'it\'eration ouverte (accepter le changement) et les exigences documentaires de la certification m\'edicale (tout tracer, tout valider). Apprentissage cl\'e : cette tension est f\'econde si elle est cultiv\'ee avec m\'ethode. Une approche it\'erative bien document\'ee produit une terre plus riche pour la certification qu'un d\'eveloppement monolithique.
+
+\paragraph{Cours de gestion de la qualit\'e en d\'eveloppement logiciel m\'edical}
+Pr\'esentation des normes IEC~62304 (cycle de vie logiciel) et de leurs exigences de tra\c{c}abilit\'e. Sem\'e ici le concept de \textbf{Definition of Done adapt\'ee} : un livrable de sprint n'est consid\'er\'e r\'ecolt\'e que si le code est \'ecrit, les tests r\'ealis\'es, la documentation produite \textit{et} la revue qualit\'e effectu\'ee.
+
+% ------------------------------------------------------------------------------
+\subsection{Lectures nourric\`ieres}
+% ------------------------------------------------------------------------------
+
+\begin{itemize}
+  \item \textbf{Sutherland, J. (2014).} \textit{Scrum : The Art of Doing Twice the Work in Half the Time} : La philosophie fondatrice du sprint comme unit\'e d'apprentissage, pas seulement de livraison.
+  \item \textbf{Poppendieck, M. \& Poppendieck, T. (2003).} \textit{Lean Software Development} : Sept principes lean appliqu\'es au logiciel, dont l'\'elimination des gaspillages documentaires inutiles et la d\'ecision au dernier moment responsable.
+  \item \textbf{Humble, J. \& Farley, D. (2010).} \textit{Continuous Delivery} : La pipeline CI/CD comme infrastructure de r\'ecolte continu\^ee : chaque commit produit un artefact v\'erifi\'e, tra\c{c}able, reproductible.
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+\subsection{Ramifications conceptuelles}
+% ------------------------------------------------------------------------------
+
+\subsubsection*{Scrum adapt\'e au d\'eveloppement m\'edical (comp\'etence B4)}
+
+La contrainte IEC~62304 oblige \`a reconfigurer le cycle agile standard. La bouture r\'ealis\'ee chez TWIICE consiste \`a greffer les exigences documentaires sur le rythme sprint, sans en briser la cadence :
+
+\begin{table}[h!]
+  \centering\small
+  \begin{tabularx}{\textwidth}{|p{3.2cm}|X|X|}
+    \hline
+    \textbf{\'Ev\'enement Scrum} & \textbf{Adaptation standard} & \textbf{Adaptation m\'edicale (IEC~62304)} \\
+    \hline
+    Sprint Planning
+      & S\'electionner les items du backlog selon la valeur utilisateur
+      & Ajouter un crit\`ere : risque de certification (bloquer la validation = priorit\'e haute) \\
+    \hline
+    Sprint Review
+      & D\'emontrer le logiciel fonctionnel
+      & V\'erifier que les enregistrements qualit\'e associ\'es sont produits et archiv\'es \\
+    \hline
+    R\'etrospective
+      & Am\'eliorer le processus d'\'equipe
+      & Identifier les dettes documentaires accumul\'ees et planifier leur remboursement \\
+    \hline
+    Definition of Done
+      & Code + tests passants
+      & Code + tests + documentation IEC~62304 + revue qualit\'e + archivage GitLab \\
+    \hline
+  \end{tabularx}
+  \caption{Scrum adapt\'e au contexte de certification m\'edicale IEC~62304 : TWIICE}
+  \label{tab:scrum-medical}
+\end{table}
+
+\subsubsection*{Priorisation du backlog : valeur $\times$ risque certification}
+
+La priorisation classique par valeur utilisateur ne suffit pas dans un contexte r\'eglement\'e. Une fonction \`a forte valeur mais \`a risque de certification \'elev\'e doit monter dans le backlog pour \'eviter les surprises tardives. La formule appliqu\'ee :
+
+\begin{quote}
+  \textit{Priorit\'e} = Valeur fonctionnelle $\times$ Risque certification
+\end{quote}
+
+Un item de faible valeur fonctionnelle mais dont la validation par l'auditeur est impos\'ee en phase pr\'ecoce est trait\'e avant un item plus d\'esirable mais moins urgent pour la certification.
+
+% ------------------------------------------------------------------------------
+\subsection{Productions et r\'ecoltes interm\'ediaires}
+% ------------------------------------------------------------------------------
+
+La r\'ecolte principale de la phase Prototypage, pour la comp\'etence B4, est document\'ee dans le chapitre \textit{Situations professionnalisantes} (section B4) et dans les annexes du portfolio. Elle comprend trois pi\`eces cueillies directement du terrain professionnel chez TWIICE :
+
+\begin{itemize}
+  \item \textbf{Annexe~C : Backlog prioris\'e} : extrait du board GitLab apr\`es application de la grille de priorisation valeur--risque. Cette r\'ecolte documente le passage d'un catalogue de d\'ebats \`a une file de travail ordonn\'ee et actionnable.
+  \item \textbf{Proposition de d\'ecoupage en sprints} (en cours de reconstitution, cf.~section B4) : le document interne pr\'esentant la structure sprint-revue-r\'etrospective adapt\'ee \`a l'IEC~62304, avec la Definition of Done sp\'ecifique au projet.
+  \item \textbf{Compte-rendu de la premi\`ere r\'etrospective} (en cours de reconstitution, cf.~section B4) : les trois actions d'am\'elioration retenues apr\`es le premier sprint complet, format Start/Stop/Continue.
+\end{itemize}
 
 % ==============================================================================
 \section{Phase 5 : Test}

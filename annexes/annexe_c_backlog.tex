@@ -5,7 +5,7 @@
 \chapter{Prioritised Backlog Extract}
 \label{annex:backlog}
 
-% --- Note de mise en contexte (portfolio) -------------------------------------
+% : Note de mise en contexte (portfolio) -------------------------------------
 \begin{tcolorbox}[colback=blue!5, colframe=blue!40!black, boxrule=0.5pt, arc=3pt,
   left=8pt, right=8pt, top=6pt, bottom=6pt]
   \small\itshape
@@ -23,11 +23,11 @@
 
 \bigskip
 
-% --- Sprint / Project header --------------------------------------------------
+% : Sprint / Project header --------------------------------------------------
 \begin{tcolorbox}[colback=gray!8, colframe=gray!50, boxrule=0.5pt, arc=3pt,
   left=8pt, right=8pt, top=6pt, bottom=6pt]
   \begin{tabularx}{\linewidth}{@{}p{4cm}X@{}}
-    \textbf{Project}   & TWIICE Exoskeleton --- Software \\[3pt]
+    \textbf{Project}   & TWIICE Exoskeleton : Software \\[3pt]
     \textbf{Milestone} & \caviarder[3cm] \\[3pt]
     \textbf{Sprint}    & \caviarder[2cm]\quad
                          (\caviarder[2cm]\;--\;\caviarder[2cm]) \\[3pt]
@@ -45,8 +45,8 @@
 
 The following extract lists the software issues identified and re-prioritised
 following an Eisenhower matrix exercise conducted with the team (see Annex~B,
-\S1). Issues are grouped by priority level --- \highprio, \mediumprio,
-\lowprio{} --- and ordered within each group by creation date. Redacted fields
+\S1). Issues are grouped by priority level : \highprio, \mediumprio,
+\lowprio{} : and ordered within each group by creation date. Redacted fields
 (\caviarder[0.9cm]) contain information covered by the company's
 confidentiality policy.
 
@@ -73,7 +73,7 @@ confidentiality policy.
 
     \highprio
       & \caviarder[0.8cm]
-      & \textbf{Set up SOUP traceability --- GitLab Package Registry}
+      & \textbf{Set up SOUP traceability : GitLab Package Registry}
         \newline{\footnotesize
           Register all third-party libraries (SOUP list) in the GitLab Package
           Registry. Ensure each entry includes version, licence, source URL and
@@ -101,7 +101,7 @@ confidentiality policy.
 
     \highprio
       & \caviarder[0.8cm]
-      & \textbf{Define CI/CD pipeline --- automated build \& test artefacts}
+      & \textbf{Define CI/CD pipeline : automated build \& test artefacts}
         \newline{\footnotesize
           Configure the GitLab CI pipeline to produce reproducible build
           artefacts (binary, SBOM, test report) and publish them to the
@@ -133,7 +133,7 @@ confidentiality policy.
 
     \mediumprio
       & \caviarder[0.8cm]
-      & \textbf{Update SOUP risk assessment --- IEC~62304 \S7.2}
+      & \textbf{Update SOUP risk assessment : IEC~62304 \S7.2}
         \newline{\footnotesize
           Review existing risk assessments for embedded SOUP (FreeRTOS,
           libmodbus, \caviarder[1.5cm]). Align severity classifications with
@@ -153,7 +153,7 @@ confidentiality policy.
       & \textbf{Evaluate MCU vs Jetson for user interface module}
         \newline{\footnotesize
           Comparative benchmark: processing power, energy budget, SDK
-          maturity, lead time. Decision deferred --- not blocking
+          maturity, lead time. Decision deferred : not blocking
           certification. To be scheduled post-milestone
           \caviarder[1.2cm].
           \newline\textit{Labels:} \texttt{hardware}, \texttt{research}}
@@ -168,7 +168,7 @@ confidentiality policy.
         \newline{\footnotesize
           Evaluate JFrog Artifactory, Nexus Repository and Harbor as
           potential complements to the GitLab Package Registry. No
-          blocker identified --- team comfort improvement only.
+          blocker identified : team comfort improvement only.
           \newline\textit{Labels:} \texttt{devops}, \texttt{tooling}}
       & \caviarder[2.2cm]
       & \caviarder[1.5cm]
@@ -176,7 +176,7 @@ confidentiality policy.
     \hline
 
   \end{tabularx}
-  \caption{Prioritised backlog extract --- TWIICE Software, post-Eisenhower
+  \caption{Prioritised backlog extract : TWIICE Software, post-Eisenhower
     matrix triage}
   \label{tab:backlog}
 \end{table}
