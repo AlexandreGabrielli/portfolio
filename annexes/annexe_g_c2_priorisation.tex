@@ -1,106 +1,106 @@
 % =============================================================================
-% ANNEX G : C2 PRIORISATION PACKAGE (MATRICE + ATELIER + ROADMAP)
+% ANNEX G : C2 PRIORITIZATION PACKAGE (MATRIX + WORKSHOP + ROADMAP)
 % =============================================================================
 
-\chapter{Package C2 : priorisation, atelier et feuille de route}
+\chapter{C2 package: prioritization, workshop, and roadmap}
 \label{annex:c2-priorisation}
 
 \begin{tcolorbox}[colback=blue!5, colframe=blue!40!black, boxrule=0.5pt, arc=3pt,
   left=8pt, right=8pt, top=6pt, bottom=6pt]
   \small\itshape
-  \textbf{Avertissement.} Les extraits ci-dessous reproduisent les artefacts de synthese utilises pour la competence C2. Les informations sensibles (noms, identifiants internes, references outillage, metadonnees projet) sont volontairement caviardees.
+  \textbf{Avertissement.} Cette annexe est une reproduction \textbf{non fidele} d'artefacts de synthese mobilises pour la competence C2. Elle est volontairement adaptee, tronquee et caviardee a des fins de \textbf{demonstration} et de \textbf{preuve} dans le portfolio. Les informations sensibles (identites, identifiants internes, references d'outillage et metadonnees projet) ont ete masquees.
 \end{tcolorbox}
 
-\section*{1. Matrice de priorisation des evolutions}
+\section*{1. Prioritization matrix for evolutions}
 
 \begin{tabularx}{\textwidth}{|p{3.1cm}|X|X|}
 \hline
- & \textbf{Faisabilite elevee} & \textbf{Faisabilite faible/moyenne} \\
+ & \textbf{High feasibility} & \textbf{Low/medium feasibility} \\
 \hline
-\textbf{Impact utilisateur eleve}
+\textbf{High user impact}
 &
 \begin{itemize}
-  \item Stabilite mode marche assistee (Must)
-  \item Fiabilite calibration capteurs (Must)
+  \item Assisted-walking mode stability (Must)
+  \item Sensor calibration reliability (Must)
 \end{itemize}
 &
 \begin{itemize}
-  \item Refonte \texttt{[CAVIARDE]} pipeline telemetry (Should)
+  \item Telemetry pipeline redesign \caviarder[1.8cm] (Should)
 \end{itemize} \\
 \hline
-\textbf{Impact utilisateur moyen}
+\textbf{Medium user impact}
 &
 \begin{itemize}
-  \item Optimisation UX ecran coach (Should)
+  \item Coach screen UX optimization (Should)
 \end{itemize}
 &
 \begin{itemize}
-  \item Evolution architecture \texttt{[CAVIARDE]} (Could)
+  \item Architecture evolution \caviarder[1.8cm] (Could)
 \end{itemize} \\
 \hline
-\textbf{Impact utilisateur faible}
+\textbf{Low user impact}
 &
 \begin{itemize}
-  \item Ajustements cosmetiques interface (Could)
+  \item Cosmetic interface adjustments (Could)
 \end{itemize}
 &
 \begin{itemize}
-  \item Recherche exploratoire hors sprint (Won't now)
+  \item Exploratory work outside sprint scope (Won't now)
 \end{itemize} \\
 \hline
 \end{tabularx}
 
 \medskip
-\noindent\textbf{Resultat.} La matrice a permis de reduire un portefeuille d'environ 150 demandes a un noyau prioritaire de \caviarder[1.1cm] axes d'action valides en atelier.
+\noindent\textbf{Result.} The matrix reduced a portfolio of approximately 150 requests to a prioritized core of \caviarder[1.1cm] action streams validated in workshop.
 
-\section*{2. Compte-rendu de l'atelier de definition des problematiques}
+\section*{2. Workshop report: problem-definition convergence}
 
 \begin{tcolorbox}[colback=gray!8, colframe=gray!50, boxrule=0.5pt, arc=3pt,
   left=8pt, right=8pt, top=6pt, bottom=6pt]
 \begin{tabularx}{\linewidth}{@{}p{4.3cm}X@{}}
 \textbf{Date} & \caviarder[2.3cm] \\
-\textbf{Participants} & Equipe software, qualite, representants usage \texttt{[CAVIARDE]} \\
-\textbf{Facilitateur} & \caviarder[2.6cm] \\
-\textbf{Objectif} & Passer des demandes brutes a 3-5 problematiques priorisees et actionnables \\
+\textbf{Participants} & Software team, quality team, usage representatives \caviarder[2.2cm] \\
+\textbf{Facilitator} & \caviarder[2.6cm] \\
+\textbf{Objective} & Move from raw requests to 3--5 prioritized and actionable problem statements \\
 \end{tabularx}
 \end{tcolorbox}
 
-\textbf{Problematique 1 (priorite haute).}
-Securiser la fiabilite des fonctions critiques avant extension de fonctionnalites secondaires.
+\textbf{Problem statement 1 (high priority).}
+Secure reliability of critical functions before extending secondary features.
 
-\textbf{Problematique 2 (priorite haute).}
-Reduire le delai de traitement des anomalies bloquantes en clarifiant ownership et criteres de priorisation.
+\textbf{Problem statement 2 (high priority).}
+Reduce lead time for blocking-anomaly handling by clarifying ownership and prioritization criteria.
 
-\textbf{Problematique 3 (priorite moyenne).}
-Ameliorer la lisibilite des decisions techniques pour limiter les reouvertures de debat inter-equipes.
+\textbf{Problem statement 3 (medium priority).}
+Improve readability of technical decisions to reduce cross-team debate reopenings.
 
 \medskip
-\noindent\textbf{Mecanisme de convergence.} Chaque problematique retenue est issue d'un vote structure, puis reformulee en phrase-probleme partagee, validee par toutes les parties prenantes presentes.
+\noindent\textbf{Convergence mechanism.} Each retained problem statement is selected through structured voting, then reformulated into a shared problem sentence validated by all attending stakeholders.
 
-\section*{3. Feuille de route issue de la priorisation}
+\section*{3. Roadmap derived from prioritization}
 
 \begin{tabularx}{\textwidth}{|p{3.7cm}|p{2.3cm}|X|p{2.1cm}|}
 \hline
-\textbf{Axe} & \textbf{Horizon} & \textbf{Objectif operationnel} & \textbf{Indicateur} \\
+\textbf{Axis} & \textbf{Horizon} & \textbf{Operational objective} & \textbf{Indicator} \\
 \hline
-Fiabilite fonctions critiques & Sprint S+1 a S+2 & Fermer les tickets critiques lies a la stabilite de marche assistee & Taux de fermeture >= \caviarder[1.1cm] \\
+Critical-function reliability & Sprint S+1 to S+2 & Close critical tickets linked to assisted-walking stability & Closure rate >= \caviarder[1.1cm] \\
 \hline
-Flux anomalies et priorisation & Sprint S+1 & Mettre en place un rituel de tri hebdomadaire + regle de classement MoSCoW & Delai moyen de tri <= \caviarder[1.4cm] \\
+Anomaly flow and prioritization & Sprint S+1 & Implement weekly triage ritual + MoSCoW ranking rule & Average triage delay <= \caviarder[1.4cm] \\
 \hline
-Traçabilite des decisions & Sprint S+1 a S+3 & Standardiser note de decision + lien backlog + preuve de verification & 100\% des decisions majeures tracees \\
+Decision traceability & Sprint S+1 to S+3 & Standardize decision note + backlog linkage + verification evidence & 100\% of major decisions traceable \\
 \hline
 \end{tabularx}
 
-\section*{4. Pourquoi cette annexe prouve la competence C2}
+\section*{4. Why this annex evidences competency C2}
 
-Cette annexe montre une chaine complete :
+This annex shows a complete chain:
 \begin{enumerate}
-  \item collecte des demandes brutes,
-  \item synthese par matrice,
-  \item convergence en atelier,
-  \item traduction en feuille de route mesuree.
+  \item raw-request collection,
+  \item matrix-based synthesis,
+  \item workshop convergence,
+  \item translation into a measurable roadmap.
 \end{enumerate}
 
-Le point probant pour C2 est la transformation d'un volume heterogene de demandes en problematiques priorisees, partagees et pilotables dans le temps.
+The decisive C2 evidence is the transformation of a heterogeneous request volume into prioritized, shared, and time-steerable problem statements.
 
 
