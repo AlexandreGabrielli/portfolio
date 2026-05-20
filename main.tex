@@ -1,14 +1,18 @@
 ﻿\documentclass[12pt,a4paper]{report}
 
 % : Polices et encodage ---
-\usepackage[utf8]{inputenc}  % Permet d'écrire les accents directement (à, é, ç…)
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
-\usepackage{lmodern} % Indispensable pour éviter les polices floues (PK fonts)
+\usepackage{lmodern}
+% Police Helvetica – conforme charte graphique HES-SO (Helvetica Now Text / Arial digital)
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage[autostyle]{csquotes}
 
 % : Mise en page ---
-\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+% Marges conformes charte HES-SO : haut 25mm, bas 25mm, gauche 15mm, droite 15mm
+\usepackage[top=2.5cm, bottom=2.5cm, left=1.5cm, right=1.5cm]{geometry}
 \setlength{\headheight}{13.6pt}  % évite l'avertissement fancyhdr
 \usepackage{setspace}
 \onehalfspacing
@@ -17,6 +21,7 @@
 \usepackage{eso-pic}
 
 % : Tableaux et boîtes colorées ---
+\usepackage{xcolor}          % Couleurs (chargé avant tcolorbox pour \definecolor)
 \usepackage{booktabs}    % Filets de tableaux professionnels (\toprule, \midrule, \bottomrule)
 \usepackage{tabularx}    % Tableaux à largeur fixe avec colonnes flexibles
 \usepackage{longtable}   % Tableaux multi-pages
@@ -78,9 +83,11 @@
   left=8pt, right=8pt, top=6pt, bottom=6pt
 }
 
-% : Journal de bord : chronologie verticale ---
-\definecolor{jbblue}{RGB}{25, 95, 165}
-\definecolor{jbbluebg}{RGB}{228, 241, 255}
+% : Couleurs HES-SO officielles (charte graphique HES-SO) ---
+\definecolor{hessoBlue}{HTML}{00609c}   % HES-SO BLEU  RVB 0/96/156
+\definecolor{hessoGrey}{HTML}{968b83}   % HES-SO GRIS  RVB 150/139/131
+\definecolor{jbblue}{RGB}{0,96,156}     % alias pour les boîtes journal
+\definecolor{jbbluebg}{RGB}{220,236,248}
 
 % Boîte d'entrée de journal : {date}{contexte}{compétences (vide si aucune)}
 \newtcolorbox{jbentry}[3]{%
@@ -139,6 +146,60 @@
 \newcommand{\stodo}{\textcolor{blue!60!black}{\textbf{To Do}}}
 \newcommand{\sbacklog}{\textcolor{gray!65!black}{\textbf{Backlog}}}
 
+% : Titres de sections en HES-SO BLEU (charte graphique) ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{hessoBlue}}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{hessoBlue}}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{hessoBlue}}
+  {\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}
+  {\thesubsubsection}{1em}{}
+
+% : Chevrons HES-SO (charte graphique) ---
+% Chevrons HES-SO : angle droit stylisé (trait, sans remplissage)
+% Coin sup. droit = barre horizontale vers la gauche + barre verticale vers le bas
+% Coin inf. gauche = miroir
+
+% Chevron HES-SO = équerre en "L" avec extrémités biseautées à 45°
+%   - épaisseur du trait : 2.5 mm
+%   - longueur de chaque branche : 10 mm
+%   - décalage du bord de page : 10 mm
+%   - les extrémités libres (cotés sans angle) sont coupées en biseau à 45°
+\AddToShipoutPictureFG{%
+  \begin{tikzpicture}[remember picture, overlay]
+    % --- Coin supérieur droit ---
+    % Polygone unique formant un L avec biseau aux deux extrémités libres.
+    \begin{scope}[shift={(current page.north east)}]
+      \fill[hessoBlue]
+        (-1cm,    -1cm)    --  % coin extérieur (côté page)
+        (-2cm,    -1cm)    --  % extrémité haut-gauche de la branche horizontale
+        (-1.75cm, -1.25cm) --  % biseau 45° de la branche horizontale
+        (-1.25cm, -1.25cm) --  % coin intérieur (concave) du L
+        (-1.25cm, -1.75cm) --  % retour le long de la branche verticale (intérieur)
+        (-1cm,    -2cm)    --  % biseau 45° de la branche verticale
+        cycle;
+    \end{scope}
+    % --- Coin inférieur gauche (miroir) ---
+    \begin{scope}[shift={(current page.south west)}]
+      \fill[hessoBlue]
+        (1cm,    1cm)    --
+        (2cm,    1cm)    --
+        (1.75cm, 1.25cm) --
+        (1.25cm, 1.25cm) --
+        (1.25cm, 1.75cm) --
+        (1cm,    2cm)    --
+        cycle;
+    \end{scope}
+  \end{tikzpicture}%
+}
+
+
 % : Bibliographie APA ---
 \usepackage[backend=biber, style=apa, language=french, natbib=true, citestyle=apa]{biblatex}
 \addbibresource{references.bib}
@@ -169,23 +230,22 @@
 \renewcommand{\footrulewidth}{0.4pt}
 
 % Configuration de l'entête (Header)
-\lhead{\small Master HES-SO Innokick}
-\chead{\small \textit{Au-delà du code}}
-\rhead{\small 2025-2026}
+\lhead{\fontsize{9}{11}\selectfont\color{hessoBlue} Master HES-SO Innokick}
+\chead{\fontsize{9}{11}\selectfont\color{hessoBlue}\textit{Au-delà du code}}
+\rhead{\fontsize{9}{11}\selectfont\color{hessoBlue} 2025-2026}
 
-% Configuration du pied de page (Footer)
-\lfoot{\small Alexandre Gati}
+% Configuration du pied de page (Footer) – 9pt HES-SO BLEU, conforme charte
+\lfoot{\fontsize{9}{11}\selectfont\color{hessoBlue} Alexandre Gati}
 \cfoot{}
-\rfoot{\small Page \thepage}
+\rfoot{\fontsize{9}{11}\selectfont\color{hessoBlue} Page \thepage}
 
 % Redéfinition du style plain (utilisé pour les débuts de chapitres)
-% Traditionnellement, on ne met pas d'entête sur ces pages, mais on garde le footer
 \fancypagestyle{plain}{%
   \fancyhf{}
   \renewcommand{\headrulewidth}{0pt}
   \renewcommand{\footrulewidth}{0.4pt}
-  \lfoot{\small Alexandre Gati}
-  \rfoot{\small Page \thepage}
+  \lfoot{\fontsize{9}{11}\selectfont\color{hessoBlue} Alexandre Gati}
+  \rfoot{\fontsize{9}{11}\selectfont\color{hessoBlue} Page \thepage}
 }
 
 % : Informations du document ---
