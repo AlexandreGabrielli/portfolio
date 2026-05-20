@@ -18,8 +18,9 @@
 % =============================================================================
 
 % : Annexe A : contrat d'apprentissage ---
-\annexepdf{Contrat d'apprentissage}{annexes/pdfs/annexe-A-contrat-apprentissage.pdf}
+\chapter{Contrat d'apprentissage}
 \label{annex:contrat-apprentissage}
+\includepdf[pages=-, pagecommand={\thispagestyle{fancy}}]{annexes/pdfs/annexe-A-contrat-apprentissage.pdf}
 
 % : Annexe B : Note de décision technique NDT-SW-001 ---
 \input{annexes/annexe_b_ndt}
@@ -34,14 +35,25 @@
 % Ce document est un fichier LaTeX autonome compilé séparément.
 % Pour mettre à jour cette annexe, recompilez d'abord :
 %   cd annexes/journal-reflexive && pdflatex journal.tex
-\annexepdf{Journal réflexif : Master Innokick}{annexes/journal-reflexive/journal.pdf}
+\chapter{Journal réflexif : Master Innokick}
 \label{annex:journal-reflexif}
+\includepdf[pages=-, pagecommand={\thispagestyle{fancy}}]{annexes/journal-reflexive/journal.pdf}
 
 % : Annexe F : Compte-rendu de la première rétrospective (B4) ---
 \input{annexes/annexe_f_retro_b4}
 
 % : Annexe G : Package de priorisation C2 ---
 \input{annexes/annexe_g_c2_priorisation}
+
+% : Annexe H : Descriptif de module Différenciation métier ---
+\chapter{Descriptif de module : Différenciation métier (MDM)}
+\label{annex:descriptif-mdm}
+\includepdf[pages=-, pagecommand={\thispagestyle{fancy}}]{annexes/pdfs/annexe-H-descriptif-mdm.pdf}
+
+% : Annexe I : Plan d'Études Cadre (PEC) Master HES-SO Innokick ---
+\chapter{Plan d'Études Cadre (PEC) : Master HES-SO Innokick (07.2024)}
+\label{annex:pec-innokick}
+\includepdf[pages=-, pagecommand={\thispagestyle{fancy}}]{annexes/pdfs/annexe-I-pec-innokick.pdf}
 
 % =============================================================================
 % AJOUTEZ VOS ANNEXES CI-DESSOUS EN SUIVANT LES EXEMPLES CI-DESSUS
