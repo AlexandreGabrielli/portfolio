@@ -11,14 +11,27 @@
 \usepackage[autostyle]{csquotes}
 
 % : Mise en page ---
-% Marges conformes charte HES-SO : haut 25mm, bas 25mm, gauche 15mm, droite 15mm
-\usepackage[top=2.5cm, bottom=2.5cm, left=1.5cm, right=1.5cm]{geometry}
-\setlength{\headheight}{13.6pt}  % évite l'avertissement fancyhdr
+% Marges : haut 35mm (dont 30mm avant l'entete + bandeau d'entete), bas 25mm, gauche 25mm, droite 15mm
+% Le logo HES-SO se place à 15mm du coin sup. gauche (au-dessus de l'entete).
+\usepackage[top=3.5cm, bottom=2.5cm, left=2.5cm, right=1.5cm,
+            headsep=5mm, headheight=27pt]{geometry}
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{eso-pic}
+
+% : Légendes des figures et tableaux ---
+% Titres des figures et tableaux : 11pt bold noir
+\usepackage{caption}
+\DeclareCaptionFont{elevenpt}{\fontsize{11}{13}\selectfont}
+\captionsetup{
+  font={elevenpt,bf},
+  labelfont={elevenpt,bf},
+  textfont={elevenpt,bf},
+  format=plain,
+  labelsep=colon
+}
 
 % : Tableaux et boîtes colorées ---
 \usepackage{xcolor}          % Couleurs (chargé avant tcolorbox pour \definecolor)
@@ -151,28 +164,34 @@
 \titleformat{\chapter}[display]
   {\normalfont\huge\bfseries\color{hessoBlue}}
   {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+% Titres (section) : 24pt bold HES-SO blue
 \titleformat{\section}
-  {\normalfont\Large\bfseries\color{hessoBlue}}
+  {\normalfont\fontsize{24}{29}\selectfont\bfseries\color{hessoBlue}}
   {\thesection}{1em}{}
+% Sous-titres (subsection) : 16pt bold HES-SO blue
 \titleformat{\subsection}
-  {\normalfont\large\bfseries\color{hessoBlue}}
+  {\normalfont\fontsize{16}{19}\selectfont\bfseries\color{hessoBlue}}
   {\thesubsection}{1em}{}
 \titleformat{\subsubsection}
   {\normalfont\normalsize\bfseries}
   {\thesubsubsection}{1em}{}
-
-% : Chevrons HES-SO (charte graphique) ---
-% Chevrons HES-SO : angle droit stylisé (trait, sans remplissage)
-% Coin sup. droit = barre horizontale vers la gauche + barre verticale vers le bas
-% Coin inf. gauche = miroir
 
 % Chevron HES-SO = équerre en "L" avec extrémités biseautées à 45°
 %   - épaisseur du trait : 2.5 mm
 %   - longueur de chaque branche : 10 mm
 %   - décalage du bord de page : 10 mm
 %   - les extrémités libres (cotés sans angle) sont coupées en biseau à 45°
+%
+% Logo HES-SO en haut à gauche (15 mm du bord) sur toutes les pages
+% sauf la page de garde. Contrôlé par le booléen \ifportfoliologo.
+\newif\ifportfoliologo
+\portfoliologotrue
+\newif\ifportfoliochevrons
+\portfoliochevronstrue
+
 \AddToShipoutPictureFG{%
   \begin{tikzpicture}[remember picture, overlay]
+    \ifportfoliochevrons
     % --- Coin supérieur droit ---
     % Polygone unique formant un L avec biseau aux deux extrémités libres.
     \begin{scope}[shift={(current page.north east)}]
@@ -196,6 +215,13 @@
         (1cm,    2cm)    --
         cycle;
     \end{scope}
+    \fi
+    % --- Logo HES-SO en haut a gauche (sauf page de garde) ---
+    \ifportfoliologo
+      \node[anchor=north west, inner sep=0pt]
+        at ([xshift=15mm, yshift=-15mm]current page.north west)
+        {\includegraphics[width=30mm]{image/hesso_master_manual.pdf}};
+    \fi
   \end{tikzpicture}%
 }
 
@@ -212,13 +238,14 @@
 % Usage : \annexepdf[options pdfpages]{Titre}{chemin/vers/fichier.pdf}
 \newcommand{\annexepdf}[3][]{%
   \chapter{#2}%
-  \includepdf[pages=-, pagecommand={\thispagestyle{fancy}}, #1]{#3}%
+  \includepdf[pages=-, pagecommand={\thispagestyle{annexepages}}, #1]{#3}%
 }
 
 % : Liens et navigation ---
 % On utilise hypertexnames=false pour éviter les erreurs de "duplicate identifier" sur la page 1
 \usepackage[hidelinks, hypertexnames=false, hyperfootnotes=false]{hyperref}
 \usepackage{bookmark}
+\usepackage{lastpage} % Pour obtenir le numéro de la dernière page
 
 % : Entête et Pied de page ---
 \usepackage{fancyhdr}
@@ -226,26 +253,47 @@
 \fancyhf{}
 
 % Configuration des lignes
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{1.6pt}
+\renewcommand{\footrulewidth}{0pt}
 
-% Configuration de l'entête (Header)
-\lhead{\fontsize{9}{11}\selectfont\color{hessoBlue} Master HES-SO Innokick}
-\chead{\fontsize{9}{11}\selectfont\color{hessoBlue}\textit{Au-delà du code}}
-\rhead{\fontsize{9}{11}\selectfont\color{hessoBlue} 2025-2026}
+% Ligne horizontale personnalisée sous l'en-tête : gris HES-SO, de 15mm à 15mm des bords
+\renewcommand{\headrule}{%
+  \vskip-\headrulewidth
+  \hspace*{-10mm}% Décalage pour commencer à 15mm du bord (marge gauche = 25mm)
+  \textcolor{hessoGrey}{\rule{\dimexpr\textwidth+10mm\relax}{\headrulewidth}}%
+  \vskip\headrulewidth
+}
 
-% Configuration du pied de page (Footer) – 9pt HES-SO BLEU, conforme charte
-\lfoot{\fontsize{9}{11}\selectfont\color{hessoBlue} Alexandre Gati}
+% Configuration de l'entête (Header) – 14pt, gras, noir, uniquement le type de document aligné à droite
+\lhead{}
+\chead{}
+\rhead{\fontsize{14}{17}\selectfont\bfseries\color{black} Portfolio}
+
+% Configuration du pied de page (Footer) – 9pt HES-SO BLEU regular, aligné à droite
+% Position : 12.5mm du bas de la page, 10mm du bord droit
+% Format : A.Gati / date / page X/X
+\lfoot{}
 \cfoot{}
-\rfoot{\fontsize{9}{11}\selectfont\color{hessoBlue} Page \thepage}
+\newcommand{\portfoliofooterbase}{A.Gati~/~\today~/~Page~\thepage/\pageref{LastPage}}
+\newcommand{\portfoliofooterannexes}{Page~\thepage}
+\rfoot{%
+  \fontsize{9}{11}\selectfont\mdseries\color{hessoBlue}%
+  \portfoliofooterbase%
+}
+% Ajustement du footskip pour positionner le pied à 12.5mm du bas
+\setlength{\footskip}{12.5mm}
+% Décalage pour positionner à 10mm du bord droit
+\fancyfootoffset[R]{5mm} % Ajustement car marge droite = 15mm, on veut 10mm
 
 % Redéfinition du style plain (utilisé pour les débuts de chapitres)
 \fancypagestyle{plain}{%
   \fancyhf{}
   \renewcommand{\headrulewidth}{0pt}
-  \renewcommand{\footrulewidth}{0.4pt}
-  \lfoot{\fontsize{9}{11}\selectfont\color{hessoBlue} Alexandre Gati}
-  \rfoot{\fontsize{9}{11}\selectfont\color{hessoBlue} Page \thepage}
+  \renewcommand{\footrulewidth}{0pt}
+  \rfoot{%
+    \fontsize{9}{11}\selectfont\mdseries\color{hessoBlue}%
+    \portfoliofooterbase%
+  }
 }
 
 % : Informations du document ---
@@ -257,10 +305,12 @@
 
 % : Partie Préliminaire ---
 \pagenumbering{Alph} % Identifiant unique pour la couverture (A, B...)
+\portfoliologofalse  % Pas de logo HES-SO sur la page de garde
 \input{sections/titlepage}
 \thispagestyle{empty}
 
 \clearpage
+\portfoliologotrue   % Logo HES-SO reactive pour toutes les pages suivantes
 \pagenumbering{roman} % i, ii, iii pour le sommaire
 \tableofcontents
 \cleardoublepage
@@ -277,6 +327,19 @@
 
 % : Corps du document ---
 \pagenumbering{arabic} % 1, 2, 3...
+\rfoot{%
+  \fontsize{9}{11}\selectfont\mdseries\color{hessoBlue}%
+  \portfoliofooterbase%
+}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+  \rfoot{%
+    \fontsize{9}{11}\selectfont\mdseries\color{hessoBlue}%
+    \portfoliofooterbase%
+  }
+}
 \input{sections/but_portfolio}
 \input{sections/titre_portfolio_justification}
 \input{sections/contrat_apprentissage}
@@ -290,6 +353,27 @@
 \printbibliography[heading=bibintoc, title={Bibliographie}]
 
 % : Annexes ---
+\portfoliologofalse
+\portfoliochevronsfalse
+\fancypagestyle{annexepages}{%
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+  \rfoot{%
+    \fontsize{9}{11}\selectfont\mdseries\color{hessoBlue}%
+    \portfoliofooterannexes%
+  }
+}
+\pagestyle{annexepages}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+  \rfoot{%
+    \fontsize{9}{11}\selectfont\mdseries\color{hessoBlue}%
+    \portfoliofooterannexes%
+  }
+}
 \begin{appendices}
   \input{annexes/annexes_main}
 \end{appendices}

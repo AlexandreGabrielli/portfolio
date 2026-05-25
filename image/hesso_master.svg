@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 295 100"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="hesso_master.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.1800462"
+     inkscape:cx="182.10623"
+     inkscape:cy="96.557587"
+     inkscape:window-width="1920"
+     inkscape:window-height="1111"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <!-- Hes (bold blue) -->
+  <text
+     x="-3.5602698"
+     y="69.242035"
+     font-family="'Source Sans Pro', 'Myriad Pro', Arial, sans-serif"
+     font-weight="700"
+     font-size="93.321px"
+     fill="#2b6ca3"
+     id="text1"
+     transform="scale(1.051668,0.95087041)"
+     style="stroke-width:1.45814">Hes</text>
+  <!-- dot separator -->
+  <ellipse
+     cx="183.77658"
+     cy="44.584641"
+     fill="#8b7d74"
+     id="circle1"
+     inkscape:transform-center-x="-10.902943"
+     inkscape:transform-center-y="-1.5899907"
+     rx="9.2008724"
+     ry="8.3190107"
+     style="stroke-width:1.45814" />
+  <!-- so (regular gray) -->
+  <text
+     x="184.0051"
+     y="71.248596"
+     font-family="'Source Sans Pro', 'Myriad Pro', Arial, sans-serif"
+     font-weight="400"
+     font-size="93.321px"
+     fill="#8b7d74"
+     id="text2"
+     transform="scale(1.051668,0.95087041)"
+     style="stroke-width:1.45814">so</text>
+  <!-- Master -->
+  <text
+     x="275.1615"
+     y="100.70594"
+     font-family="'Source Sans Pro', 'Myriad Pro', Arial, sans-serif"
+     font-weight="700"
+     font-size="32.079px"
+     fill="#2b6ca3"
+     text-anchor="end"
+     id="text3"
+     transform="scale(1.051668,0.95087041)"
+     style="stroke-width:1.45814">Master</text>
+</svg>
