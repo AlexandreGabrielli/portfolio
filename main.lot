@@ -4,23 +4,30 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Matrice d'Eisenhower appliqu\'ee aux d\'ecisions IEC~62304 chez TWIICE}}{20}{table.caption.39}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Matrice d'Eisenhower formalis\'ee : D\'ecisions logicielles TWIICE}}{21}{table.caption.47}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Grille build vs buy : Tra\c {c}abilit\'e SOUP (IEC~62304)}}{21}{table.caption.49}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Scrum adapt\'e au contexte de certification m\'edicale IEC~62304 : TWIICE}}{24}{table.caption.62}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Matrice d'Eisenhower formalisée : Décisions logicielles TWIICE}}{25}{table.caption.50}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Grille build vs buy : Traçabilité SOUP (IEC~62304)}}{25}{table.caption.52}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Scrum adapté au contexte de certification médicale IEC~62304 : TWIICE}}{28}{table.caption.63}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Scores d'autoévaluation avant/après formation (Famille A) : Compétences sociales et personnelles}}{41}{table.caption.97}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Scores d'autoévaluation avant/après formation (Famille B) : Compétences méthodologiques}}{41}{table.caption.98}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Scores d'autoévaluation avant/après formation (Famille C) : Compétences métier}}{41}{table.caption.99}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Grille Tardif synthétique : compétence A2}}{34}{table.caption.72}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Grille Tardif synthétique : compétence B4}}{43}{table.caption.86}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Indicateurs d'itération sur les quatre premiers sprints adaptés IEC~62304, équipe logicielle TWIICE (chiffres anonymisés et arrondis ; source : board GitLab et comptes-rendus de rétrospective).}}{47}{table.caption.91}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Grille Tardif synthétique : compétence C2}}{52}{table.caption.96}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Scores d'autoévaluation avant/après formation (Famille A) : Compétences sociales et personnelles}}{60}{table.caption.107}%
+\contentsline {table}{\numberline {6.6}{\ignorespaces Scores d'autoévaluation avant/après formation (Famille B) : Compétences méthodologiques}}{61}{table.caption.108}%
+\contentsline {table}{\numberline {6.7}{\ignorespaces Scores d'autoévaluation avant/après formation (Famille C) : Compétences métier}}{61}{table.caption.109}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Multi-criteria grid : IEC~62304 configuration management options}}{53}{table.caption.112}%
-\contentsline {table}{\numberline {B.2}{\ignorespaces Residual risks and mitigation measures : NDT-SW-001}}{54}{table.caption.113}%
-\contentsline {table}{\numberline {B.3}{\ignorespaces Approval table : NDT-SW-001}}{55}{table.caption.114}%
+\contentsline {table}{\numberline {B.1}{\ignorespaces Multi-criteria grid : IEC~62304 configuration management options}}{76}{table.caption.122}%
+\contentsline {table}{\numberline {B.2}{\ignorespaces Residual risks and mitigation measures : NDT-SW-001}}{78}{table.caption.123}%
+\contentsline {table}{\numberline {B.3}{\ignorespaces Approval table : NDT-SW-001}}{78}{table.caption.124}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces Prioritised backlog extract : TWIICE Software, post-Eisenhower matrix triage}}{57}{table.caption.116}%
-\contentsline {table}{\numberline {C.2}{\ignorespaces Mapping between backlog priority levels and Eisenhower quadrants}}{58}{table.caption.117}%
+\contentsline {table}{\numberline {C.1}{\ignorespaces Prioritised backlog extract : TWIICE Software, post-Eisenhower matrix triage}}{81}{table.caption.126}%
+\contentsline {table}{\numberline {C.2}{\ignorespaces Mapping between backlog priority levels and Eisenhower quadrants}}{82}{table.caption.127}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

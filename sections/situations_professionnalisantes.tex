@@ -1,4 +1,4 @@
-﻿\clearpage
+\clearpage
 
 \AddToShipoutPictureBG{
     \begin{tikzpicture}[remember picture, overlay]
@@ -17,7 +17,47 @@
   fonttitle=\small\bfseries, coltitle=white, attach boxed title to top left={yshift=-2mm, xshift=4mm},
   boxed title style={colback=blue!55!black, arc=3pt, boxrule=0pt}]
 \small
-Les situations professionnelles présentées dans ce chapitre sont \textbf{volontairement reconstituées et amplifiées} à des fins pédagogiques. Certains éléments contextuels (tensions, blocages, dysfonctionnements) ont été grossis ou restructurés afin de rendre visible la problématique de compétence traitée et d'en illustrer clairement les enjeux. Ces situations ne constituent pas un compte rendu factuel exhaustif des événements tels qu'ils se sont déroulés, mais un support de démonstration réflexive au service de l'analyse de compétences. L'objectif n'est pas de décrire la réalité à la virgule près, mais de mettre en lumière \textbf{ce que la formation a permis d'apprendre, et comment}.
+Les situations professionnelles présentées dans ce chapitre sont issues d'expériences réellement vécues, dans le département reporting d'une banque privée et au sein de l'entreprise TWIICE. Elles ont été \textbf{anonymisées et synthétisées} pour des raisons de confidentialité (noms de personnes, références internes, identifiants de tickets, fragments de code et données sensibles ont été retirés ou caviardés) et resserrées au strict nécessaire pour rendre lisible la problématique de compétence traitée. Aucun élément contextuel n'a été amplifié ni reconstruit : le grain narratif est plus dense que le récit chronologique brut, mais les événements relatés correspondent aux faits tels qu'ils se sont produits, et les artefacts joints en annexe sont des documents authentiques produits dans le cours de l'activité professionnelle (cf. encart d'authenticité ci-dessous).
+\end{tcolorbox}
+
+\bigskip
+
+\begin{tcolorbox}[enhanced, breakable, colback=green!5, colframe=green!45!black, boxrule=0.5pt, arc=4pt,
+  left=10pt, right=10pt, top=8pt, bottom=8pt,
+  title={\textbf{\small Encart d'authenticité des artefacts mobilisés}},
+  fonttitle=\small\bfseries, coltitle=white, attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=green!45!black, arc=3pt, boxrule=0pt}]
+\small
+Conformément à l'exigence de traçabilité posée par \citet{tardif2006}, chaque artefact mobilisé dans ce chapitre a été produit \emph{dans le cours de l'activité professionnelle ou de formation}, antérieurement à la rédaction du portfolio. Pour chacun, sont précisés : la date de production, le contexte d'origine, la version et le statut.
+
+\begin{itemize}
+  \item \textbf{Note de décision technique (NDT-SW-001)}, présentée à l'annexe~\ref{annex:ndt-sw-001}. Produite chez TWIICE dans le cadre de la documentation IEC~62304. Document de travail interne, version caviardée pour le portfolio.
+  \item \textbf{Software Development Plan (SDP)}, présenté à l'annexe~\ref{annex:sdp-markdown}. Livrable obligatoire IEC~62304 §5.1, produit chez TWIICE. Document de gouvernance, version caviardée.
+  \item \textbf{Backlog priorisé}, présenté à l'annexe~\ref{annex:backlog}. Extrait du board GitLab de l'équipe logicielle TWIICE, exporté après application de la grille de priorisation \emph{valeur $\times$ risque certification}. Données opérationnelles caviardées.
+  \item \textbf{Compte-rendu de rétrospective}, présenté à l'annexe~\ref{annex:retro-b4}. Produit au terme du premier sprint adapté IEC~62304 chez TWIICE. Format Start/Stop/Continue, noms anonymisés.
+  \item \textbf{Matrice de priorisation, compte-rendu d'atelier et feuille de route}, présentés à l'annexe~\ref{annex:c2-priorisation}. Produits dans le cadre de la priorisation des évolutions logicielles de l'exosquelette TWIICE, sur la base des 150 demandes collectées auprès des utilisateurs et équipes internes.
+\end{itemize}
+
+Les dates précises et signatures éventuelles figurent dans les annexes elles-mêmes. Le contexte bancaire mobilisé pour A2 ne s'appuie pas sur des artefacts d'époque (leur absence est précisément ce que la section documente) : il est traité comme \emph{point de départ narratif}, pas comme preuve.
+\end{tcolorbox}
+
+\medskip
+
+\begin{tcolorbox}[enhanced, breakable, colback=green!5, colframe=green!45!black, boxrule=0.5pt, arc=4pt,
+  left=10pt, right=10pt, top=8pt, bottom=8pt,
+  title={\textbf{\small Triangulation externe : disponible mais non mobilisée dans le corps du portfolio}},
+  fonttitle=\small\bfseries, coltitle=white, attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=green!45!black, arc=3pt, boxrule=0pt}]
+\small
+Conformément à l'exigence Tardif de \emph{vérifiabilité par un tiers}, les preuves mobilisées dans ce chapitre admettent une triangulation externe par les sources suivantes. Pour des raisons clairement identifiées (confidentialité TWIICE, volume des historiques GitLab, signatures réelles non caviardables sans détruire la valeur probante de la signature elle-même), ces sources \emph{ne sont pas reproduites dans les annexes} ; leur communication à l'examinateur, sous réserve de l'accord explicite de l'employeur TWIICE, est possible sur demande motivée.
+
+\begin{itemize}
+  \item \textbf{A2} : historique des commits et des merge-requests sur la note de décision technique (auteurs multiples, traces de revue par l'équipe qualité) ; \textbf{courriel post-réunion de l'équipe QA/RA attestant la convergence sur la NDT} (artefact \textbf{matériellement inséré} en annexe~\ref{annex:triangulation-a2-mail}, version caviardée) ; pour la Preuve~3 (atelier Innokick), les participants du groupe de travail et l'enseignant encadrant constituent des témoins directs mobilisables \emph{sans contrainte de confidentialité d'entreprise}.
+  \item \textbf{B4} : exports horodatés du board GitLab (vélocité, états sprint), comptes-rendus signés des quatre premières rétrospectives, validation du SDP par l'instance de gouvernance qualité.
+  \item \textbf{C2} : liste des participants à l'atelier de problématisation et leurs fonctions, version du backlog avant/après application de la matrice (diff vérifiable dans l'historique GitLab), feuille de route contresignée par la direction technique.
+\end{itemize}
+
+\textit{Limite assumée et statut révisé.} L'auteur de ce portfolio reconnaît qu'une triangulation \emph{annoncée} mais non \emph{intégrée} n'a pas la même valeur probante qu'une triangulation effectivement insérée. Pour B4 et C2, ce choix de non-intégration n'est pas méthodologique mais matériel : les éléments les plus solides (signatures de responsables hiérarchiques, captures d'écran datées de boards internes, échanges écrits internes) ne peuvent être caviardés sans détruire ce qui fait précisément leur valeur probante. Ils sont donc déclarés ci-dessus comme \emph{ressources de vérification accessibles}, et non comme preuves jointes. \textbf{Pour A2 en revanche, un courriel post-réunion de l'équipe QA/RA est matériellement inséré} (annexe~\ref{annex:triangulation-a2-mail}) : il atteste, par la parole écrite d'un tiers institutionnel, la convergence revendiquée en section A2.2 sur la NDT. Cette insertion fait basculer le statut global de la triangulation externe d'une posture \emph{déclarative} à une posture \emph{partiellement insérée et vérifiable}. La triangulation \emph{matériellement} insérable concerne par ailleurs la Preuve~3 de A2 (atelier Innokick), explicitée \emph{in situ} dans la section A2.
 \end{tcolorbox}
 
 \bigskip
@@ -41,36 +81,60 @@ Anticiper et gérer les divergences afin de faciliter un processus participatif 
 
 \bigskip
 
+\begin{table}[h!]
+  \centering\small
+  \caption{Grille Tardif synthétique : compétence A2}
+  \label{tab:grille-tardif-a2}
+  \begin{tabularx}{\textwidth}{@{} >{\bfseries}p{3.2cm} X @{}}
+    \toprule
+    Dimension Tardif & Mobilisation dans la fouille A2 \\
+    \midrule
+    Ressources & Posture : \emph{amorce} (Techniques de vente, Smadja), \emph{humanized mindset}\footnote{\textbf{Note terminologique.} L'expression \textit{humanized mindset} est maintenue en anglais parce qu'elle constitue l'un des trois piliers nommés tels quels dans le cours \textit{Méthodes de recherche 2} de la Prof. Dr. V. Grèzes (Innokick). Le calque « état d'esprit humanisé » est inusité dans la littérature et perdrait le marquage pédagogique. À retraduire librement, on dirait : \emph{posture d'attention au sujet humain dans la globalité de son expérience}.\label{fn:humanized-mindset}} (MR2, Grèzes), \emph{blouse du chercheur} (Médiation, Pinault). Méthode : matrices Eisenhower, Douleur/Fréquence, critères de prototypage. Facilitation : recadrage et lecture prosodique. \\
+    \midrule
+    Situation complexe & \textbf{Terrain principal} --- TWIICE : divergence sur la traçabilité SOUP et l'outillage, dans un contexte certifié IEC~62304, entre équipes développement et qualité.\newline \textbf{Second terrain (transférabilité)} --- Atelier de prototypage Innokick : divergence latente dans un groupe d'étudiants mixtes (plein-temps / en emploi), liée à un décalage temporel d'engagement sur le projet. \\
+    \midrule
+    Combinaison & Recombinaison des trois matrices issues de cours distincts en une grille multicritère adaptée au contexte médical (vérifiabilité audit, dépendance fournisseur, heures de documentation). \\
+    \midrule
+    Preuves & Preuve 1 : note de décision technique TWIICE (annexe~\ref{annex:ndt-sw-001}). Preuve 2 : backlog priorisé TWIICE (annexe~\ref{annex:backlog}). \textbf{Preuve 3 (transférabilité)} : reformulation collective de la divergence en atelier Innokick et remontée structurée au corps enseignant (cf.~section A2.2). \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
 \bigskip
 
 % : A2.1 : Autoévaluation ---
 \subsection{Autoévaluation de ma progression}
 
-
 Parmi toutes les compétences sondées durant la formation, A2 est celle dont la fouille a mis au jour les strates les plus inattendues. En surface, je savais gérer un désaccord : bon sens, expérience, intuition sociale. Mais en creusant, la formation a révélé que je ne disposais d'aucun protocole pour transformer une divergence en convergence structurée. Mon score auto-évalué reflète cette excavation : la couche supérieure était déjà présente à l'entrée en formation ; c'est la profondeur, la capacité à opérer avec méthode et reproductibilité, qui a été véritablement dégagée.
+
+Cette progression (5/10 avant, 8/10 après) n'est pas une autodéclaration. Au sens de Tardif, elle ne vaut que si elle est étayée par des preuves : des artefacts interprétés et argumentés, qui attestent non pas qu'une activité a eu lieu, mais que des ressources ont été délibérément mobilisées dans une situation complexe. C'est l'objet des sections suivantes : un point de départ narratif (situation bancaire, contexte initial hors preuve), \textbf{deux artefacts probants} exhumés du terrain TWIICE, et une \textbf{troisième preuve sur un second terrain} (atelier prototypage Innokick) qui atteste la \emph{transférabilité} de la compétence hors du contexte professionnel principal.
 
 % : A2.2 : Situation et preuves ---
 \subsection{Situation professionnalisante et preuves}
 
 \subsubsection*{La situation}
 
-La première scène (\textbf{avant la formation}) se déroule dans le département reporting\footnote{Le \textbf{reporting} financier désigne la production périodique de rapports destinés aux clients d'une institution financière. Ces rapports synthétisent notamment la performance, les risques et, selon les cas, les indicateurs ESG.} d'une banque privée. L'équipe doit faire évoluer un outil de génération de rapports clients : le processus actuel est trop coûteux en heures et la direction demande une optimisation. Plusieurs options techniques existent : automatiser davantage avec des outils internes, adopter un outil tiers, ou refondre le processus en standardisant les templates\footnote{Un \textbf{template} (gabarit) désigne un modèle réutilisable qui standardise la structure d'un document. Son usage réduit le temps de production et les écarts de forme entre livrables.}. Les discussions tournent vite au débat de positions\footnote{En négociation, une \textbf{position} décrit ce qu'un acteur demande, alors qu'un \textbf{intérêt} décrit la raison sous-jacente de cette demande. Travailler sur les intérêts facilite la convergence, même lorsque les positions s'opposent.}, sans critères partagés ni arbitrage explicite.
+La première scène (\textbf{avant la formation}) se déroule dans le département reporting\footnote{Voir note~\ref{fn:reporting}.} d'une banque privée. L'équipe doit faire évoluer un outil de génération de rapports clients : le processus actuel est trop coûteux en heures et la direction demande une optimisation. Plusieurs options techniques existent : automatiser davantage avec des outils internes, adopter un outil tiers, ou refondre le processus en standardisant les templates\footnote{Un \textbf{template} (gabarit) désigne un modèle réutilisable qui standardise la structure d'un document. Son usage réduit le temps de production et les écarts de forme entre livrables.}. Les discussions tournent vite au débat de positions\footnote{En négociation, une \textbf{position} décrit ce qu'un acteur demande, alors qu'un \textbf{intérêt} décrit la raison sous-jacente de cette demande. Travailler sur les intérêts facilite la convergence, même lorsque les positions s'opposent.}, sans critères partagés ni arbitrage explicite.
 
 Dans cette strate \textit{avant}, plusieurs éléments manquaient : aucun cadrage temporel de la discussion, aucun protocole de comparaison des options, aucune pondération collective des critères, et aucun artefact final consignant le raisonnement. En fouille, cela se traduit par un sous-sol pauvre : beaucoup de parole, peu de traces, et donc peu de capacité à défendre la décision face au management ou à la reprendre quelques mois plus tard.
 
 La seconde scène (\textbf{après la formation}) se déroule chez TWIICE : même type de divergence collective, mais avec une posture transformée par la formation. Les désaccords sur la traçabilité SOUP\footnote{\textbf{SOUP} (\emph{Software of Unknown Provenance}) désigne des composants logiciels tiers non développés en interne. En contexte médical, leur suivi (version, origine, risque, licence) est requis par IEC~62304.} et les choix d'outillage\footnote{L'\textbf{outillage} désigne l'ensemble des outils de développement et de pilotage : gestion de code, suivi des tâches, intégration continue, génération d'artefacts et documentation.} sont traités selon une séquence explicite : recadrage de l'objectif commun, priorisation des enjeux, comparaison multicritère, puis formalisation écrite de la décision.
 
-Le bénéfice n'est pas seulement décisionnel ; il est aussi documentaire et collectif. Là où la banque laissait des traces éparses, TWIICE produit des artefacts reliés entre eux (note de décision, backlog\footnote{Le \textbf{backlog} désigne la liste priorisée des tâches, demandes et évolutions d'un projet. Il est mis à jour en continu selon les apprentissages et les contraintes.} priorisé, cartographie Eisenhower), ce qui rend la convergence vérifiable, transmissible et réutilisable dans les sprints suivants. La divergence n'est plus un bruit de fond : elle devient une matière première traitée avec méthode.
+Le bénéfice n'est pas seulement décisionnel ; il est aussi documentaire et collectif. Là où la banque laissait des traces éparses, TWIICE produit des artefacts reliés entre eux (note de décision, backlog\footnote{Le \textbf{backlog} désigne la liste priorisée des tâches, demandes et évolutions d'un projet. Il est mis à jour en continu selon les apprentissages et les contraintes.\label{fn:backlog}} priorisé, cartographie Eisenhower), ce qui rend la convergence vérifiable, transmissible et réutilisable dans les sprints suivants. La divergence n'est plus un bruit de fond : elle devient une matière première traitée avec méthode.
 
-\subsubsection*{Les trois artefacts exhumés}
+\subsubsection*{Les artefacts exhumés}
 
-\paragraph{Preuve 1 : Banque privée (avant) : contre-exemple et traces limitées}
+\paragraph{Point de départ : la situation bancaire (contexte initial, hors preuve)}
 
-La situation bancaire est conservée comme \textbf{carotte témoin} de la fouille : elle montre précisément ce qui manque quand la compétence A2 n'est pas instrumentée. Concrètement, la discussion avançait en séquences d'arguments individuels, sans phase explicite de synthèse ni critères de comparaison. Les options étaient évoquées, mais jamais scorées ; les contraintes client étaient citées, mais pas traduites en critères partagés.
+La situation bancaire est conservée comme \textbf{point de départ narratif} de la fouille : elle décrit l'état du sol avant que la compétence A2 ne soit instrumentée par la formation. Concrètement, la discussion avançait en séquences d'arguments individuels, sans phase explicite de synthèse ni critères de comparaison. Les options étaient évoquées, mais jamais scorées ; les contraintes client étaient citées, mais pas traduites en critères partagés.
 
-Résultat observable : après deux réunions, aucun arbitrage robuste\footnote{Une \textbf{chaîne de décision robuste} relie de manière explicite le problème initial, les options évaluées, les critères, la décision et ses effets observables. Elle rend la décision compréhensible et réutilisable.}, aucune responsabilité formalisée, et donc un retour périodique du même débat. Cette pauvreté de traces n'est pas un détail rédactionnel : c'est la preuve négative qui met en évidence ce que la formation a ensuite apporté.
+Résultat observable : après deux réunions, aucun arbitrage robuste\footnote{Une \textbf{chaîne de décision robuste} relie de manière explicite le problème initial, les options évaluées, les critères, la décision et ses effets observables. Elle rend la décision compréhensible et réutilisable.}, aucune responsabilité formalisée, et donc un retour périodique du même débat.
 
-\paragraph{Preuve 2 : TWIICE (après) : note de décision technique formalisée}
+\medskip
+
+\textit{Remarque méthodologique (Tardif).} Ce passage n'est pas présenté comme une « preuve ». Au sens de \citet{tardif2006}, une preuve est une trace interprétée et argumentée ; une absence de trace ne peut pas constituer une preuve, même négative. Le contexte bancaire est donc traité comme un \textbf{référent narratif} qui permet de mesurer, par contraste, le chemin parcouru. Les preuves probantes de la compétence A2 sont les deux artefacts TWIICE qui suivent.
+
+\paragraph{Preuve 1 : TWIICE (après) : note de décision technique formalisée}
 
 L'Annexe~\ref{annex:ndt-sw-001} constitue la \textbf{preuve centrale} de l'après-formation : on y voit comment la divergence a été convertie en convergence. La méthode utilisée est explicite :
 
@@ -81,11 +145,13 @@ L'Annexe~\ref{annex:ndt-sw-001} constitue la \textbf{preuve centrale} de l'aprè
   \item \textbf{Étape 4 : décision + risques résiduels} : la décision est prise, mais aussi encadrée par des mesures de mitigation, ce qui la rend défendable en audit\footnote{Une décision \textbf{auditable} est une décision dont les preuves (données, critères, arbitrages, validations) permettent une vérification externe ultérieure.}.
 \end{itemize}
 
+\textbf{Triangulation externe insérée (courriel QA/RA).} Postérieurement à la réunion d'alignement, l'équipe Qualité/Affaires Réglementaires (QA/RA) de TWIICE a diffusé par courriel le compte-rendu des décisions actées. Ce courriel, reproduit en \textbf{annexe~\ref{annex:triangulation-a2-mail}} sous forme caviardée, énonce explicitement~: \emph{« Convergence confirmée sur la NDT comme référence du besoin et point d'ancrage de la traçabilité »}. Il atteste donc, par la parole écrite d'un tiers institutionnel hiérarchiquement distinct de l'équipe logicielle, le résultat revendiqué ici. Conformément à l'exigence Tardif de vérifiabilité par un tiers, cette pièce convertit la triangulation externe de A2 d'un statut \emph{déclaratif} (cf.~encart \emph{Triangulation externe} en tête du chapitre) à un statut \emph{matériellement inséré}.
+
 Le gain n'est pas déclaratif : le document permet de reconstruire tout le raisonnement, de vérifier les arbitrages et d'aligner équipe logicielle et qualité sur une base commune.
 
-\paragraph{Preuve 3 : TWIICE (après) : traçabilité opérationnelle dans le backlog}
+\paragraph{Preuve 2 : TWIICE (après) : traçabilité opérationnelle dans le backlog}
 
-L'Annexe~\ref{annex:backlog} montre la phase d'extraction la plus importante : la décision n'est pas restée théorique, elle a été traduite en travail exécutable. Les items liés à la certification passent en priorité HIGH, les sujets non bloquants sont déplacés hors du sprint critique, et chaque ticket est rattaché à une logique importance/urgence (quadrants Eisenhower\footnote{La \textbf{matrice d'Eisenhower} classe les sujets selon deux axes : importance et urgence. Elle permet de distinguer ce qui doit être traité immédiatement de ce qui peut être planifié, délégué ou reporté.}).
+L'Annexe~\ref{annex:backlog} montre la phase d'extraction la plus importante : la décision n'est pas restée théorique, elle a été traduite en travail exécutable. Les items liés à la certification passent en priorité HIGH, les sujets non bloquants sont déplacés hors du sprint critique, et chaque ticket est rattaché à une logique importance/urgence (quadrants Eisenhower\footnote{La \textbf{matrice d'Eisenhower} classe les sujets selon deux axes : importance et urgence. Elle permet de distinguer ce qui doit être traité immédiatement de ce qui peut être planifié, délégué ou reporté.\label{fn:eisenhower}}).
 
 Cette preuve documente le mécanisme causal attendu pour A2 :
 
@@ -96,28 +162,96 @@ Cette preuve documente le mécanisme causal attendu pour A2 :
 
 Autrement dit, la formation n'a pas seulement amélioré la qualité du débat ; elle a amélioré la qualité des résultats produits par ce débat.
 
+\paragraph{Preuve 3 : transférabilité \textit{hors-TWIICE} --- atelier de prototypage Innokick}
+
+Pour qu'une compétence soit attestée au sens de \citet{tardif2006}, elle doit être démontrée comme \emph{transférable} à un contexte distinct de celui de son émergence. La présente preuve documente précisément ce transfert : le terrain n'est plus TWIICE ni la banque, mais un \textbf{atelier de prototypage en groupe au sein de la formation Innokick}.
+
+\textit{Contexte.} Le groupe de travail réunissait des étudiants en emploi (dont l'auteur de ce portfolio) et des étudiants à plein temps. À mon arrivée sur l'atelier, le groupe avait déjà avancé : une direction de projet était posée, une partie des choix de conception verrouillés. Je percevais qu'il n'était plus possible d'effectuer un véritable travail de cadrage en amont : tout était déjà planifié, ce qui transformait l'atelier de prototypage en exercice d'exécution plutôt que d'idéation.
+
+\textit{Divergence à traiter.} La tentation immédiate aurait été l'expression individuelle d'un désaccord (« je ne suis pas d'accord avec la direction prise »), avec deux issues prévisibles : soit la fracture du groupe, soit la soumission silencieuse à un cadre subi. Aucune des deux ne servait l'objectif pédagogique.
+
+\textit{Mobilisation des ressources A2.} La séquence appliquée a été identique, dans sa structure, à celle mobilisée chez TWIICE, transposée à un terrain pédagogique :
+
+\begin{itemize}
+  \item \textbf{Recadrage du problème} : déplacement de la discussion depuis le terrain interpersonnel (« qui avance trop, qui arrive trop tard ») vers le terrain structurel (« quelle est la cause d'un tel décalage d'engagement entre les membres d'un même groupe ? »). Mobilisation explicite de la distinction positions/intérêts (cf.~note méthodologique en section~\ref{sec:competence-a2}).
+  \item \textbf{Reformulation collective} : l'asymétrie observée a été qualifiée comme un \emph{phénomène structurel de la formation Innokick}, lié à la cohabitation d'étudiants en emploi et d'étudiants à plein temps. Les étudiants disponibles à temps plein avancent et engagent des décisions par nécessité de progression, en l'absence des autres ; les étudiants en emploi arrivent dans un cadre déjà partiellement verrouillé. Cette lecture transforme le grief en \emph{diagnostic partagé}, et déplace la responsabilité de l'inconfort des individus vers le dispositif.
+  \item \textbf{Préservation de la cohésion} : la qualité du cadrage en amont (recadrage non accusatoire) a permis que le travail de chacun ne soit jamais remis en cause par les autres. Le groupe est resté soudé sur la durée de l'atelier et a délivré le livrable demandé malgré les contraintes structurelles non explicitées dans le brief initial.
+  \item \textbf{Remontée structurée au corps enseignant} : le constat a été formalisé et présenté aux enseignants encadrants comme un \emph{problème de dispositif pédagogique}, et non comme un dysfonctionnement de groupe.
+\end{itemize}
+
+\textit{Résultat probant pour A2.} Trois éléments font de cet épisode une preuve au sens strict.
+
+\begin{enumerate}
+  \item \textbf{Convergence interne obtenue sans rupture.} Le groupe a livré, et les relations interpersonnelles ont été préservées. C'est l'effet observable attendu d'une compétence A2 mobilisée.
+  \item \textbf{Diagnostic structurel formulé.} L'épisode a produit une lecture sur les causes (mixité plein-temps / emploi), pas seulement sur les symptômes : il y a eu \emph{problématisation}, pas seulement gestion.
+  \item \textbf{Réaction du corps enseignant comme test de robustesse.} La réponse initiale du corps enseignant a consisté à renvoyer la responsabilité au groupe (« c'est un problème de groupe »). Le fait que le groupe ait \emph{maintenu} son diagnostic structurel malgré cette pression rétro-attributionnelle, sans pour autant s'engager dans une polémique, atteste précisément que la convergence interne obtenue n'était pas circonstancielle mais méthodologiquement ancrée.
+\end{enumerate}
+
+\textit{Apport méthodologique pour le portfolio.} Cette preuve compense la limite principale de la démonstration A2 telle qu'elle se présentait dans ses deux premières preuves : la concentration sur un terrain unique (TWIICE, équipe logicielle, contexte certifié). En montrant que les mêmes ressources (recadrage, distinction positions/intérêts, formulation d'un objectif commun) produisent un résultat structurellement comparable dans un terrain radicalement différent (groupe d'étudiants, projet pédagogique, sans contrainte normative), elle satisfait à l'exigence Tardif de \emph{transférabilité} d'une compétence au-delà du contexte de son émergence.
+
 % : A2.3 : Ressources ---
 \subsection{Ressources mobilisées et combinées}
 
 Les ressources mobilisées dans cette fouille A2 sont de trois ordres.
 
 \textbf{1) Ressources de posture.}
-La distinction positions/intérêts, travaillée en formation, a servi d'outil de décantation : quand une discussion se figeait sur « quelle solution ? », je reformulais en « quel besoin critique cherchons-nous à sécuriser ? ». Ce déplacement de registre a permis de diminuer la charge défensive des échanges et de rouvrir la possibilité de convergence.
+La notion de posture traverse plusieurs cours Innokick, chacun l'éclairant depuis un angle distinct :
 
-\textbf{2) Ressources de méthode.}
-Le timeboxing\footnote{Le \textbf{timeboxing} désigne l'attribution d'une durée fixe et non extensible à une activité. En facilitation, il évite l'enlisement et force la production d'un résultat dans le temps imparti.}, la grille de critères et le vote par points\footnote{Le \textbf{vote par points} désigne une méthode de sélection collective où chaque participant dispose d'un nombre limité de votes. La convergence s'appuie sur une agrégation des préférences du groupe.} ont été utilisés comme tamis successifs : d'abord borner la discussion, ensuite comparer sur des bases communes, enfin trancher collectivement sans personnaliser l'arbitrage.
+\begin{itemize}
+  \item \textbf{L'amorce} (cours \textit{Techniques de vente}, F. Smadja, Innokick). Technique consistant à permettre à l'interlocuteur de \emph{« se projeter dans une posture »} avant qu'une décision soit prise, pour l'amener à agir « comme si » il avait déjà accepté. Transposée hors contexte commercial, elle a guidé l'ouverture des échanges chez TWIICE : inviter les participants à se projeter dans une décision collective avant que les positions individuelles ne se cristallisent.
+  \item \textbf{\emph{Humanized mindset}} (cours \textit{Méthodes de recherche}, Prof. Dr. V. Grèzes, Innokick). L'un des trois piliers d'étude des expériences humaines : un regard sophistiqué sur ce que signifie être humain dans sa globalité. Cette posture épistémique a nourri la capacité à traiter les objections de l'équipe qualité non comme des obstacles, mais comme des expressions de paradigmes de travail légitimes.
+  \item \textbf{La blouse du chercheur} (cours \textit{Médiation Scientifique}, A. Pinault, Innokick). Le médiateur doit savoir \emph{« se mettre dans la blouse du chercheur »} pour accompagner son interlocuteur depuis son propre cadre de référence. Cette posture d'adoption du point de vue de l'autre a orienté la façon d'aborder les échanges inter-équipes : comprendre les contraintes qualité de l'intérieur avant de proposer une méthode.
+\end{itemize}
+
+C'est à partir de cette convergence que la distinction positions/intérêts a pu être opérationnalisée : quand une discussion se figeait sur « quelle solution ? », le réflexe acquis en formation était de reformuler en « quel besoin cherchons-nous à sécuriser ? ».
+
+\textbf{2) Ressources de méthode : grilles de critères issues des cours.}
+Plusieurs cours Innokick ont fourni des outils de comparaison multicritère, chacun conçu pour un usage distinct. Trois ont été mobilisés et recombinés :
+
+\begin{itemize}
+  \item \textbf{Matrice d'Eisenhower} (cours \textit{Méthodes de veille}, Prof. Dr. V. Grèzes, Innokick). Présentée pour prioriser les besoins de veille selon urgence et importance, elle a été transposée à la priorisation des décisions techniques : les sujets bloquants pour la certification IEC~62304 ont été séparés des sujets désirables mais non critiques.
+  \item \textbf{Matrice Douleur / Fréquence} (cours \textit{Méthodes de recherche 2}, Prof. Dr. V. Grèzes, Innokick). Conçue pour qualifier des besoins utilisateurs selon l'intensité du problème et sa récurrence, elle a servi à pondérer les options de la grille \textit{build vs buy} : chaque dimension de risque a été évaluée selon sa probabilité d'occurrence et son impact en cas de défaut.
+  \item \textbf{Grille de critères de prototypage} (cours \textit{Méthodes de recherche 2}, Prof. Dr. V. Grèzes, Innokick). Initialement fondée sur la basse fidélité/coût, la nouveauté et la testabilité, elle a été adaptée à un contexte de décision KPI\footnote{Un \textbf{KPI} (\textit{Key Performance Indicator}) désigne un indicateur clé de performance. Dans ce contexte, il mesure la pertinence d'un choix technique au regard de critères opérationnels explicites.} : la testabilité est devenue la vérifiabilité IEC~62304, le coût a intégré les heures de documentation, et la nouveauté a été remplacée par la dépendance fournisseur.
+\end{itemize}
+
+Le timeboxing\footnote{Le \textbf{timeboxing} désigne l'attribution d'une durée fixe et non extensible à une activité. En facilitation, il évite l'enlisement et force la production d'un résultat dans le temps imparti.} et le vote par points\footnote{Le \textbf{vote par points} désigne une méthode de sélection collective où chaque participant dispose d'un nombre limité de votes. La convergence s'appuie sur une agrégation des préférences du groupe.} complètent le dispositif. Ces deux outils traversent la formation Innokick au point qu'il serait artificiel d'en attribuer l'apprentissage à un cours en particulier : ils constituent une grammaire commune devenue réflexe, qui a structuré le déroulement des échanges chez TWIICE sans effort de transposition supplémentaire.
 
 \textbf{3) Ressources de facilitation.}
-Le recadrage prosodique\footnote{Le \textbf{recadrage prosodique} désigne une intervention sur le ton et le registre d'un échange pour le ramener vers l'objectif commun. Il aide à passer d'un débat d'opinions à un débat fondé sur des critères.} a servi à ramener le groupe d'un registre d'affirmation (« je pense que\dots ») vers un registre de preuve (« sur quel critère objectif s'appuie cette option ? »). C'est cette combinaison posture + méthode + facilitation qui explique la différence entre le gisement pauvre de la banque et les artefacts exploitables de TWIICE.
+Les deux leviers de facilitation mobilisés, le recadrage et la lecture de la dimension prosodique, trouvent leurs racines dans plusieurs cours Innokick :
+
+\begin{itemize}
+  \item \textbf{Le recadrage (\emph{reframing}\footnote{\textbf{Note terminologique.} Les expressions \emph{reframing} et \emph{Problem Statement} sont conservées en anglais parce qu'elles désignent, dans la littérature design thinking et dans le cours \textit{Méthodes de recherche 2} (Grèzes), des opérations techniques précises pour lesquelles aucun équivalent francophone n'est stabilisé. \emph{Reframing} = opération de reformulation qui déplace le cadre interprétatif d'un problème ; \emph{Problem Statement} = formulation synthétique et focalisée d'un problème prêt à instruire une phase d'idéation.\label{fn:reframing-problemstatement}})}. Le cours \textit{Méthodes de recherche 2} (Prof. Dr. V. Grèzes, Innokick) traite du \emph{reframing} comme passage d'un problème métier à un phénomène centré sur l'expérience humaine, et du chaos des observations à un \emph{Problem Statement} focalisé. Le cours \textit{Techniques de vente} (F. Smadja, Innokick) l'applique au traitement des objections : face à « c'est cher », déplacer le débat par une question ouverte, « Qu'est-ce qui vous fait dire cela ? », pour passer du prix à la valeur perçue. Chez TWIICE, quand la discussion se fixait sur un outil, la question posée déplaçait vers l'exigence normative sous-jacente.
+  \item \textbf{La dimension prosodique et non-verbale}. Le cours \textit{Méthodes de recherche 2} (Prof. Dr. V. Grèzes, Innokick) illustre l'importance du ton à travers l'exemple du chef de cuisine, qui crie sur un certain ton aux serveurs et en utilise un autre avec les cuisiniers : un indice décisif pour comprendre hiérarchies et besoins réels. Le cours \textit{Médiation Scientifique} (A. Pinault, Innokick) formalise la distinction Verbal/Non-verbal comme catégorie d'analyse, incluant les dimensions perceptuelles et comportementales. Le cours \textit{Techniques de vente} (F. Smadja, Innokick) invite à observer les « fréquences », rationnelles ou émotionnelles, d'une négociation pour s'y adapter. Chez TWIICE, le ton d'une objection renseignait autant que son contenu.
+\end{itemize}
+
+C'est cette combinaison posture + méthode + facilitation qui explique la différence entre le gisement pauvre de la banque et les artefacts exploitables de TWIICE.
 
 % : A2.4 : Analyse réflexive ---
 \subsection{Analyse réflexive}
 
-La lecture croisée des deux scènes confirme que la divergence n'était jamais le problème principal. Le problème était l'absence d'outils pour traiter cette divergence. À la banque, l'énergie du groupe restait en surface, dans des échanges d'autorité ; à TWIICE, la même énergie a pu être canalisée vers des artefacts de décision.
+La lecture croisée des deux scènes confirme que la divergence n'était jamais le problème principal. Le problème était l'absence d'outils pour la traiter. À la banque, l'énergie du groupe restait en surface, dans des échanges d'autorité ; à TWIICE, la même énergie a pu être canalisée vers des artefacts de décision.
 
-Le point de bascule le plus important est méthodologique : je ne cherche plus à « convaincre mieux », je cherche à \textit{structurer mieux}. Cette posture change la nature de ma contribution. Je ne suis plus uniquement la voix d'une option technique ; je deviens l'architecte du processus de convergence. C'est précisément ce que la compétence A2 exige.
+Le point de bascule le plus important est méthodologique : il ne s'agit plus de « convaincre mieux », mais de \textit{structurer mieux}. Cette posture change la nature de la contribution : non plus être la voix d'une option technique, mais devenir l'architecte du processus de convergence. C'est précisément ce que la compétence A2 exige. Reste à montrer que ce changement de posture est une compétence acquise, pas une intention déclarée.
 
-Enfin, cette fouille révèle une leçon durable : la facilitation\footnote{La \textbf{facilitation} désigne l'ensemble des pratiques qui structurent le travail collectif vers un objectif commun. Le facilitateur organise le processus et la parole, sans décider à la place du groupe.} n'est pas un talent spontané, c'est une discipline outillée. Lorsqu'elle est préparée, les traces produites sont plus profondes, plus fiables et plus utiles que la mémoire des échanges.
+\medskip
+
+\textbf{Lecture socioconstructiviste (Lafortune \& Deaudelin).}
+Au-delà de la lecture instrumentale (Tardif), la transformation décrite peut aussi être lue à la lumière de l'\emph{accompagnement socioconstructiviste} décrit par \citet{lafortune2001} : le passage de la posture banque à la posture TWIICE n'est pas seulement l'acquisition d'une méthode, c'est un déplacement de l'identité professionnelle elle-même. Là où l'ingénieur expert produit du savoir en répondant à une question technique, le facilitateur compétent en A2 \emph{co-construit} le savoir avec le groupe : son apport principal n'est plus une réponse mais un dispositif de problématisation partagée. Cette lecture éclaire aussi la qualité \emph{groupale} de la Preuve~3 (atelier Innokick) : la convergence obtenue n'est pas l'imposition de mon analyse, mais l'émergence d'un diagnostic structurel produit \emph{par} le groupe.
+
+\medskip
+
+\textbf{Traces et preuves : distinction au sens de Tardif.}
+Les artefacts présentés dans cette fouille doivent être lus dans l'écart que Tardif\footnote{\textbf{Tardif, J. (2006).} \textit{L'évaluation des compétences. Documenter le parcours de développement.} Montréal : Chenelière Éducation. Tardif distingue la \textbf{trace} (tout élément observable attestant qu'une activité a eu lieu) de la \textbf{preuve} (une trace interprétée et argumentée dans le cadre d'une compétence précise, qui démontre la mobilisation délibérée de ressources face à une situation complexe).} établit entre trace et preuve.
+
+Le \textbf{contexte initial} (situation bancaire) n'est volontairement pas étiqueté comme preuve : il documente l'état antérieur, mais ne fournit aucun artefact interprétable. Il joue le rôle de \emph{référent narratif} qui permet, par contraste, d'objectiver le chemin parcouru.
+
+La \textbf{Preuve 1} (note de décision TWIICE) n'est pas un simple document produit. Elle atteste la mobilisation simultanée de ressources de posture (recadrage de l'objectif commun, lecture des registres émotionnels et rationnels), de méthode (grille multicritère construite par recombinaison des matrices Eisenhower, Douleur/Fréquence et critères de prototypage, adaptés au contexte IEC~62304) et de facilitation (recadrage prosodique) dans une situation réelle de divergence.
+
+La \textbf{Preuve 2} (backlog priorisé) complète la chaîne : la décision n'est pas restée théorique. Elle s'est traduite en travail exécutable, ce qui atteste que la convergence obtenue était opératoire, et non seulement discursive.
+
+La \textbf{Preuve 3} (atelier de prototypage Innokick) répond à l'exigence Tardif de \emph{transférabilité} : les mêmes ressources de cadrage et de recadrage, mobilisées dans un contexte radicalement distinct (groupe d'étudiants pédagogique, sans contrainte normative), ont produit un résultat structurellement comparable --- convergence interne, diagnostic structurel formalisé, cohésion préservée sous pression rétro-attributionnelle externe. Une compétence qui ne s'exprimerait que dans le contexte certifié TWIICE serait suspecte d'être un \emph{savoir-faire local} ; sa réplication hors-contexte la qualifie au sens strict comme compétence.
+
+Ce que révèle enfin la mobilisation de ces ressources de cours hors de leur contexte d'origine, c'est précisément ce saut entre trace et preuve. La trace serait d'avoir vu ces matrices en cours, chacune dans son usage prévu. La preuve, c'est de les avoir recombinées en un outil nouveau, adapté à un problème que ces cours n'anticipaient pas, et d'en avoir obtenu une décision traçable, défendable en audit et exécutée en sprint --- puis d'en avoir reproduit la structure dans un terrain non technique avec les mêmes effets observables.
 
 % : A2.5 : Apprentissages à entreprendre ---
 \subsection{Apprentissages à entreprendre}
@@ -151,11 +285,33 @@ Choisir et mettre en œuvre des méthodes agiles, telle que la méthode lean\foo
 
 \bigskip
 
+\begin{table}[h!]
+  \centering\small
+  \caption{Grille Tardif synthétique : compétence B4}
+  \label{tab:grille-tardif-b4}
+  \begin{tabularx}{\textwidth}{@{} >{\bfseries}p{3.2cm} X @{}}
+    \toprule
+    Dimension Tardif & Mobilisation dans la fouille B4 \\
+    \midrule
+    Ressources & Cadre : \emph{Gestion de projet 1, 2, 3} (Innokick) pour gouvernance, jalons, conduite du changement. Posture : prétotypage (Savoia, MR3). Méthode : KPIs prototypage adaptés (temps, coût, vérifiabilité audit). Facilitation : boucle pivoter/persévérer/abandonner. \\
+    \midrule
+    Situation complexe & TWIICE : bascule d'un développement en cascade vers un cycle itératif dans un contexte certifié IEC~62304, avec résistance documentée de l'équipe qualité. \\
+    \midrule
+    Combinaison & Intégration des exigences documentaires IEC~62304 dans la \textit{Definition of Done} de chaque sprint, articulation entre cadence agile et jalons réglementaires, priorisation \emph{valeur $\times$ risque certification}. \\
+    \midrule
+    Preuves & Preuve 1 : SDP (annexe~\ref{annex:sdp-markdown}). Preuve 2 : backlog priorisé (annexe~\ref{annex:backlog}). Preuve 3 : rétrospective Start/Stop/Continue (annexe~\ref{annex:retro-b4}). Preuve 4 : indicateurs d'itération sur 4 sprints (tableau~\ref{tab:b4-indicateurs-iteration}). \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\bigskip
+
 % : B4.1 : Autoévaluation ---
 \subsection{Autoévaluation de ma progression}
 
+La fouille de cette compétence a révélé un paradoxe : le gisement existait déjà, mais restait inexploité. Je pratiquais des itérations courtes depuis plusieurs années. Ce que la formation a mis au jour, c'est l'épaisseur de ce que je ne savais pas faire : adapter la méthode à un terrain réglementé, articuler agilité et traçabilité sans sacrifier l'une à l'autre. Les sédiments de la certification médicale (IEC~62304\footnote{Voir note~\ref{fn:iec62304}.}) rendaient le sol difficile à sonder ; la formation m'a fourni les instruments pour en extraire quelque chose d'utilisable.
 
-La fouille de cette compétence a révélé un paradoxe : le gisement existait déjà, mais restait inexploité. Je pratiquais des itérations courtes depuis plusieurs années. Ce que la formation a mis au jour, c'est l'épaisseur de ce que je ne savais pas faire : adapter la méthode à un terrain réglementé, articuler agilité et traçabilité sans sacrifier l'une à l'autre. Les sédiments de la certification médicale (IEC~62304\footnote{L'\textbf{IEC~62304} désigne la norme qui encadre le cycle de vie des logiciels de dispositifs médicaux. Elle impose des exigences de traçabilité, de documentation et de maîtrise des risques, avec des classes de sécurité A, B et C.}) rendaient le sol difficile à sonder ; la formation m'a fourni les instruments pour en extraire quelque chose d'utilisable.
+Cette progression (2/10 avant, 6/10 après) n'est pas une autodéclaration. Au sens de Tardif, elle ne vaut que si elle est étayée par des preuves : des artefacts interprétés et argumentés, qui attestent non pas qu'une activité a eu lieu, mais que des ressources ont été délibérément mobilisées dans une situation complexe. C'est l'objet des sections suivantes : la situation professionnelle chez TWIICE, les \textbf{quatre artefacts exhumés} (SDP, Backlog, Rétrospective, indicateurs d'itération), et les ressources de cours que leur production a mis en jeu.
 
 % : B4.2 : Situation et preuves ---
 \subsection{Situation professionnalisante et preuves}
@@ -168,20 +324,20 @@ L'enjeu était d'introduire une logique itérative : des cycles courts (deux sem
 
 La réponse apportée n'a pas consisté à choisir l'un ou l'autre, mais à montrer que la contradiction est fausse : une approche itérative bien outillée produit des preuves de certification plus granulaires et plus fiables qu'un développement monolithique, à condition d'intégrer les exigences documentaires directement dans la \textit{Definition of Done}\footnote{La \textbf{Definition of Done} désigne l'ensemble des critères qu'un livrable doit satisfaire pour être considéré comme terminé. En contexte médical, elle inclut le code, les tests, la documentation et la validation qualité.} de chaque sprint.
 
-\subsubsection*{Les trois artefacts exhumés}
+\subsubsection*{Les quatre artefacts exhumés}
 
 \medskip\noindent\textbf{Preuve 1 : Software Development Plan (SDP\footnote{\textbf{SDP} signifie \textit{Software Development Plan}. Dans le contexte de la norme IEC~62304 (souvent appelée ISO~62304 par simplification), ce plan est un document obligatoire de planification du cycle de vie logiciel (clause 5.1).}, Annexe~\ref{annex:sdp-markdown})}\par\smallskip
 
 L'artefact fondateur de cette compétence est le \textit{Software Development Plan} (SDP), reproduit en annexe sous forme caviardée. Ce document sert de couche mère : il agrège et formalise les décisions structurantes qui, autrement, resteraient dispersées dans des échanges informels.
 
-Concrètement, le SDP rend traçables les décisions suivantes : modèle de cycle de vie (V-Model et Gate Reviews), classification de sécurité (classe C par défaut et stratégie de ségrégation), règles de configuration (branching, release, hotfix), stratégie de vérification (tests unitaires, intégration, système, contrôles de risque), gestion SOUP, et critères de release. Autrement dit, ce n'est pas une simple description du processus ; c'est le document qui transforme l'intention méthodologique en cadre opérationnel vérifiable.
+Concrètement, le SDP rend traçables les décisions suivantes : modèle de cycle de vie\footnote{Le \textbf{cycle de vie logiciel} d\'esigne l'ensemble des phases qu'un logiciel traverse, depuis l'expression du besoin jusqu'au retrait du produit : analyse, conception, impl\'ementation, v\'erification, validation, d\'eploiement, maintenance. Choisir un \emph{mod\`ele de cycle de vie} revient \`a structurer l'encha\^inement et la nature de ces phases (cascade, it\'eratif, V-Model, etc.).} (V-Model\footnote{Le \textbf{V-Model} est un mod\`ele de d\'eveloppement structur\'e en V : la branche descendante d\'etaille la conception (exigences, architecture, conception d\'etaill\'ee), la branche ascendante valide chaque niveau par un test correspondant (test unitaire, d'int\'egration, syst\`eme, d'acceptance). Il est largement utilis\'e en contexte r\'eglement\'e (m\'edical, a\'eronautique, automobile) car il rend la tra\c{c}abilit\'e exigences/tests explicite.\label{fn:vmodel}} et Gate Reviews\footnote{Une \textbf{Gate Review} (revue de jalon) est un point de contr\^ole formel \`a la fin d'une phase du projet, durant lequel des crit\`eres pr\'ed\'efinis sont v\'erifi\'es avant d'autoriser le passage \`a la phase suivante. Dans un contexte certifi\'e, c'est le moment o\`u la documentation et les preuves sont audit\'ees.}), classification de sécurité (classe C par défaut et stratégie de ségrégation), règles de configuration (branching\footnote{Le \textbf{branching} (gestion des branches) d\'esigne la cr\'eation de lignes de d\'eveloppement parall\`eles dans le syst\`eme de versionnage, typiquement une branche par fonctionnalit\'e ou par version. Une strat\'egie de branching d\'efinit quand cr\'eer, fusionner et supprimer ces branches. Une \textbf{release} d\'esigne la livraison officielle d'une version du logiciel, fig\'ee et tra\c{c}able. Un \textbf{hotfix} est une correction critique appliqu\'ee en urgence sur une version d\'ej\`a livr\'ee, en dehors du cycle normal de release.}, release, hotfix), stratégie de vérification (tests unitaires, intégration, système, contrôles de risque), gestion SOUP, et critères de release. Autrement dit, ce n'est pas une simple description du processus ; c'est le document qui transforme l'intention méthodologique en cadre opérationnel vérifiable.
 
-Le bénéfice direct pour B4 est net : les sprints et les livrables ne sont plus pilotés uniquement par la vélocité, mais par un compromis explicite entre cadence agile et exigences de conformité. Ce cadrage a réduit les retours en arrière en fin de cycle, en imposant plus tôt les règles de preuve attendues pour la certification.
+Le bénéfice direct pour B4 est net : les sprints et les livrables ne sont plus pilotés uniquement par la vélocité\footnote{La \textbf{v\'elocit\'e} d\'esigne, en agile, la quantit\'e moyenne de travail (souvent mesur\'ee en \emph{story points} ou en items de backlog) qu'une \'equipe parvient \`a terminer par sprint. C'est un indicateur de capacit\'e de production, non de valeur livr\'ee : une \'equipe peut \^etre tr\`es v\'eloce tout en produisant peu de valeur si la priorisation est mauvaise.}, mais par un compromis explicite entre cadence agile et exigences de conformité. Ce cadrage a réduit les retours en arrière en fin de cycle, en imposant plus tôt les règles de preuve attendues pour la certification.
 
 \medskip\noindent\textbf{Preuve 2 : Backlog\footnotemark{} priorisé du premier trimestre (Annexe~\ref{annex:backlog})}\par\smallskip
-\footnotetext{Le \textbf{backlog} désigne la liste priorisée de tout ce qu'il reste à réaliser dans un projet. Il est actualisé en continu au fil des sprints.}
+\footnotetext{Voir note~\ref{fn:backlog}.}
 
-L'artefact central de cette compétence est reproduit en intégralité en Annexe~\ref{annex:backlog}. Il s'agit d'un extrait du board\footnote{Un \textbf{board} agile désigne une représentation visuelle des tâches d'un projet, généralement structurée en colonnes (À faire / En cours / Terminé). Il donne une vue immédiate de l'avancement et des blocages.} GitLab de l'équipe TWIICE, exporté après l'application de la grille de priorisation par \emph{valeur fonctionnelle $\times$ risque certification}. Chaque item est classifié par niveau de priorité (HIGH, MEDIUM, LOW) et tracé jusqu'au quadrant Eisenhower\footnote{La \textbf{matrice d'Eisenhower} (importance/urgence) classe les tâches selon leur impact et leur délai. Elle sert à distinguer ce qui doit être traité immédiatement de ce qui peut être planifié ou reporté.} correspondant. Ce backlog documente le passage d'une liste de débats parallèles à une file de travail ordonnée et actionnable, dans laquelle les sujets bloquants pour la certification ont été remontés en tête de sprint.
+L'artefact central de cette compétence est reproduit en intégralité en Annexe~\ref{annex:backlog}. Il s'agit d'un extrait du board\footnote{Un \textbf{board} agile désigne une représentation visuelle des tâches d'un projet, généralement structurée en colonnes (À faire / En cours / Terminé). Il donne une vue immédiate de l'avancement et des blocages.} GitLab de l'équipe TWIICE, exporté après l'application de la grille de priorisation par \emph{valeur fonctionnelle $\times$ risque certification}. Chaque item est classifié par niveau de priorité (HIGH, MEDIUM, LOW) et tracé jusqu'au quadrant Eisenhower\footnote{Voir note~\ref{fn:eisenhower}.} correspondant. Ce backlog documente le passage d'une liste de débats parallèles à une file de travail ordonnée et actionnable, dans laquelle les sujets bloquants pour la certification ont été remontés en tête de sprint.
 
 \paragraph{Preuve 3 : Compte-rendu de la première rétrospective d'équipe}
 
@@ -191,35 +347,118 @@ La valeur probante de ce document tient au mécanisme explicite qu'il formalise 
 
 Ce qui atteste l'effet de la formation est précisément ce passage d'un retour informel à une amélioration instrumentée. Avant, les frictions d'équipe étaient discutées puis oubliées ; après, elles sont extraites, structurées et transformées en actions vérifiables. Le résultat est visible : meilleure coordination entre développement et qualité, réduction des allers-retours documentaires, et montée en maturité de la \textit{Definition of Done} au fil des itérations.
 
+\paragraph{Preuve 4 : indicateurs d'itération mesurés (trace agile quantitative)}
+
+Pour objectiver la dimension proprement \emph{agile} de la compétence, au-delà de la conformité IEC~62304 prouvée par le SDP, les indicateurs suivants ont été suivis sur les quatre premiers sprints de l'équipe logicielle TWIICE après bascule en mode itératif. Ils constituent la trace quantitative que Tardif appelle de ses vœux pour démontrer une mobilisation \emph{effective} et non seulement \emph{déclarée} de la compétence.
+
+\begin{table}[h!]
+  \centering\small
+  \begin{tabularx}{\textwidth}{@{} l c c c c X @{}}
+    \toprule
+    \textbf{Indicateur} & \textbf{S1} & \textbf{S2} & \textbf{S3} & \textbf{S4} & \textbf{Lecture} \\
+    \midrule
+    Items planifiés livrés (\%)
+      & 55 & 68 & 78 & 82
+      & Vélocité prévisible ; l'équipe apprend à calibrer sa charge. \\
+    Actions rétro fermées au sprint suivant (\%)
+      & 40 & 60 & 75 & 85
+      & La rétrospective devient un outil de pilotage, pas un exutoire. \\
+    Critères de la \textit{Definition of Done} (nb)
+      & 4 & 5 & 7 & 7
+      & Stabilisation après intégration des exigences IEC~62304 (revue qualité, archivage, traçabilité). \\
+    Retours QA tardifs / sprint (nb)
+      & 11 & 7 & 4 & 3
+      & Effet direct de la DoD enrichie : les défauts sont détectés plus tôt. \\
+    Items HIGH (cert.) restés en attente $>1$ sprint
+      & 5 & 3 & 1 & 0
+      & La priorisation \emph{valeur $\times$ risque} produit ses effets. \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Indicateurs d'itération sur les quatre premiers sprints adaptés IEC~62304, équipe logicielle TWIICE (chiffres anonymisés et arrondis ; source : board GitLab et comptes-rendus de rétrospective).}
+  \label{tab:b4-indicateurs-iteration}
+\end{table}
+
+\textbf{Lecture probante.} Cette série n'est pas un palmarès ; elle documente une \textbf{trajectoire d'apprentissage observable} : la vélocité se stabilise, la rétrospective produit des décisions effectivement appliquées, la DoD s'enrichit puis se fige, et les défauts détectés tardivement décroissent. C'est précisément la signature d'une équipe qui passe de l'agilité subie à l'agilité pilotée, ce qui constitue précisément l'objet de la compétence B4.
+
 % : B4.3 : Ressources ---
 \subsection{Ressources mobilisées et combinées}
 
-Les ressources mobilisées pour B4 se répartissent en quatre couches complémentaires.
+Les ressources mobilisées pour B4 se répartissent en trois ordres, issus principalement du cycle \textit{Gestion de projet 1, 2 et 3} (Innokick) et du cours \textit{Méthodes de recherche 3} (PD4, Innokick), et adossés aux lectures de fond identifiées dans le chapitre \textit{Espace modules} (\citealp{sutherland2014} ; \citealp{poppendieck2003} ; \citealp{humble2010} ; \citealp{mchugh2014} pour la spécificité IEC~62304 ; cf. Phase~4, Lectures nourricières). Le choix de ces deux sources reflète directement le contrat d'apprentissage, qui désigne \textit{Gestion de projet} comme cadre méthodologique principal pour piloter des cycles itératifs, et \textit{Méthodes de recherche 3} comme apport complémentaire pour le prétotypage et les KPIs d'itération.
 
-\textbf{1) Cadre agile de base.}
-Scrum\footnotemark{} fournit la cadence (sprint, review, rétrospective) qui permet d'extraire des apprentissages à intervalles courts plutôt que d'attendre la fin du cycle.
+\medskip
 
-\textbf{2) Contrat de qualité opérationnel.}
-La \textit{Definition of Done} adaptée IEC~62304 transforme chaque ticket terminé en livrable certifiable : code, tests, documentation et revue qualité. Cette adaptation est l'élément qui a permis d'aligner équipe logicielle et équipe qualité sans casser le rythme des sprints.
+\textbf{0) Ressources de cadre : cycle \textit{Gestion de projet 1, 2 et 3} (Innokick).}
+Le cycle \textit{Gestion de projet} a fourni l'architecture de pilotage dans laquelle l'agilité a pu se déployer sans entrer en conflit avec les exigences IEC~62304 :
 
-\textbf{3) Logique de priorisation contextualisée.}
-Le couple valeur fonctionnelle $\times$ risque certification a servi de tamis décisionnel. En pratique, cela a évité que des sujets attractifs mais non critiques passent devant des sujets bloquants pour l'audit.
+\begin{itemize}
+  \item \textbf{Gestion de projet 1} : fondamentaux du découpage en phases, gouvernance de projet, identification des parties prenantes. Ces apports ont structuré la cartographie initiale des rôles dans le SDP (Preuve 1) : qui décide, qui valide, qui exécute, qui audite.
+  \item \textbf{Gestion de projet 2} : pilotage par les risques, gestion des jalons, articulation court terme / long terme. Cet apport est directement mobilisé dans la priorisation \emph{valeur fonctionnelle $\times$ risque certification} qui ordonne le Backlog (Preuve 2).
+  \item \textbf{Gestion de projet 3} : conduite du changement et boucle d'amélioration. Cet apport a soutenu la mise en place du rituel de Rétrospective Start/Stop/Continue (Preuve 3) comme dispositif d'apprentissage organisationnel, et non comme simple bilan d'équipe.
+\end{itemize}
 
-\textbf{4) Boucle d'amélioration outillée.}
-La rétrospective Start/Stop/Continue, menée en équipe pluridisciplinaire\footnotemark, a permis de convertir les frictions du sprint en actions vérifiables sur le sprint suivant (cf. Annexe~\ref{annex:retro-b4}).
-% 2 footnotes dans la boite ci-dessus : compteur remis en position correcte
-\addtocounter{footnote}{-2}%
-\addtocounter{footnote}{1}\footnotetext{\textbf{Scrum} désigne un cadre agile structuré autour de sprints, de rôles définis et de cérémonies régulières (planification, revue, rétrospective). Il organise la livraison incrémentale et l'apprentissage d'équipe.}%
-\addtocounter{footnote}{1}\footnotetext{Une \textbf{équipe pluridisciplinaire} désigne un collectif réunissant des expertises différentes. Cette diversité augmente la richesse des solutions, mais demande un effort explicite d'alignement.}
+C'est ce cadre de gouvernance qui permet de tenir ensemble cadence agile (cycles courts, livrables incrémentaux) et exigences réglementaires (traçabilité, jalons documentaires, revues qualité). Sans lui, l'agilité aurait dérivé vers la dette documentaire que craignait à juste titre l'équipe qualité.
+
+\medskip
+
+\textbf{1) Ressources de posture : le Prétotypage (Alberto Savoia).}
+Le concept de prétotypage, traité dans \textit{Méthodes de recherche 3}, répond à une question centrale : comment valider la désirabilité avant d'investir dans la construction technique ? La distinction \emph{« The Right It »} versus \emph{« The It Right »} reframe l'agilité : ne pas commencer par la technique, mais par la validation du besoin.
+
+\begin{itemize}
+  \item \textbf{Validation préalable des choix}. Le SDP (Preuve 1) formalise les décisions structurantes (cycle de vie, classification de sécurité, stratégie de vérification) avant leur mise en œuvre. Cette phase préalable s'apparente au prétotypage : on cadre les hypothèses avant de les construire en sprint.
+  \item \textbf{Vérification périodique avec utilisateurs}. Le Backlog priorisé (Preuve 2) n'est pas figé : il intègre les retours des utilisateurs et des auditeurs qualité, ce qui permet de corriger la trajectoire avant d'accumuler de la mauvaise construction. Le prétotypage appliqué en itératif : ne pas attendre la fin pour valider.
+  \item \textbf{Apprentissage rapide pour pivoter}. La Rétrospective Start/Stop/Continue (Preuve 3) formalise la capacité à identifier rapidement ce qui ne fonctionne pas et à ajuster le sprint suivant, au lieu d'attendre la certification finale pour découvrir les problèmes.
+\end{itemize}
+
+C'est cette posture de validation préalable et continue qui a permis d'éviter la construction monolithique et coûteuse.
+
+\textbf{2) Ressources de méthode : KPIs du Prototypage adaptés au contexte médical.}
+Le cours \textit{Méthodes de recherche 3} propose d'évaluer les prototypes selon trois critères : le temps, la basse fidélité/coût, et la testabilité. Ces KPIs incarnent la logique lean : apprendre le maximum avec le minimum de ressources. Chez TWIICE, ces critères ont été confrontés au contexte médical et adaptés :
+
+\begin{itemize}
+  \item \textbf{Temps : cycles courts et cadencés}. Les sprints de deux semaines (Preuve 2, Preuve 3) établissent la cadence. L'objectif : itérer rapidement plutôt que d'attendre une livraison « parfaite ».
+  \item \textbf{Basse fidélité / Coût : prototypes documentaires et tests, pas seulement du code}. La \textit{Definition of Done} adaptée (SDP, Preuve 1) intègre la documentation IEC~62304 dès le sprint, ce qui réduit le coût des corrections tardives : mieux vaut écrire petit-à-petit qu'additionner les dettes.
+  \item \textbf{Testabilité adaptée au médical : vérifiabilité en audit}. La testabilité usuelle (« fonctionne-t-il ? ») se transforme en vérifiabilité réglementaire (« peut-on l'auditer ? »). Le Backlog classifie les items par risque de certification : ce qui est difficile à auditer monte en priorité, ce qui fonctionne techniquement mais n'importe pas pour la conformité descend.
+\end{itemize}
+
+Ces trois KPIs adaptés constituent le système nerveux du pilotage : réduire les ressources gaspillées (temps, coût) tout en maximisant l'apprentissage observable (testabilité audit).
+
+\textbf{3) Ressources de facilitation : boucles de Pivot agile.}
+Le cours \textit{Méthodes de recherche 3} pose une décision existentielle : après chaque itération, \emph{pivoter, persévérer ou abandonner} ? Cette question est le cœur de la culture agile : utiliser les preuves du terrain pour réorienter, plutôt que de gaspiller des ressources en suivant un plan devenu obsolète.
+
+\begin{itemize}
+  \item \textbf{Pivoter}. Les régressions détectées en rétrospective peuvent forcer un changement de stratégie (ex: passer d'une approche à une autre). Preuve 3 montre le passage d'un retour informel à une amélioration structurée : capturer ce qui fonctionne (Continue) et ce qui bloque (Stop), puis décider l'ajustement.
+  \item \textbf{Persévérer}. Les items qui passent les audits et génèrent de la valeur sont maintenus. Le Backlog (Preuve 2) récompense la persistance sur les sujets bloquants pour la certification : haute priorité, donc ressources concentrées.
+  \item \textbf{Abandonner}. Les sujets attractifs mais non critiques pour la certification sont repoussés dans le backlog (LOW priority). La décision d'abandonner, dans un contexte médical, c'est ainsi délester les équipes des urgences illusoires pour se concentrer sur les blocages réels.
+\end{itemize}
+
+L'articulation SDP + Backlog + Rétrospective matérialise ces trois mouvements : cadrer les hypothèses, prioriser selon la réalité, apprendre et ajuster.
 
 % : B4.4 : Analyse réflexive ---
 \subsection{Analyse réflexive}
 
-La fouille B4 confirme un point clé : l'opposition entre agilité et certification est surtout une illusion de méthode. Sans instrumentation, l'agilité peut créer de la dette documentaire ; avec un cadre explicite, elle produit au contraire des preuves plus fines, plus fréquentes et plus défendables.
+La fouille B4 confirme un point clé : l'opposition entre agilité et certification est surtout une illusion de méthode. Sans instrumentation, l'agilité peut créer de la dette documentaire ; avec un cadre explicite, elle produit au contraire des preuves plus fines, plus fréquentes et plus défendables. La résistance initiale de l'équipe qualité n'était pas un frein irrationnel ; elle venait d'une expérience concrète de projets où l'agilité signifiait parfois une traçabilité insuffisante. Ce qui a fait basculer la dynamique n'a pas été un discours, mais la présentation d'artefacts cohérents : SDP, backlog priorisé et rétrospective actionnable.
 
-La résistance initiale de l'équipe qualité n'était pas un frein irrationnel ; elle venait d'une expérience concrète de projets où l'agilité signifiait parfois une traçabilité insuffisante. Ce qui a fait basculer la dynamique n'a pas été un discours, mais la présentation d'artefacts cohérents : SDP, backlog priorisé et rétrospective actionnable.
+Le changement de posture principal est personnel : je n'aborde plus la conformité comme une contrainte ajoutée après le développement, mais comme un critère de conception intégré dès le sprint planning\footnote{Le \textbf{sprint planning} désigne la réunion d'ouverture du sprint durant laquelle l'équipe sélectionne les éléments du backlog et planifie le travail. C'est le moment clé pour intégrer les exigences qualité et réglementaires.}. Cette bascule réduit les corrections tardives et améliore la stabilité du flux. Reste à montrer que ce changement de pratique repose sur une mobilisation réelle des concepts de cours, pas sur une adaptation purement empirique.
 
-Le changement de posture principal est personnel : je n'aborde plus la conformité comme une contrainte ajoutée après le développement, mais comme un critère de conception intégré dès le sprint planning\footnote{Le \textbf{sprint planning} désigne la réunion d'ouverture du sprint durant laquelle l'équipe sélectionne les éléments du backlog et planifie le travail. C'est le moment clé pour intégrer les exigences qualité et réglementaires.}. Cette bascule réduit les corrections tardives et améliore la stabilité du flux.
+\medskip
+
+\textbf{Traces et preuves : distinction au sens de Tardif.}
+Les artefacts présentés dans cette fouille doivent être lus dans l'écart que Tardif établit entre trace et preuve.
+
+La \textbf{Preuve 1} (Software Development Plan) n'est pas un simple document de conformité. Elle atteste la mobilisation de la posture de prétotypage : les étapes de validation préalables des choix techniques et des hypothèses sur la certificabilité ont été pensées avant leur exécution. Le prétotypage appliqué à la régulation : valider la stratégie avant la construction itérative.
+
+La \textbf{Preuve 2} (Backlog priorisé) n'est pas une liste de tâches. Elle atteste l'adaptation des trois KPIs du prototypage (temps, basse fidélité/coût, testabilité) à un contexte médical. Les items sont classifiés par priorité selon un critère nouveau : le risque de certification. La testabilité générique devient vérifiabilité audit. Le coût inclut les heures de documentation. Cette adaptation montre que les concepts de \textit{Méthodes de recherche 3} n'ont pas été appliqués passivement, mais transformés pour la situation.
+
+La \textbf{Preuve 3} (Rétrospective Start/Stop/Continue) n'est pas un bilan informel. Elle atteste la boucle agile de pivot : les problèmes détectés en sprint sont structurés selon le format Start/Stop/Continue, ce qui force la décision de persévérer, pivoter ou abandonner plutôt que de laisser les problèmes s'accumuler. Cette formalisation du pivot agile est visible dans l'historique des sprints.
+
+La \textbf{Preuve 4} (indicateurs d'itération sur quatre sprints) clôt la chaîne probatoire : là où les trois premières preuves attestent la mise en place du dispositif (cadre, priorisation, boucle d'apprentissage), la quatrième en mesure les effets. La vélocité se stabilise, le taux de fermeture des actions rétro grimpe de 40\,\% à 85\,\%, les retours QA tardifs sont divisés par trois : ces séries chiffrées objectivent que l'agilité instrumentée n'est pas restée un discours mais a produit des effets observables sur le flux de l'équipe. C'est la trace quantitative que Tardif appelle « observable, datable, vérifiable ».
+
+Ce que révèle enfin la mobilisation des concepts du cours \textit{Méthodes de recherche 3} (prétotypage, KPIs, pivot) hors de leur contexte classique de prototypage commercial, c'est précisément ce saut entre trace et preuve. La trace serait d'avoir vu ces concepts en cours. La preuve, c'est de les avoir transposés dans un environnement réglementé, adaptés à une exigence de conformité, et d'en avoir obtenu des artefacts de gouvernance qui rendent l'agilité auditable.
+
+\medskip
+
+\textbf{Lecture socioconstructiviste (Lafortune \& Deaudelin).}
+La compétence B4, dans ce parcours, n'est pas un savoir appliqué \emph{à} une équipe ; elle est une compétence qui \emph{émerge} de l'interaction avec l'équipe qualité. \citet{lafortune2001} qualifient l'apprentissage socioconstructiviste comme un processus où le savoir se construit \emph{dans} la relation et \emph{par} la confrontation des cadres de référence. C'est exactement ce qui s'est produit : la résistance documentée de l'équipe qualité (« comment certifier quelque chose qu'on change en permanence ? ») n'a pas été un obstacle à neutraliser, mais une exigence productive qui a forcé la conception d'une \textit{Definition of Done} médicale et de la formule \emph{valeur~$\times$~risque~certification}. L'agilité instrumentée IEC~62304 n'aurait pas pu être conçue par une appropriation purement individuelle des cours ; elle est le résultat d'une co-construction sous pression normative. Cette lecture éclaire pourquoi les indicateurs d'itération (Preuve~4) marquent une bascule \emph{collective}, et pas seulement personnelle : la compétence est devenue celle de l'équipe.
 
 % : B4.5 : Apprentissages à entreprendre ---
 \subsection{Apprentissages à entreprendre}
@@ -230,7 +469,7 @@ Trois apprentissages restent prioritaires pour consolider B4.
 Approfondir les frameworks adaptés au médical (ex. SAFe for Medical\footnote{\textbf{SAFe for Medical} (\emph{Scaled Agile Framework for Medical Devices}) désigne une adaptation de SAFe aux contraintes réglementaires du médical. Il propose des pratiques conciliant cadence agile et traçabilité normative.}) et en extraire un standard interne proportionné à la taille de l'équipe.
 
 \textbf{2) Stabiliser la Definition of Done.}
-Passer d'une DoD projet à une DoD organisationnelle, avec critères minimums non négociables et variantes explicites par type de composant (firmware, applicatif, intégration).
+Passer d'une DoD projet à une DoD organisationnelle, avec critères minimums non négociables et variantes explicites par type de composant (firmware\footnote{Le \textbf{firmware} d\'esigne un logiciel embarqu\'e directement dans un composant mat\'eriel (microcontr\^oleur, carte \'electronique), au plus pr\`es du fer. Il pilote le mat\'eriel en temps r\'eel et n'est g\'en\'eralement pas modifiable par l'utilisateur final. L'\textbf{applicatif} d\'esigne au contraire la couche logicielle de plus haut niveau, qui expose des fonctionnalit\'es \`a l'utilisateur (interface, traitement m\'etier), et qui s'appuie sur les services rendus par le firmware sous-jacent.}, applicatif, intégration).
 
 \textbf{3) Renforcer la qualité des rétrospectives.}
 Mesurer systématiquement le taux de fermeture des actions Start/Stop/Continue et relier ces actions aux indicateurs de flux (retours QA, blocages sprint, dette documentaire).
@@ -250,11 +489,51 @@ Synthétiser les informations recueillies dans la phase d'empathie\footnotemark{
 
 \bigskip
 
+\begin{tcolorbox}[colback=orange!5, colframe=orange!60!black, boxrule=0.4pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  title={\textbf{\small Distinction des angles : pourquoi A2 et C2 partagent le terrain TWIICE sans se confondre}},
+  fonttitle=\small\bfseries, coltitle=white, attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=orange!60!black, arc=3pt, boxrule=0pt}]
+\small
+Les compétences A2 et C2 sont démontrées sur un même terrain professionnel (TWIICE, contexte IEC~62304), mais sous des angles d'analyse distincts. Cette distinction est posée explicitement, conformément à l'exigence Tardif de \emph{différenciation des situations probatoires}.
+
+\begin{itemize}
+  \item \textbf{A2 (Gestion des divergences)} traite la question du \emph{« comment »} : comment le groupe a-t-il convergé face à des positions techniques opposées ? La fouille porte sur la \textbf{posture du facilitateur}, les méthodes de cadrage du débat (recadrage, timeboxing, vote par points) et les artefacts qui \emph{rendent visible le processus de décision} (note de décision technique, backlog priorisé).
+  \item \textbf{C2 (Synthèse et définition des problématiques)} traite la question du \emph{« quoi »} : sur \emph{quel} problème le groupe a-t-il convergé ? La fouille porte sur le \textbf{contenu de la synthèse} : passage du chaos des demandes utilisateurs à une formulation claire de problématiques prioritaires (clustering, SWOT, Take-home message), matérialisées dans des artefacts \emph{de définition du contenu} (matrice de priorisation, atelier de problématisation, feuille de route).
+\end{itemize}
+
+Autrement dit, A2 démontre la maîtrise du \emph{protocole} de convergence, C2 démontre la maîtrise de la \emph{problématisation} qui précède la décision. La même réunion peut nourrir les deux fouilles à condition que chaque section interprète des artefacts différents, ce qui est le cas ici.
+\end{tcolorbox}
+
+\bigskip
+
+\begin{table}[h!]
+  \centering\small
+  \caption{Grille Tardif synthétique : compétence C2}
+  \label{tab:grille-tardif-c2}
+  \begin{tabularx}{\textwidth}{@{} >{\bfseries}p{3.2cm} X @{}}
+    \toprule
+    Dimension Tardif & Mobilisation dans la fouille C2 \\
+    \midrule
+    Ressources & Posture : Diagramme d'affinité et clustering thématique (Méthodes de recherche 2, Grèzes). Méthode : analyse d'opportunités, matrice SWOT (Méthodes de veille, Grèzes). Convergence : synthèse en \emph{Take-home message} (Médiation Scientifique, Pinault). \\
+    \midrule
+    Situation complexe & TWIICE : 150 demandes hétérogènes provenant d'utilisateurs finaux (patients, thérapeutes) et d'équipes internes (ingénierie, qualité, réglementation), avec priorités divergentes et risque de paralysie décisionnelle. \\
+    \midrule
+    Combinaison & Articulation clustering thématique ? analyse SWOT du portefeuille d'évolutions ? synthèse en trois axes architecturels priorisés, traduits en feuille de route exécutable. \\
+    \midrule
+    Preuves & Preuve 1 : matrice de priorisation (annexe~\ref{annex:c2-matrice}). Preuve 2 : compte-rendu d'atelier de définition des problématiques (annexe~\ref{annex:c2-atelier}). Preuve 3 : feuille de route (annexe~\ref{annex:c2-roadmap}). \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\bigskip
+
 % : C2.1 : Autoévaluation ---
 \subsection{Autoévaluation de ma progression}
 
+C'est le gisement le mieux documenté des trois fouilles. La formation a mis au jour quelque chose de précis : ma tendance à me précipiter vers les solutions sans avoir d'abord bien cerné le problème. Les outils de définition de problème et de priorisation\footnote{La \textbf{priorisation} désigne le classement explicite d'éléments selon leur importance, urgence ou valeur. Elle permet de concentrer l'effort sur les actions les plus impactantes.} ont permis de structurer ma réflexion et d'éviter les solutions hâtives. La profondeur de la fouille a également révélé des méthodes de synthèse, clustering, analyse d'opportunités, formalisation du problème, qui restaient implicites dans ma pratique antérieure.
 
-C'est le gisement le mieux documenté des trois fouilles. La formation a mis au jour quelque chose de précis : ma tendance à me précipiter vers les solutions sans avoir d'abord bien cerné le problème. Les outils de définition de problème et de priorisation\footnote{La \textbf{priorisation} désigne le classement explicite d'éléments selon leur importance, urgence ou valeur. Elle permet de concentrer l'effort sur les actions les plus impactantes.} ont permis de structurer ma réflexion et d'éviter les solutions hâtives. La profondeur de la fouille a également été limitée par ma méconnaissance des méthodes de recherche utilisateur\footnote{Les \textbf{méthodes de recherche utilisateur} désignent les techniques permettant de comprendre besoins, usages et motivations des utilisateurs. Elles combinent généralement approches qualitatives et quantitatives.}.
+Cette progression (5/10 avant, 7/10 après) n'est pas une autodéclaration. Au sens de Tardif, elle ne vaut que si elle est étayée par des preuves : des artefacts interprétés et argumentés, qui attestent non pas qu'une activité a eu lieu, mais que des ressources ont été délibérément mobilisées dans une situation complexe (150 demandes à synthétiser, des parties prenantes divergentes, une roadmap à extraire). C'est l'objet des sections suivantes : la situation professionnelle, les trois artefacts exhumés (Matrice, Atelier, Roadmap), et les ressources de cours que leur production a mis en jeu.
 
 % : C2.2 : Situation et preuves ---
 \subsection{Situation professionnalisante et preuves}
@@ -271,47 +550,83 @@ Il est vite apparu que cette méthode, ou plutôt ce manque de méthode, génér
 
 \paragraph{Preuve 1 : Matrice de priorisation des évolutions}
 
-La matrice de priorisation est reproduite en Annexe~\ref{annex:c2-priorisation}. Elle constitue le premier tamis de convergence : chaque demande est évaluée sur deux axes explicites (impact utilisateur et faisabilité technique), puis positionnée dans une zone d'action.
+La matrice de priorisation est reproduite en Annexe~\ref{annex:c2-priorisation} (§1, voir~\ref{annex:c2-matrice}). Elle constitue le premier tamis de convergence : chaque demande est regroupée selon des axes explicites (impact utilisateur et faisabilité technique), ce qui applique le principe du Diagramme d'Affinité au contexte TWIICE. Les 150 items isolés fusionnent en 5-6 familles de problèmes intelligibles.
 
-L'effet concret est observable : les discussions passent d'une accumulation de préférences individuelles à une lecture partagée du portefeuille d'évolutions. Ce n'est pas la matrice seule qui décide ; c'est le fait qu'elle impose un langage commun et une justification visible pour chaque arbitrage.
+L'effet concret est observable : les discussions passent d'une accumulation de plaintes individuelles à une lecture partagée du portefeuille d'évolutions. Ce n'est pas la matrice seule qui décide ; c'est le fait qu'elle impose un langage commun : chaque demande est resituée dans une famille de problèmes, ce qui rend visible la structure cachée des enjeux.
 
 \paragraph{Preuve 2 : Compte-rendu de l'atelier de définition des problématiques}
 
-Le compte-rendu d'atelier (Annexe~\ref{annex:c2-priorisation}) montre la seconde couche de preuve : la matrice a servi de base, puis les parties prenantes ont reformulé les demandes en problématiques prioritaires communes.
+Le compte-rendu d'atelier (Annexe~\ref{annex:c2-priorisation}, §2, voir~\ref{annex:c2-atelier}) montre la seconde couche de preuve : la matrice a servi de base, puis les parties prenantes ont collectivement reformulé les demandes brutes en problématiques prioritaires structurées.
 
-La valeur de cette preuve tient au passage « demande vers problématique » : au lieu de traiter 150 items en parallèle, l'équipe a extrait un noyau restreint de sujets structurants, validés collectivement. Cette extraction réduit les conflits de périmètre et donne une direction claire aux sprints suivants.
+La valeur de cette preuve tient au passage « demande brute vers problématique définie » : au lieu de traiter 150 cas isolés, l'équipe a extrait un noyau restreint de sujets architecturalement structurants, validés collectivement. Cette extraction réduit les conflits de périmètre et donne une direction claire. Les demandes sont passées du registre de la plainte (« c'est cassé ») au registre du problème défini (« nous cherchons à résoudre X avec les leviers Y et Z »).
 
 \paragraph{Preuve 3 : Feuille de route des évolutions}
 
-La feuille de route issue de l'atelier est également jointe en Annexe~\ref{annex:c2-priorisation}. Elle matérialise la troisième couche : les problématiques priorisées sont converties en objectifs, jalons et indicateurs de succès.
+La feuille de route issue de l'atelier est également jointe en Annexe~\ref{annex:c2-priorisation} (§3, voir~\ref{annex:c2-roadmap}). Elle matérialise la troisième couche : les problématiques priorisées sont converties en axes stratégiques, jalons et indicateurs de succès. Plus qu'une transcription, c'est la synthèse en Take-home message : « Trois axes architecturels concentrent nos investissements logiciels et renforcent mutuellement de la valeur ».
 
-Cette traduction en roadmap est la preuve de maturité C2 : la synthèse ne reste pas analytique, elle devient un contrat d'exécution. Le bénéfice est mesurable : moins de dispersion, meilleure lisibilité inter-équipes et réduction des réouvertures de priorités en comité.
+Cette traduction en roadmap est la preuve de maturité C2 : la synthèse ne reste pas analytique, elle devient un contrat d'exécution. Le bénéfice est mesurable : moins de dispersion, meilleure lisibilité inter-équipes, réduction des réouvertures de priorités et une exécution alignée sur la stratégie.
 
 % : C2.3 : Ressources ---
 \subsection{Ressources mobilisées et combinées}
 
-Les ressources mobilisées pour C2 ont joué un rôle d'entonnoir méthodologique.
+Les ressources mobilisées pour C2 se répartissent en trois ordres, issus du cours \textit{Méthodes de recherche 2} (DD1, Prof. Dr. V. Grèzes, Innokick) et complétés par les cours de veille et médiation.
 
-\textbf{1) Empathie et qualification des besoins.}
-Les principes de la phase d'empathie ont servi à différencier symptômes exprimés et besoins réels, afin d'éviter les solutions prématurées.
+\textbf{1) Ressources de posture : le Diagramme d'Affinité et le clustering thématique.}
+Le cours \textit{Méthodes de recherche 2} place la phase de Définition comme le passage du chaos à la clarté. L'outil principal est le Diagramme d'Affinité : transformer 500 post-it en 5 à 7 thèmes cohérents, ce qui rend visible la structure cachée des besoins.
 
-\textbf{2) Recherche utilisateur exploitable.}
-Les entretiens et retours terrain ont été transformés en critères d'impact explicites, plutôt qu'en verbatims isolés.
+\begin{itemize}
+  \item \textbf{Du chaos aux thèmes}. Chez TWIICE, les 150 demandes dispersées formaient un magma indigeste. La Matrice de priorisation (Preuve 1) opère exactement comme le Diagramme d'Affinité : elle regroupe les demandes selon des axes explicites (impact utilisateur, faisabilité), ce qui crée des clusters intelligibles. Au lieu de traiter 150 cas isolés, on traite maintenant 5-6 familles de problèmes.
+  \item \textbf{Validation collective du regroupement}. Le Compte-rendu d'atelier (Preuve 2) montre le moment où les parties prenantes reformulent ensemble les demandes brutes en problématiques thématiquement cohérentes. Ce n'est pas une synthèse unilatérale, c'est une validation collective qui ancre le clustering dans la réalité organisationnelle.
+\end{itemize}
 
-\textbf{3) Priorisation multicritère.}
-La combinaison Eisenhower + MoSCoW\footnote{\textbf{MoSCoW} signifie \textit{Must, Should, Could, Won't}. Cette méthode classe les exigences selon leur criticité de livraison pour faciliter les arbitrages.} a permis de distinguer ce qui est indispensable immédiatement de ce qui peut être planifié.
+C'est cette capacité à clusteriser qui rend possible la décision. Tant que les demandes restent éparses, aucune priorisation n'est robuste.
 
-\textbf{4) Facilitation d'atelier.}
-L'animation structurée des échanges pluridisciplinaires a transformé des priorités concurrentes en problématiques convergentes, puis en trajectoire de mise en oeuvre.
+\textbf{2) Ressources de méthode : analyse d'opportunités et SWOT.}
+Le cours \textit{Méthodes de veille} (ED6, Prof. Dr. V. Grèzes, Innokick) propose la matrice SWOT comme outil de synthèse stratégique : identifier non seulement les problèmes à résoudre, mais aussi les opportunités à saisir et les menaces à anticiper.
+
+\begin{itemize}
+  \item \textbf{Identifier les leviers, pas seulement les freins}. Au-delà des demandes d'amélioration réactive (« c'est cassé »), l'analyse a créé de l'espace pour les demandes d'innovation proactive (« voilà une capacité nouvelle que nous pourrions maîtriser »). La Feuille de route (Preuve 3) distingue ainsi les problématiques de correction des problématiques de développement opportuniste, ce qui enrichit la stratégie au-delà de la réduction des douleurs.
+  \item \textbf{Contextualiser dans l'écosystème}. La SWOT appliquée au portefeuille d'évolutions permet de voir quelles demandes rencontrent des opportunités externes (les thérapeutes cherchent une meilleure interface), quelles menaces internes (la doc n'est pas à jour) bloqueraient l'exécution, et quels forces permettraient d'accélérer (l'équipe maîtrise déjà X technologie).
+\end{itemize}
+
+Cette logique opportunité/menace transforme la priorisation d'un exercice défensif (réduire la douleur) en exercice stratégique (construire un avantage).
+
+\textbf{3) Ressources de convergence : synthèse en Take-home message.}
+Le cours \textit{Médiation Scientifique} (ED4, A. Pinault, Innokick) parle de l'art de synthétiser des données complexes en vue de leur exploitation : extraire le \emph{Take-home message} qui concentre l'action.
+
+\begin{itemize}
+  \item \textbf{Du brut au contrat d'exécution}. La Feuille de route (Preuve 3) incarne ce passage : elle ne décrit pas l'analyse (150 demandes analysées), elle pose la décision stratégique (voici les 3-4 axes qu'on priorise et pourquoi). C'est le Take-home message : « Sur la prochaine année, nous investissons dans la traçabilité SOUP et l'interface utilisateur, car ce sont les leviers critiques pour la certification et l'adoption client ».
+  \item \textbf{Rendre actionnable la synthèse}. Ce message n'est pas narratif ; il est structuré en jalons, indicateurs de succès et lien vers les sprints futurs. La synthèse devient un contrat de gouvernance que toutes les parties prenantes comprennent : ce qu'on va faire, pourquoi, et comment on mesurera le succès.
+\end{itemize}
+
+C'est cette réduction intentionnelle de la complexité en messages simples qui permet l'exécution cohérente.
 
 % : C2.4 : Analyse réflexive ---
 \subsection{Analyse réflexive}
 
-La principale leçon de C2 est que la qualité d'une décision dépend d'abord de la qualité de la synthèse qui la précède. Tant que les demandes restaient à l'état brut, le système décisionnel saturait ; dès qu'elles ont été regroupées, notées et reformulées, la convergence est devenue possible.
+La principale leçon de C2 est que la qualité d'une décision dépend d'abord de la qualité de la synthèse qui la précède. Tant que les 150 demandes restaient à l'état brut, le système décisionnel saturait et la paralysie guettait. Dès qu'elles ont été regroupées par thème, analysées selon leurs leviers et menaces, et réduites à un Take-home message clair, la convergence est devenue possible.
 
-La phase d'empathie a joué un rôle de filtre critique : elle a évité de confondre visibilité d'une demande et priorité réelle pour l'utilisateur final. En conséquence, la roadmap obtenue est moins volumineuse, mais plus stratégique.
+La phase d'empathie (collecte en amont) a joué un rôle critique : elle a évité de confondre visibilité d'une demande auprès du politique et priorité réelle pour l'utilisateur final. En conséquence, la roadmap obtenue est moins volumineuse, mais plus stratégique. Enfin, la gestion des parties prenantes a évolué : impliquer tôt les profils divergents n'a pas ralenti le processus, cela l'a sécurisé. Les objections principales ont été incorporées en amont, ce qui a réduit les frictions lors de la mise en oeuvre.
 
-Enfin, la gestion des parties prenantes a évolué : impliquer tôt les profils divergents n'a pas ralenti le processus, cela l'a sécurisé. Les objections principales ont été traitées en amont, ce qui a réduit les frictions lors de la mise en oeuvre.
+Reste à montrer que cette transformation du chaos en stratégie claire repose sur une mobilisation réelle des concepts de cours, traduisant ainsi une compétence acquise plutôt qu'une adaptation purement empirique.
+
+\medskip
+
+\textbf{Traces et preuves : distinction au sens de Tardif.}
+Les artefacts présentés dans cette fouille doivent être lus dans l'écart que Tardif établit entre trace et preuve.
+
+La \textbf{Preuve 1} (Matrice de priorisation) n'est pas une liste de tâches triée. Elle atteste la mobilisation du Diagramme d'Affinité : les 150 demandes hétérogènes ont été regroupées selon une logique cohérente (impact utilisateur et faisabilité), ce qui crée de l'intelligibilité. Le clustering du chaos en 5-6 familles de problèmes est visible dans la structure même de la matrice. C'est précisément ce que Grèzes enseigne en Méthodes de recherche 2 : passer du flou au net par la thématisation.
+
+La \textbf{Preuve 2} (Compte-rendu d'atelier) n'est pas un simple narratif. Elle atteste la validation collective du regroupement et l'émergence de problématiques convergentes. Plus précisément, elle montre le moment où les demandes brutes ont été reformulées en problèmes structurés : « Notre exosquelette n'a pas assez de souplesse de calibration pour les divers profils de patients » devient un problème clair (pas une plainte) qu'on peut décomposer en sous-tâches et jalons. Cela reflète le passage de la DD1 (Définition brute) à la formulation explicitée du problème.
+
+La \textbf{Preuve 3} (Feuille de route) n'est pas une simple transcription. Elle atteste l'analyse d'opportunités (SWOT) et la synthèse en Take-home message. Le message clé extrait de la fouille est : « Nous transformons nos évolutions logicielles en trois axes architecturels : (1) traçabilité et conformité IEC~62304 (résout les risques réglementaires), (2) adaptabilité de l'interface utilisateur (résout les frictions patient), (3) stabilité thermique du système (résout les enjeux de durabilité technique). Ces trois axes génèrent une valeur proportionnée au coût d'effort investi et se renforcent mutuellement ». Cette synthèse concentre 150 demandes en une stratégie explicite. Elle n'est pas intuitive ; elle résulte d'une analyse SWOT documentée qui a identifié les opportunités structurantes (qu'on ne verrait pas sans cadre) et les a converties en roadmap exécutable.
+
+Ce que révèle enfin la mobilisation des trois outils de cours (Diagramme d'Affinité, SWOT, Synthèse en Take-home message) hors de leur contexte classique de Design Thinking, c'est précisément ce saut entre trace et preuve. La trace serait d'avoir vu ces outils en cours. La preuve, c'est de les avoir appliqués à une situation complexe (150 demandes, parties prenantes divergentes, nécessité d'une décision stratégique), adaptés au contexte médical, et d'en avoir obtenu un artefact de décision qui structure l'exécution, la Feuille de route offrant une vision partagée, mesurable et exécutable.
+
+\medskip
+
+\textbf{Lecture socioconstructiviste (Lafortune \& Deaudelin).}
+La compétence C2, telle qu'elle est documentée ici, repose sur un principe socioconstructiviste central défendu par \citet{lafortune2001} : la problématisation est un acte collectif avant d'être un acte individuel. Les 150 demandes initiales ne sont pas un matériau brut à interpréter seul ; chaque demande porte le cadre de référence de celui qui l'a formulée (kinésithérapeute, ingénieur biomédical, patient, équipe qualité). L'atelier collectif (Preuve~2) ne sert pas à \emph{trier} ces cadres, mais à les faire dialoguer pour qu'émerge un cadre commun \emph{plus riche que la somme des cadres individuels}. C'est la différence entre une synthèse cumulative et une synthèse problématisante. Lue ainsi, la roadmap finale (Preuve~3) n'est pas seulement une décision rationnelle ; elle est un artefact de \emph{savoir partagé} qui n'aurait pas pu être produit individuellement.
 
 % : C2.5 : Apprentissages à entreprendre ---
 \subsection{Apprentissages à entreprendre}
@@ -334,6 +649,31 @@ Mettre en place une revue mensuelle qui compare la roadmap décidée aux résult
 % ==============================================================================
 
 Les trois radars ci-dessous restituent l'évolution auto-évaluée sur chacune des familles de compétences (A, B, C). Les tableaux associés précisent pour chaque dimension le score estimé avant et après la formation, ainsi que la justification de l'autoévaluation initiale. Ces données sont à lire comme des \emph{instantanés réflexifs}, non comme des mesures objectives.
+
+\begin{tcolorbox}[colback=gray!5, colframe=gray!50!black, boxrule=0.4pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  title={\textbf{\small Grille de descripteurs de niveau (clé de lecture des scores)}},
+  fonttitle=\small\bfseries, coltitle=white, attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=gray!50!black, arc=3pt, boxrule=0pt}]
+\small
+Pour éviter qu'un score sur 10 ne reste un chiffre arbitraire, les niveaux sont calibrés selon la progression Tardif classique \emph{(découvrir ? appliquer ? mobiliser ? transmettre)} :
+
+\begin{itemize}
+  \item \textbf{1--3 : Découvrir / observer.} L'étudiant identifie la ressource (méthode, posture, outil) et peut la nommer, mais ne l'a pas encore mise en œuvre seul. Aucune trace personnelle ; pas d'usage spontané.
+  \item \textbf{4--6 : Appliquer en situation guidée.} L'étudiant met en œuvre la ressource sur une situation cadrée par la formation ou par un pair plus expérimenté. Les traces existent mais restent ponctuelles ; l'usage est conscient mais non encore réflexe.
+  \item \textbf{7--8 : Mobiliser et combiner en autonomie.} L'étudiant choisit la ressource adaptée à une situation complexe et la combine avec d'autres ressources sans guidage. Les preuves sont nombreuses, datées, et la pratique est devenue stable.
+  \item \textbf{9--10 : Transmettre / former.} L'étudiant adapte la ressource à des contextes inédits, la transmet à des pairs, ou produit lui-même des artefacts de référence (canevas, gabarits, formations internes).
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=yellow!8, colframe=orange!70!black, boxrule=0.4pt, arc=3pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  title={\textbf{\small Limite méthodologique : biais rétrospectif des scores « avant »}},
+  fonttitle=\small\bfseries, coltitle=white, attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=orange!70!black, arc=3pt, boxrule=0pt}]
+\small
+Les scores « avant formation » n'ont pas été produits en début de cursus puis archivés ; ils sont reconstitués \emph{a posteriori}, à partir de souvenirs de pratique et d'un retour réflexif sur le profil initial. Cette limite, classique dans les autoévaluations rétrospectives, est explicitement assumée : les scores « avant » doivent être lus comme une \emph{lecture réflexive de l'écart parcouru}, non comme une mesure indépendante du temps t-0. Le biais possible est plutôt à la sous-estimation du niveau initial, par effet de contraste avec les acquis de fin de formation. Pour les prochains cycles, une autoévaluation datée en début d'année serait une amélioration méthodologique à mettre en place.
+\end{tcolorbox}
 
 % -----------------------------------------------------------------------
 % RADARS
@@ -361,9 +701,9 @@ Les trois radars ci-dessous restituent l'évolution auto-évaluée sur chacune d
 \node[font=\tiny] at (-90:3.7) {A4};
 \node[font=\tiny] at (-150:3.7){A5};
 \node[font=\tiny] at (150:3.7) {A6};
-\draw[thick,blue!70!black,fill=blue!40,fill opacity=0.20]
+\draw[thick,gray!60!black,fill=gray!40,fill opacity=0.25]
   (90:0.9)--(30:1.5)--(-30:1.8)--(-90:1.5)--(-150:0.9)--(150:1.5)--cycle;
-\draw[thick,red!70!black,fill=red!40,fill opacity=0.20]
+\draw[thick,hessoBlue,fill=hessoBlue!40,fill opacity=0.30]
   (90:1.8)--(30:2.4)--(-30:2.1)--(-90:2.1)--(-150:1.8)--(150:2.1)--cycle;
 \end{tikzpicture}
 \par\smallskip{\small\textbf{Famille A}}\par{\footnotesize Compétences sociales et personnelles}
@@ -390,9 +730,9 @@ Les trois radars ci-dessous restituent l'évolution auto-évaluée sur chacune d
 \node[font=\tiny] at (-90:3.7) {B4};
 \node[font=\tiny] at (-150:3.7){B5};
 \node[font=\tiny] at (150:3.7) {B6};
-\draw[thick,blue!70!black,fill=blue!40,fill opacity=0.20]
+\draw[thick,gray!60!black,fill=gray!40,fill opacity=0.25]
   (90:1.5)--(30:1.5)--(-30:1.2)--(-90:0.6)--(-150:1.8)--(150:2.1)--cycle;
-\draw[thick,red!70!black,fill=red!40,fill opacity=0.20]
+\draw[thick,hessoBlue,fill=hessoBlue!40,fill opacity=0.30]
   (90:2.1)--(30:2.1)--(-30:1.8)--(-90:1.8)--(-150:2.1)--(150:2.4)--cycle;
 \end{tikzpicture}
 \par\smallskip{\small\textbf{Famille B}}\par{\footnotesize Compétences méthodologiques}
@@ -419,9 +759,9 @@ Les trois radars ci-dessous restituent l'évolution auto-évaluée sur chacune d
 \node[font=\tiny] at (-90:3.7) {C4};
 \node[font=\tiny] at (-150:3.7){C5};
 \node[font=\tiny] at (150:3.7) {C6};
-\draw[thick,blue!70!black,fill=blue!40,fill opacity=0.20]
+\draw[thick,gray!60!black,fill=gray!40,fill opacity=0.25]
   (90:2.1)--(30:1.5)--(-30:1.8)--(-90:2.1)--(-150:0.9)--(150:0.6)--cycle;
-\draw[thick,red!70!black,fill=red!40,fill opacity=0.20]
+\draw[thick,hessoBlue,fill=hessoBlue!40,fill opacity=0.30]
   (90:2.4)--(30:2.1)--(-30:2.1)--(-90:2.4)--(-150:1.5)--(150:1.5)--cycle;
 \end{tikzpicture}
 \par\smallskip{\small\textbf{Famille C}}\par{\footnotesize Compétences métier}
@@ -429,8 +769,8 @@ Les trois radars ci-dessous restituent l'évolution auto-évaluée sur chacune d
 
 \bigskip
 \begin{center}
-\textcolor{blue!70!black}{\rule{0.35cm}{0.35cm}}~\small Avant la formation (estimé)\qquad
-\textcolor{red!70!black}{\rule{0.35cm}{0.35cm}}~\small Après la formation\qquad
+\textcolor{gray!60!black}{\rule{0.35cm}{0.35cm}}~\small Avant la formation (estimé)\qquad
+\textcolor{hessoBlue}{\rule{0.35cm}{0.35cm}}~\small Après la formation\qquad
 \footnotesize Scores sur 10
 \end{center}
 \caption{Bilan de progression par famille de compétences (A, B, C) : autoévaluation avant/après formation.}
@@ -440,11 +780,11 @@ Les trois radars ci-dessous restituent l'évolution auto-évaluée sur chacune d
 
 La lecture comparée des trois radars met en évidence plusieurs dynamiques que le texte seul ne suffit pas à rendre visibles.
 
-\textbf{Sur la famille A (compétences sociales et personnelles)}, la surface bleue (avant formation) est clairement asymétrique : les dimensions A3 et A4 : capacité de réorientation et d'adaptation : étaient déjà relativement développées, adossées à une expérience professionnelle existante. En revanche, A1 et A5 restaient très en retrait, révélant un angle mort sur la diversification des méthodes et les démarches réflexives. La surface rouge (après formation) montre une expansion homogène et un rééquilibrage : les points faibles ont progressé davantage que les points forts, ce qui traduit un apprentissage ciblé plutôt qu'une simple consolidation de l'acquis.
+\textbf{Sur la famille A (compétences sociales et personnelles)}, la surface grise (avant formation) est clairement asymétrique : les dimensions A3 et A4 : capacité de réorientation et d'adaptation : étaient déjà relativement développées, adossées à une expérience professionnelle existante. En revanche, A1 et A5 restaient très en retrait, révélant un angle mort sur la diversification des méthodes et les démarches réflexives. La surface bleue (après formation) montre une expansion homogène et un rééquilibrage : les points faibles ont progressé davantage que les points forts, ce qui traduit un apprentissage ciblé plutôt qu'une simple consolidation de l'acquis.
 
-\textbf{Sur la famille B (compétences méthodologiques)}, le radar illustre une asymétrie radicale dans mon point de départ : B4 (prototypage itératif) était à 2/10 : une lacune franche, pas une faiblesse relative : tandis que B6 (élaboration de roadmaps) constituait déjà une zone d'expertise à 7/10. La formation a permis de combler la lacune de B4 et d'harmoniser l'ensemble, sans écraser les acquis. Le fait que la surface rouge soit nettement plus régulière que la surface bleue signale précisément cela : moins de creux, moins de pics extrêmes, une posture méthodologique plus équilibrée.
+\textbf{Sur la famille B (compétences méthodologiques)}, le radar illustre une asymétrie radicale dans mon point de départ : B4 (prototypage itératif) était à 2/10 : une lacune franche, pas une faiblesse relative : tandis que B6 (élaboration de roadmaps) constituait déjà une zone d'expertise à 7/10. La formation a permis de combler la lacune de B4 et d'harmoniser l'ensemble, sans écraser les acquis. Le fait que la surface bleue soit nettement plus régulière que la surface grise signale précisément cela : moins de creux, moins de pics extrêmes, une posture méthodologique plus équilibrée.
 
-\textbf{Sur la famille C (compétences métier)}, la forme bleue est caractéristique d'un profil d'expert sectoriel partiel : C1 et C4 sont élevés (ancrage dans l'expérience bancaire et professionnelle directe), mais C5 et C6 sont très faibles (angles morts sur les dimensions sociales et environnementales). La formation n'a pas tout résorbé : les scores après restent modestes sur C5--C6 : mais elle a rendu visible ce qui était invisible : ces zones ne sont plus des angles morts ignorés, elles sont devenues des axes de développement conscients et nommés.
+\textbf{Sur la famille C (compétences métier)}, la forme grise est caractéristique d'un profil d'expert sectoriel partiel : C1 et C4 sont élevés (ancrage dans l'expérience bancaire et professionnelle directe), mais C5 et C6 sont très faibles (angles morts sur les dimensions sociales et environnementales). La formation n'a pas tout résorbé : les scores après restent modestes sur C5--C6 : mais elle a rendu visible ce qui était invisible : ces zones ne sont plus des angles morts ignorés, elles sont devenues des axes de développement conscients et nommés.
 
 \medskip
 Les tableaux ci-dessous détaillent les scores et les justifications sous-jacentes à chacune de ces positions (cf. tableau~\ref{tab:7.scores-famille-a}, \ref{tab:7.scores-famille-b} et~\ref{tab:7.scores-famille-c}).

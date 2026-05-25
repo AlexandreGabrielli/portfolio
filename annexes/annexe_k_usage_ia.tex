@@ -1,0 +1,81 @@
+% =============================================================================
+% ANNEXE K : Note opérationnelle d'usage de l'intelligence artificielle générative
+% =============================================================================
+% Documente, conformément aux principes HES-SO (hessoIA2025) et UNESCO
+% (unescoIA2022), l'usage concret de l'IA générative dans la rédaction du
+% portfolio : modèles mobilisés, périmètre d'usage, périmètre d'exclusion,
+% dispositif de vérification.
+% =============================================================================
+
+\chapter{Note opérationnelle d'usage de l'intelligence artificielle générative}
+\label{annex:usage-ia}
+
+\annexefiche
+  {Synthèse rédigée en mai 2026, à la clôture du portfolio}
+  {Documentation méthodologique interne sur l'usage de l'IA générative dans la rédaction}
+  {Transparence académique et probité méthodologique (cadres HES-SO / UNESCO)}
+  {Aucun caviardage (document déclaratif et méthodologique)}
+
+\section*{Objet de l'annexe}
+
+La sous-section \emph{Note méthodologique et choix de structure} du chapitre~\ref{chap:but_portfolio} déclare un recours à l'intelligence artificielle générative dans la rédaction du portfolio, encadré par les principes directeurs de la HES-SO~\citep{hessoIA2025} et la \emph{Recommandation sur l'éthique de l'intelligence artificielle} de l'UNESCO~\citep{unescoIA2022}. La présente annexe complète cette déclaration par une \textbf{description opérationnelle} de l'usage : quels modèles, pour quels usages, sur quel périmètre, avec quelles exclusions explicites, et selon quel dispositif de vérification. Elle vise à rendre auditable, par un examinateur exigeant, la frontière effective entre les apports de l'auteur et ceux des outils mobilisés.
+
+\section{Modèles génératifs mobilisés}
+
+Deux familles de modèles de langage ont été utilisées, de manière complémentaire :
+
+\begin{itemize}
+  \item \textbf{ChatGPT} (OpenAI), versions GPT-4 et GPT-4o, accessibles via l'interface conversationnelle publique, durant l'année académique 2025--2026.
+  \item \textbf{Claude} (Anthropic), accessible via l'interface conversationnelle publique \texttt{claude.ai}, sur la même période.
+\end{itemize}
+
+Aucun modèle n'a été entraîné, finement ajusté (\emph{fine-tuned}) ni paramétré spécifiquement pour ce travail. Tous les usages relèvent de l'interaction par \emph{prompt} en langage naturel sur les versions standard accessibles au public.
+
+Le choix de deux modèles distincts, plutôt que d'un seul, répond à un principe de \emph{contre-vérification croisée} : en cas de doute sur une formulation ou sur la solidité d'un argument, le passage était soumis aux deux modèles, et la convergence (ou la divergence) de leurs réponses informait la décision finale de l'auteur.
+
+\section{Périmètre d'usage --- où l'IA a été mobilisée}
+
+Les usages de l'IA ont été circonscrits à quatre catégories explicites :
+
+\begin{enumerate}
+  \item \textbf{Vérification de la cohérence argumentative entre sections.} Soumission de plusieurs sections à la fois pour identifier les contradictions internes, les répétitions et les enchaînements faibles. Exemple : alignement entre les compétences annoncées dans le contrat d'apprentissage et les preuves effectivement mobilisées dans le chapitre \emph{Situations}.
+  \item \textbf{Audit et contre-argumentation.} L'IA a été instruite explicitement de jouer le rôle d'un évaluateur strict (par exemple, un examinateur de mémoire ou un spécialiste Tardif) afin d'identifier les faiblesses argumentatives. Les audits Tardif (\texttt{AUDIT\_TARDIF.md}) et académique (\texttt{AUDIT\_ACADEMIQUE.md}) ont été produits selon cette modalité ; leurs verdicts ont ensuite été révisés et arbitrés par l'auteur avant intégration au document.
+  \item \textbf{Génération de tableaux structurés et de grilles.} Mise en forme tabulaire d'éléments dont le contenu était fourni par l'auteur : grilles Tardif synthétiques en tête de chaque compétence, grille de descripteurs de niveau (1--3 / 4--6 / 7--8 / 9--10), tableaux d'autoévaluation par famille. L'IA a produit la structure tabulaire ; l'auteur a fourni et validé les contenus.
+  \item \textbf{Mise en forme \LaTeX{}.} Production et maintenance des environnements (boîtes \texttt{tcolorbox}, badges, en-têtes, footnotes complexes), des commandes personnalisées (\verb|\competences|, \verb|\caviarder|), et des graphiques TikZ (radars, chevrons). L'IA a accéléré la production typographique sans intervenir sur le contenu intellectuel.
+\end{enumerate}
+
+\section{Périmètre d'exclusion --- où l'IA n'a délibérément pas été mobilisée}
+
+Les passages suivants ont été rédigés sans recours à l'IA générative, parce qu'ils relèvent de la \emph{voix réflexive personnelle} de l'auteur et que leur authenticité est constitutive de la valeur probante du portfolio au sens de~\citet{tardif2006} :
+
+\begin{itemize}
+  \item \textbf{Les autoévaluations chiffrées} (scores avant/après formation par dimension de compétence, dans les trois radars du \emph{Bilan de progression}) ainsi que leurs justifications individuelles. Toute médiation par un modèle de langage aurait introduit un biais de formulation incompatible avec l'exigence de probité méthodologique posée en section~\ref{sec:note-methodologique}.
+  \item \textbf{Le récit des situations professionnalisantes} (faits, dates, personnes, déroulés). Les contextes bancaires, TWIICE et atelier Innokick relèvent de l'expérience directe : leur narration est strictement personnelle, anonymisée et synthétisée par l'auteur lui-même.
+  \item \textbf{Les analyses réflexives en fin de chaque compétence} (sous-sections \emph{Analyse réflexive} et \emph{Apprentissages à entreprendre}). Ces passages relèvent de la pratique réflexive au sens de~\citet{schon1994} : ils ne peuvent être délégués sans dénaturer la démarche.
+  \item \textbf{Le titre du portfolio et son argumentation} (chapitre~\ref{chap:titre_portfolio}). Le choix du titre \emph{Au-delà du code} et le récit du \emph{plafond technique} qui le soutient relèvent d'une décision rédactionnelle personnelle.
+  \item \textbf{Le chapitre \emph{Perspectives pour la suite}} (chapitre~\ref{chap:perspectives}). Le projet professionnel et la lecture rétrospective des apprentissages ne peuvent venir que de l'auteur.
+\end{itemize}
+
+\section{Dispositif de vérification appliqué aux productions de l'IA}
+
+Trois précautions ont été appliquées systématiquement aux passages où l'IA est intervenue :
+
+\begin{enumerate}
+  \item \textbf{Vérification factuelle des références bibliographiques.} Toute référence suggérée par un modèle de langage a été vérifiée auprès des sources primaires (catalogue éditeur, base de données ISBN, DOI) avant inclusion dans \texttt{references.bib}. Le risque de \emph{références hallucinées} est documenté dans la littérature ; il a été contré par cette étape de vérification, qui explique la modestie volontaire de la bibliographie (chaque entrée a été contrôlée).
+  \item \textbf{Réécriture sur appropriation.} Les passages reformulés par l'IA ont été relus, retravaillés et appropriés par l'auteur : aucun texte n'a été inséré tel quel sans une lecture critique et, dans la majorité des cas, une réécriture partielle. La voix rédactionnelle du portfolio (registre, métaphores filées par chapitre, ponctuation) reflète des choix personnels que l'IA ne produit pas spontanément.
+  \item \textbf{Contre-vérification croisée entre modèles.} Pour les passages sensibles (audit Tardif, audit académique, analyses réflexives complexes), la production d'un modèle a été soumise à l'autre pour identification des points faibles. Les éventuelles divergences ont été arbitrées par l'auteur.
+\end{enumerate}
+
+\section{Limites assumées de cette annexe}
+
+Cette annexe ne prétend pas fournir un journal exhaustif des interactions avec les modèles. La traçabilité conversationnelle complète n'a pas été archivée de manière systématique. Trois limites doivent donc être assumées :
+
+\begin{itemize}
+  \item Le décompte précis du nombre d'interactions, du volume de tokens consommés ou du pourcentage de texte « touché » par l'IA ne peut être fourni.
+  \item L'identification rétrospective des passages spécifiques où l'IA est intervenue est probabiliste, non déterministe : les listes des sections~3 et~4 décrivent des \emph{politiques d'usage} et des \emph{politiques d'exclusion}, non un marquage paragraphe par paragraphe.
+  \item Pour les cycles d'écriture futurs, un journal d'usage daté et un système de marquage explicite des passages assistés par IA constitueraient une amélioration méthodologique souhaitable, conforme à l'évolution prévisible des standards académiques sur ce sujet.
+\end{itemize}
+
+\section{Conclusion : un usage encadré, non central}
+
+L'IA générative a joué dans ce portfolio le rôle d'un \textbf{outil d'échafaudage} (au sens où l'on parle d'échafaudage en construction : on l'installe pour bâtir, on le démonte ensuite). Elle a accéléré la production des éléments accessoires (structure tabulaire, typographie \LaTeX{}, vérification de cohérence) et a fourni un partenaire de contre-argumentation pour les audits successifs. Elle n'a pas produit le contenu intellectuel central : sélection des compétences, identification des situations professionnelles, analyse des artefacts, lecture réflexive de la trajectoire. Cette frontière est revendiquée et défendable à l'oral : elle correspond, opérationnellement, à ce que les principes HES-SO appellent un usage \emph{« légitime et transparent »} de l'IA dans le cadre académique.

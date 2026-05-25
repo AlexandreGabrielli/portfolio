@@ -17,6 +17,7 @@
             headsep=5mm, headheight=27pt]{geometry}
 \usepackage{setspace}
 \onehalfspacing
+\setlength{\emergencystretch}{3em}
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{eso-pic}
@@ -34,12 +35,13 @@
 }
 
 % : Tableaux et boîtes colorées ---
-\usepackage{xcolor}          % Couleurs (chargé avant tcolorbox pour \definecolor)
+\usepackage[table,dvipsnames]{xcolor} % Couleurs + support tableaux (\rowcolor, \cellcolor) via xcolor natif
+\usepackage{array}       % Internals tableaux : doit être chargé EN PREMIER (avant colortbl/tabularx)
 \usepackage{booktabs}    % Filets de tableaux professionnels (\toprule, \midrule, \bottomrule)
 \usepackage{tabularx}    % Tableaux à largeur fixe avec colonnes flexibles
 \usepackage{longtable}   % Tableaux multi-pages
-\usepackage{colortbl}    % Couleurs de cellules et lignes (\rowcolor, \cellcolor)
-\usepackage{ragged2e}    % \RaggedRight dans les cellules longtable
+%\usepackage{colortbl}    % désactivé : fourni par xcolor[table] ci-dessus
+%\usepackage{ragged2e}   % désactivé : conflit avec array/p{} sur cette version MiKTeX
 \usepackage[many]{tcolorbox} % Boîtes colorées (brouillons, notes, callouts)
 \usepackage[framemethod=tikz]{mdframed} % Boite acompleter : supporte \footnote nativement
 
@@ -226,6 +228,14 @@
 }
 
 
+% Correctif de compatibilité array 2021+ / colortbl ancienne version
+% array >= 2021 appelle \insert@pcolumn dans \@startpbox (colonnes p{})
+% mais l'ancienne version de colortbl ne le définit pas → "Undefined control sequence"
+% \providecommand ne l'écrase pas si colortbl le définit à son tour.
+\makeatletter
+\providecommand{\insert@pcolumn}{}
+\makeatother
+
 % : Bibliographie APA ---
 \usepackage[backend=biber, style=apa, language=french, natbib=true, citestyle=apa]{biblatex}
 \addbibresource{references.bib}
@@ -239,6 +249,29 @@
 \newcommand{\annexepdf}[3][]{%
   \chapter{#2}%
   \includepdf[pages=-, pagecommand={\thispagestyle{annexepages}}, #1]{#3}%
+}
+
+% Cartouche d'identification d'artefact (Annexes) -----------------------------
+% Usage : \annexefiche{Date}{Contexte d'origine}{Ce que cet artefact prouve}{Niveau de caviardage}
+% Affiche un encadré standardisé en tête de chaque annexe, conformément à
+% l'exigence d'auditabilité posée par Tardif (2006) et reformulée par l'audit
+% académique (action B5) : date / destinataire / ce que ça prouve / caviardage.
+\newcommand{\annexefiche}[4]{%
+  \begin{tcolorbox}[colback=gray!4, colframe=hessoGrey, boxrule=0.5pt, arc=3pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt,
+    title={\textbf{\small Fiche d'identité de l'artefact}},
+    fonttitle=\small\bfseries, coltitle=white,
+    attach boxed title to top left={yshift=-2mm, xshift=4mm},
+    boxed title style={colback=hessoGrey, arc=3pt, boxrule=0pt}]
+  \small
+  \begin{tabularx}{\linewidth}{@{}p{3.5cm}X@{}}
+    \textbf{Date de production} & #1 \\
+    \textbf{Contexte d'origine} & #2 \\
+    \textbf{Mobilisé comme preuve de} & #3 \\
+    \textbf{Niveau de caviardage} & #4 \\
+  \end{tabularx}
+  \end{tcolorbox}%
+  \bigskip
 }
 
 % : Liens et navigation ---
@@ -297,7 +330,7 @@
 }
 
 % : Informations du document ---
-\title{Au-delà du code : construire une professionnalité transdisciplinaire (DRAFT)}
+\title{Au-delà du code : construire une professionnalité transdisciplinaire}
 \author{Alexandre Gati}
 \date{1er juin 2026}
 
@@ -379,4 +412,3 @@
 \end{appendices}
 
 \end{document}
-
